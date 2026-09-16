@@ -1,5 +1,5 @@
 import { Check, Infinity as InfinityIcon, Lock, ShieldCheck, Zap } from "lucide-react";
-import heroCinematicBakery from "@/assets/hero-cinematic-bakery.png.asset.json";
+const heroCinematicBakeryUrl = "/images/hero-cinematic-bakery.png";
 import { CHECKOUT_URL } from "./config";
 import { PhoneMockup } from "./PhoneMockup";
 import { FloatingCards } from "./FloatingCards";
