@@ -64,7 +64,13 @@
   --color-gold-bright: oklch(0.75 0.158 72); /* #F59E0B */
   --color-gold-mute: oklch(0.55 0.09 78);    /* #8B6914 */
   --color-emerald-cta: oklch(0.63 0.17 152); /* #16A34A conversion */
+  --color-emerald-cta-hover: oklch(0.53 0.15 152);
   --color-cream: oklch(0.93 0.028 88);       /* warm bread-cream text */
+  --color-artisan-cream: oklch(0.96 0.025 83);
+  --color-artisan-ink: oklch(0.19 0.034 52);
+  --color-paper: oklch(1 0 0);
+  --color-wine: oklch(0.38 0.15 27);
+  --color-red-offer: oklch(0.55 0.2 27);
 
   --font-serif: "Playfair Display", "Georgia", serif;
   --font-sans: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
@@ -143,6 +149,12 @@
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border: 1px solid oklch(0.45 0.1 75 / 45%);
+}
+
+@utility artisan-linen {
+  background-image: url("/images/fundo-dobra-2-4.webp");
+  background-position: center;
+  background-size: cover;
 }
 
 @layer base {
