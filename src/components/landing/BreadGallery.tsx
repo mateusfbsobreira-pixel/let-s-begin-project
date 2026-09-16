@@ -6,28 +6,28 @@ const breads = [
   },
   {
     image: "/images/pao-2.webp",
-    title: "Baguette Tradicional Francesa",
-    subtitle: "Crocancia perfecta y greñado dorado",
+    title: "Hogaza Multisemillas de Campo",
+    subtitle: "Miga alveolada con semillas tostadas y fermentación lenta",
   },
   {
     image: "/images/pao-3.webp",
-    title: "Ciabatta de Alta Hidratación",
-    subtitle: "Miga ligera como una nube",
+    title: "Pan de Brioche Gourmet con Sésamo",
+    subtitle: "Masa enriquecida ultra-suave, dorada y esponjosa",
   },
   {
     image: "/images/pao-4.webp",
-    title: "Focaccia al Romero y Oliva",
-    subtitle: "Burbujas aireadas y aroma mediterráneo",
+    title: "Pan Rústico Integral Multicereal",
+    subtitle: "Corteza de avena crocante y alto valor nutritivo",
   },
   {
     image: "/images/pao-5.webp",
-    title: "Pan de Campo Multigrano",
-    subtitle: "Semillas tostadas y fermentación lenta",
+    title: "Baguette Tradicional Francesa",
+    subtitle: "Alveolado tipo panal y crocancia inigualable",
   },
   {
     image: "/images/pao-6.webp",
-    title: "Pan Relleno Gourmet",
-    subtitle: "Combinaciones dulces y saladas irresistibles",
+    title: "Rollos de Canela & Masas Dulces",
+    subtitle: "Espirales caramelizadas con glaseado artesanal de vainilla",
   },
 ];
 
