@@ -40,8 +40,8 @@ function Index() {
         <ContrastSection />
         <BreadGallery />
         <MasterBooks />
-        <AppTour />
         <Testimonials />
+        <AppTour />
         <FinalOffer />
         <Guarantee />
         <FaqSection />
