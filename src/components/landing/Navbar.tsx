@@ -1,5 +1,5 @@
-import { Wheat } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logoAsset from "@/assets/logo-la-casa-del-pan.png.asset.json";
 import { BRAND_NAME, CHECKOUT_URL } from "./config";
 
 export function Navbar() {
@@ -7,8 +7,13 @@ export function Navbar() {
     <header className="sticky top-0 z-50 border-b border-gold/30 bg-oven/90 shadow-xl backdrop-blur-md">
       <div className="mx-auto flex min-h-18 max-w-7xl items-center justify-between gap-2 px-3 py-2 sm:min-h-20 sm:gap-4 sm:px-6">
         <a href="#" className="flex min-w-0 items-center gap-2.5 sm:gap-3" aria-label={`${BRAND_NAME}, inicio`}>
-          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-gold/60 bg-gradient-to-br from-oven-deep to-oven-black shadow-md">
-            <Wheat className="h-5 w-5 text-gold-bright" aria-hidden="true" />
+          <span className="flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-gold/60 bg-oven-black shadow-[0_0_20px_color-mix(in_oklab,var(--color-gold)_25%,transparent)] sm:h-14 sm:w-14">
+            <img
+              src={logoAsset.url}
+              alt=""
+              aria-hidden="true"
+              className="h-full w-full object-cover"
+            />
           </span>
           <span className="min-w-0">
             <span className="block whitespace-nowrap font-serif text-base font-bold leading-none tracking-[0.12em] text-gold-bright drop-shadow-sm sm:text-2xl sm:tracking-[0.2em]">
