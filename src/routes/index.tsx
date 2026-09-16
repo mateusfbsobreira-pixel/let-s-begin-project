@@ -3,6 +3,8 @@ import { AnnouncementBar } from "@/components/landing/AnnouncementBar";
 import { Navbar } from "@/components/landing/Navbar";
 import { Hero } from "@/components/landing/Hero";
 import { ContrastSection } from "@/components/landing/ContrastSection";
+import { BreadGallery } from "@/components/landing/BreadGallery";
+import { MasterBooks } from "@/components/landing/MasterBooks";
 import { AppTour } from "@/components/landing/AppTour";
 
 const TITLE =
@@ -32,6 +34,8 @@ function Index() {
       <main>
         <Hero />
         <ContrastSection />
+        <BreadGallery />
+        <MasterBooks />
         <AppTour />
       </main>
     </div>
