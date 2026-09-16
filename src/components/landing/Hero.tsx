@@ -15,7 +15,7 @@ export function Hero() {
   return (
     <section
       className="relative overflow-hidden bg-cover bg-center sm:bg-right"
-      style={{ backgroundImage: `url(${heroCinematicBakery.url})` }}
+      style={{ backgroundImage: `url(${heroCinematicBakeryUrl})` }}
     >
       {/* Cinematic horizontal vignette: dark, crisp side for typography; glowing oven stays vibrant on the right */}
       <div
