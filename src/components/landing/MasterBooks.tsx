@@ -66,7 +66,7 @@ const books = [
 
 export function MasterBooks() {
   return (
-    <section className="border-t border-gold/20 bg-artisan-cream px-4 py-20">
+    <section className="scroll-mt-24 border-t border-gold/20 bg-artisan-cream px-4 py-20">
       <div className="mx-auto max-w-7xl">
         <header className="mx-auto max-w-4xl text-center">
           <span className="mb-3 inline-block rounded-full bg-gold px-4 py-1.5 text-xs font-bold uppercase text-artisan-ink">
