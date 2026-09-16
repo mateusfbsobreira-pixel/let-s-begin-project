@@ -94,7 +94,7 @@ export function Hero() {
           </div>
 
           {/* Phone showcase + floating cards */}
-          <div className="relative">
+          <div className="relative lg:pb-24">
             <PhoneMockup />
             <FloatingCards />
           </div>
