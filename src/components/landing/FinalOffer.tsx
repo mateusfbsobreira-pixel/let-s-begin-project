@@ -1,6 +1,7 @@
 import { Check, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { CHECKOUT_URL } from "./config";
+import { useCountdown } from "@/hooks/use-countdown";
 
 const benefits = [
   "Aplicación Oficial La Casa del Pan para iPhone, Android y PC (Valor $49)",
@@ -13,6 +14,8 @@ const benefits = [
 ];
 
 export function FinalOffer() {
+  const { minutes, seconds } = useCountdown();
+
   return (
     <section className="bg-artisan-cream px-4 py-20 sm:py-24">
       <div className="mx-auto max-w-4xl">
@@ -43,6 +46,31 @@ export function FinalOffer() {
               </li>
             ))}
           </ul>
+
+          <div className="mt-8 rounded-2xl border border-gold/35 bg-oven-deep p-5">
+            <p className="text-xs font-bold uppercase tracking-wider text-gold-bright">
+              ⏳ Tu descuento del 97% expira en:
+            </p>
+            <div className="mt-3 flex items-center justify-center gap-2">
+              <div className="flex flex-col items-center">
+                <span className="rounded-xl border border-gold/45 bg-oven px-4 py-2 font-mono text-3xl font-black text-gold sm:text-4xl">
+                  {minutes}
+                </span>
+                <span className="mt-1 text-[10px] font-semibold uppercase tracking-wider text-cream/65">
+                  Minutos
+                </span>
+              </div>
+              <span className="pb-5 font-mono text-3xl font-black text-gold/70 sm:text-4xl">:</span>
+              <div className="flex flex-col items-center">
+                <span className="rounded-xl border border-gold/45 bg-oven px-4 py-2 font-mono text-3xl font-black text-gold sm:text-4xl">
+                  {seconds}
+                </span>
+                <span className="mt-1 text-[10px] font-semibold uppercase tracking-wider text-cream/65">
+                  Segundos
+                </span>
+              </div>
+            </div>
+          </div>
 
           <div className="mt-8 border-t border-gold/25 pt-7">
             <p className="text-lg font-bold text-red-offer line-through">
