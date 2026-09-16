@@ -2,6 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { AnnouncementBar } from "@/components/landing/AnnouncementBar";
 import { Navbar } from "@/components/landing/Navbar";
 import { Hero } from "@/components/landing/Hero";
+import { ContrastSection } from "@/components/landing/ContrastSection";
+import { AppTour } from "@/components/landing/AppTour";
 
 const TITLE =
   "La Casa del Pan Artesanal — App Interactiva + Chef IA por $6.90";
@@ -29,6 +31,8 @@ function Index() {
       <Navbar />
       <main>
         <Hero />
+        <ContrastSection />
+        <AppTour />
       </main>
     </div>
   );
