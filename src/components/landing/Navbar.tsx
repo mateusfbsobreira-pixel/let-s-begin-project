@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import logoAsset from "@/assets/logo-la-casa-del-pan.png.asset.json";
+const logoUrl = "/images/logo-la-casa-del-pan.png";
 import { BRAND_NAME, CHECKOUT_URL } from "./config";
 
 export function Navbar() {
