@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import logoAsset from "@/assets/logo-la-casa-del-pan.png.asset.json";
+const logoUrl = "/images/logo-la-casa-del-pan.png";
 import { BRAND_NAME, CHECKOUT_URL } from "./config";
 
 export function Navbar() {
@@ -9,7 +9,7 @@ export function Navbar() {
         <a href="#" className="flex min-w-0 items-center gap-2.5 sm:gap-3" aria-label={`${BRAND_NAME}, inicio`}>
           <span className="flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-gold/60 bg-oven-black shadow-[0_0_20px_color-mix(in_oklab,var(--color-gold)_25%,transparent)] sm:h-14 sm:w-14">
             <img
-              src={logoAsset.url}
+              src={logoUrl}
               alt=""
               aria-hidden="true"
               className="h-full w-full object-cover"

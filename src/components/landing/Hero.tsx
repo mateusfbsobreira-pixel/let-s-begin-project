@@ -1,5 +1,5 @@
 import { Check, Infinity as InfinityIcon, Lock, ShieldCheck, Zap } from "lucide-react";
-import heroCinematicBakery from "@/assets/hero-cinematic-bakery.png.asset.json";
+const heroCinematicBakeryUrl = "/images/hero-cinematic-bakery.png";
 import { CHECKOUT_URL } from "./config";
 import { PhoneMockup } from "./PhoneMockup";
 import { FloatingCards } from "./FloatingCards";
@@ -15,7 +15,7 @@ export function Hero() {
   return (
     <section
       className="relative overflow-hidden bg-cover bg-center sm:bg-right"
-      style={{ backgroundImage: `url(${heroCinematicBakery.url})` }}
+      style={{ backgroundImage: `url(${heroCinematicBakeryUrl})` }}
     >
       {/* Cinematic horizontal vignette: dark, crisp side for typography; glowing oven stays vibrant on the right */}
       <div
