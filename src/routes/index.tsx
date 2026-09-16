@@ -10,6 +10,7 @@ import { Testimonials } from "@/components/landing/Testimonials";
 import { FinalOffer } from "@/components/landing/FinalOffer";
 import { Guarantee } from "@/components/landing/Guarantee";
 import { FaqSection, Footer } from "@/components/landing/FaqFooter";
+import { StickyMobileBar } from "@/components/landing/StickyMobileBar";
 
 const TITLE =
   "La Casa del Pan Artesanal — App Interactiva + Chef IA por $6.90";
@@ -46,6 +47,7 @@ function Index() {
         <Guarantee />
         <FaqSection />
       </main>
+      <StickyMobileBar />
       <Footer />
     </div>
   );
