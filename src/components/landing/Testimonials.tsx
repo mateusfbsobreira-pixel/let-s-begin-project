@@ -12,6 +12,7 @@ import {
   Video,
   Wifi,
 } from "lucide-react";
+import { useEffect, useState } from "react";
 import mariaAvatar from "@/assets/maria-gonzalez-avatar.jpg";
 import carlosAvatar from "@/assets/carlos-rodriguez-avatar.jpg";
 import anaAvatar from "@/assets/ana-silva-avatar.jpg";
@@ -58,6 +59,47 @@ const chats = [
   },
 ];
 
+function SyncedPhoto({
+  preferredSrc,
+  fallbackSrc,
+  alt,
+  className,
+  width,
+  height,
+}: {
+  preferredSrc: string;
+  fallbackSrc: string;
+  alt: string;
+  className: string;
+  width: number;
+  height: number;
+}) {
+  const [src, setSrc] = useState(fallbackSrc);
+
+  useEffect(() => {
+    let active = true;
+    fetch(preferredSrc, { method: "HEAD" })
+      .then((response) => {
+        if (active && response.ok) setSrc(preferredSrc);
+      })
+      .catch(() => undefined);
+    return () => {
+      active = false;
+    };
+  }, [preferredSrc]);
+
+  return (
+    <img
+      src={src}
+      alt={alt}
+      loading="lazy"
+      width={width}
+      height={height}
+      className={className}
+    />
+  );
+}
+
 export function Testimonials() {
   return (
     <section className="relative overflow-hidden bg-[#120804] px-4 py-20">
@@ -96,16 +138,12 @@ export function Testimonials() {
               <div className="mt-1 flex items-center justify-between rounded-t-xl bg-[#1F2C34] px-3 py-2.5 text-stone-200">
                 <div className="flex min-w-0 items-center gap-2">
                   <ChevronLeft className="h-4 w-4 shrink-0 text-stone-300" aria-hidden="true" />
-                  <img
-                    src={chat.photo}
+                  <SyncedPhoto
+                    preferredSrc={chat.photo}
+                    fallbackSrc={chat.fallbackAvatar}
                     alt=""
-                    loading="lazy"
                     width={512}
                     height={512}
-                    onError={(event) => {
-                      event.currentTarget.onerror = null;
-                      event.currentTarget.src = chat.fallbackAvatar;
-                    }}
                     className="h-9 w-9 shrink-0 rounded-full border border-stone-600 object-cover"
                   />
                   <div className="min-w-0">
@@ -132,16 +170,12 @@ export function Testimonials() {
 
                 <div className="relative max-w-[92%] rounded-2xl rounded-tl-none bg-[#202C33] p-2.5 text-stone-100 shadow-md">
                   <span className="absolute -left-1.5 top-0 h-3 w-3 bg-[#202C33] [clip-path:polygon(100%_0,100%_100%,0_0)]" aria-hidden="true" />
-                  <img
-                    src={chat.photo}
+                  <SyncedPhoto
+                    preferredSrc={chat.photo}
+                    fallbackSrc={chat.fallbackPhoto}
                     alt={chat.photoAlt}
-                    loading="lazy"
                     width={800}
                     height={600}
-                    onError={(event) => {
-                      event.currentTarget.onerror = null;
-                      event.currentTarget.src = chat.fallbackPhoto;
-                    }}
                     className="mb-2 aspect-[4/3] w-full rounded-xl object-cover shadow-sm"
                   />
                   <p className="text-[13px] leading-[1.45]">{chat.incoming}</p>
