@@ -33,11 +33,11 @@ export function ContrastSection() {
           <span className="inline-flex items-center rounded-full border border-amber-500/30 text-amber-300 bg-amber-950/40 px-4 py-1.5 text-xs sm:text-sm font-bold uppercase tracking-wider">
             ⚡ La Diferencia que lo Cambia Todo
           </span>
-          <h2 className="font-serif text-3xl sm:text-4xl text-stone-100 mt-5 leading-tight">
+          <h2 className="mt-5 font-serif text-2xl font-bold leading-tight text-cream sm:text-4xl">
             ¿Por Qué los Libros en PDF Tradicionales y Videos de YouTube Te
             Hacen Fracasar en la Cocina?
           </h2>
-          <p className="text-stone-300 max-w-2xl mx-auto mt-3">
+          <p className="mx-auto mt-3 max-w-3xl text-base leading-relaxed text-cream/85 sm:text-lg">
             Hornear pan artesanal es un proceso vivo de tiempo, hidratación y
             temperatura. Los métodos estáticos de hace 15 años ya no funcionan.
           </p>
@@ -56,7 +56,7 @@ export function ContrastSection() {
                   <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-red-950/60 border border-red-900/50">
                     <X className="h-3.5 w-3.5 text-red-400" aria-hidden="true" />
                   </span>
-                  <span className="text-stone-400 text-sm sm:text-base leading-relaxed">
+                   <span className="text-base leading-relaxed text-cream/75 sm:text-lg">
                     {pain}
                   </span>
                 </li>
@@ -88,7 +88,7 @@ export function ContrastSection() {
                   >
                     <Check className="h-3.5 w-3.5 text-emerald-400" aria-hidden="true" />
                   </span>
-                  <span className="text-stone-200 text-sm sm:text-base leading-relaxed">
+                   <span className="text-base leading-relaxed text-cream/90 sm:text-lg">
                     {win}
                   </span>
                 </li>

@@ -8,10 +8,10 @@ export function Guarantee() {
           loading="lazy"
           className="mx-auto mb-6 w-36 drop-shadow-md sm:w-44"
         />
-        <h2 className="font-serif text-2xl font-bold leading-tight text-artisan-ink sm:text-3xl">
+        <h2 className="font-serif text-2xl font-bold leading-tight text-artisan-ink sm:text-4xl">
           Garantía Incondicional de Satisfacción por 7 Días — Riesgo Cero
         </h2>
-        <p className="mx-auto mt-4 text-sm leading-7 text-artisan-ink/75 sm:text-base sm:leading-8">
+        <p className="mx-auto mt-4 max-w-3xl text-base leading-relaxed text-artisan-ink/85 sm:text-lg">
           Estamos tan seguros de que este será el mejor recurso culinario de tu
           vida que asumimos todo el riesgo por ti. Accede hoy, habla con el Chef
           IA, pon en marcha los cronómetros y hornea tus primeros panes este fin

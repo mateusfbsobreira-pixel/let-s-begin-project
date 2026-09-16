@@ -105,6 +105,17 @@
   80%, 100% { transform: scale(2.4); opacity: 0; }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
 :root {
   --radius: 0.625rem;
   --background: oklch(0.16 0.028 52);
