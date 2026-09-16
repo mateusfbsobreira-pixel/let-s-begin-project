@@ -15,11 +15,15 @@ import {
 import mariaPhoto from "@/assets/maria-sourdough.jpg";
 import carlosPhoto from "@/assets/carlos-baguettes.jpg";
 import sofiaPhoto from "@/assets/sofia-focaccia.jpg";
+import mariaAvatar from "@/assets/maria-avatar.jpg";
+import carlosAvatar from "@/assets/carlos-avatar.jpg";
+import sofiaAvatar from "@/assets/sofia-avatar.jpg";
 
 const chats = [
   {
     name: "María González 🇲🇽",
     photo: mariaPhoto,
+    avatar: mariaAvatar,
     photoAlt: "María González mostrando su hogaza de masa madre recién horneada",
     incoming:
       "¡Hola Chef! No puedo creer lo que logré este domingo... ¡mira esta hogaza! Mi esposo no podía creer que lo hice en nuestro horno casero, pensó que lo compré en una panadería francesa 😭🥖❤️",
