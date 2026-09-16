@@ -28,11 +28,11 @@ export function StickyMobileBar() {
           <div className="min-w-0">
             <p className="flex items-baseline gap-2 leading-none">
               <span className="text-xs text-cream/50 line-through">$230</span>
-              <span className="text-lg font-black text-gold sm:text-xl">
+              <span className="whitespace-nowrap text-lg font-black text-gold sm:text-xl">
                 $6.90 USD
               </span>
             </p>
-            <p className="mt-1 flex items-center gap-1 text-[11px] font-semibold text-cream/75 sm:text-xs">
+            <p className="mt-1.5 flex items-center gap-1 whitespace-nowrap text-[11px] font-semibold text-cream/75 sm:text-xs">
               <Clock className="h-3 w-3 text-gold-bright" aria-hidden="true" />
               Oferta expira en{" "}
               <span className="font-mono font-bold text-gold-bright">{label}</span>

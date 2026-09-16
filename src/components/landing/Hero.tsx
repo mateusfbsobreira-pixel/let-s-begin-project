@@ -68,6 +68,11 @@ export function Hero() {
                 SÍ, QUIERO MI APLICACIÓN + 8 LIBROS POR $6.90 USD »
               </a>
 
+              <p className="mx-auto mt-4 max-w-xl text-xs font-medium leading-relaxed text-cream/75 sm:text-sm lg:mx-0">
+                🌎 Pagas en tu moneda local: Hotmart convierte automáticamente
+                los $6.90 USD al valor de tu país al pagar.
+              </p>
+
               {/* Trust signals */}
               <ul className="mt-6 grid grid-cols-1 gap-2.5 text-left sm:grid-cols-2">
                 {TRUST_SIGNALS.map(({ icon: Icon, text }) => (

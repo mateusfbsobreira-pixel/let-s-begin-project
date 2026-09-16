@@ -85,6 +85,37 @@ export function FinalOffer() {
             </p>
           </div>
 
+          {/* Local-currency clarity: Hotmart auto-converts at checkout */}
+          <div className="mt-6 rounded-2xl border border-gold/30 bg-oven-deep p-5 text-left">
+            <p className="text-xs font-bold uppercase tracking-wider text-gold-bright">
+              🌎 Pagas en la moneda de tu país
+            </p>
+            <ul className="mt-3 flex flex-wrap gap-2">
+              {[
+                "🇲🇽 Pesos Mexicanos",
+                "🇨🇴 Pesos Colombianos",
+                "🇨🇱 Pesos Chilenos",
+                "🇵🇪 Soles",
+                "🇪🇸 Euros",
+                "🇦🇷 ARS",
+              ].map((currency) => (
+                <li
+                  key={currency}
+                  className="rounded-full border border-gold/30 bg-oven px-3 py-1.5 text-xs font-semibold text-cream/85"
+                >
+                  {currency}
+                </li>
+              ))}
+            </ul>
+            <p className="mt-3 text-sm leading-6 text-cream/80">
+              Hotmart detecta tu país y convierte automáticamente los{" "}
+              <span className="font-bold text-gold-bright">$6.90 USD</span> al
+              valor de tu moneda local en el instante de pagar. Acepta tarjetas
+              locales de débito y crédito y también pago en efectivo (OXXO,
+              Efecty, PagoEfectivo y otros puntos habilitados según tu país).
+            </p>
+          </div>
+
           <Button
             asChild
             className="group relative mt-6 h-auto w-full overflow-hidden whitespace-normal rounded-full bg-emerald-cta px-6 py-5 text-base font-bold text-paper shadow-2xl transition-transform hover:scale-[1.03] hover:bg-emerald-cta-hover sm:px-8 sm:text-lg"

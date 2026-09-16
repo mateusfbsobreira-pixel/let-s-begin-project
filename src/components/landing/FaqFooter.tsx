@@ -18,6 +18,11 @@ const faqs = [
       "¡Jamás! Tu pago de hoy de $6.90 USD es un pago ÚNICO y para toda la vida. No existen mensualidades, ni suscripciones, ni cargos sorpresa en tu tarjeta.",
   },
   {
+    question: "¿Puedo pagar en la moneda de mi país si no tengo dólares (USD)?",
+    answer:
+      "¡Claro que sí! El precio base es de $6.90 USD, pero Hotmart detecta automáticamente desde qué país estás pagando y convierte ese monto al instante a tu moneda local: pesos mexicanos, colombianos, chilenos, argentinos, soles peruanos, euros o la moneda de tu país. Antes de confirmar verás el valor exacto ya convertido, sin hacer ningún cálculo manual. Además puedes usar tarjetas locales de débito o crédito, o pagar en efectivo en los puntos habilitados para tu país (OXXO en México, Efecty en Colombia, PagoEfectivo en Perú y muchos otros).",
+  },
+  {
     question: "¿También recibiré los libros en formato PDF para descargar e imprimir?",
     answer:
       "¡Sí! Tienes lo mejor de los dos mundos: la experiencia interactiva dentro del aplicativo con cronómetros integrados y, además, todos los libros en formato PDF original en alta resolución para descargar a tu computadora o imprimir en papel cuando quieras.",
