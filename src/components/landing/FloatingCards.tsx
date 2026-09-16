@@ -66,7 +66,7 @@ export function FloatingCards() {
       <div className="animate-float-slow absolute right-0 top-6 hidden w-60 lg:block">
         <CardTimer />
       </div>
-      <div className="animate-float-fast absolute -bottom-4 right-2 hidden w-64 lg:block">
+      <div className="animate-float-fast absolute bottom-0 right-0 hidden w-64 lg:block">
         <CardDiploma />
       </div>
 
