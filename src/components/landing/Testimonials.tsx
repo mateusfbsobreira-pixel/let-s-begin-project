@@ -122,7 +122,7 @@ export function Testimonials() {
                 <div className="flex min-w-0 items-center gap-2">
                   <ChevronLeft className="h-4 w-4 shrink-0 text-stone-300" aria-hidden="true" />
                   <TestimonialPhoto
-                    src={chat.fallbackAvatar}
+                    src={chat.photo}
                     alt=""
                     width={512}
                     height={512}
@@ -153,7 +153,7 @@ export function Testimonials() {
                 <div className="relative max-w-[92%] rounded-2xl rounded-tl-none bg-[#202C33] p-2.5 text-stone-100 shadow-md">
                   <span className="absolute -left-1.5 top-0 h-3 w-3 bg-[#202C33] [clip-path:polygon(100%_0,100%_100%,0_0)]" aria-hidden="true" />
                   <TestimonialPhoto
-                    src={chat.fallbackPhoto}
+                    src={chat.photo}
                     alt={chat.photoAlt}
                     width={800}
                     height={600}
