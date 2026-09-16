@@ -28,10 +28,10 @@ export function StickyMobileBar() {
           <div className="min-w-0">
             <p className="flex items-baseline gap-2 leading-none">
               <span className="text-xs text-cream/50 line-through">$230</span>
-              <span className="text-lg font-black text-gold sm:text-xl">
+              <span className="whitespace-nowrap text-lg font-black text-gold sm:text-xl">
                 $6.90 USD
               </span>
-              <span className="truncate text-[10px] font-semibold text-cream/60 sm:text-xs">
+              <span className="whitespace-nowrap text-[9px] font-semibold text-cream/60 sm:text-xs">
                 • En tu moneda local
               </span>
             </p>
