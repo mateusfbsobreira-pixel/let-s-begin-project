@@ -37,6 +37,7 @@ const chats = [
   {
     name: "Carlos Rodríguez 🇦🇷",
     photo: carlosPhoto,
+    avatar: carlosAvatar,
     photoAlt: "Carlos Rodríguez sosteniendo baguettes artesanales en papel kraft",
     incoming:
       "Buenas tardes equipo, les comparto que con la guía de ventas y la calculadora del Chef IA vendí mis primeras 8 baguettes hoy a los vecinos del edificio. ¡Recuperé los $6.90 y ya tengo 14 pedidos para el sábado! 🚀💰",
@@ -50,6 +51,7 @@ const chats = [
   {
     name: "Sofía Alarcón 🇨🇴",
     photo: sofiaPhoto,
+    avatar: sofiaAvatar,
     photoAlt: "Sofía Alarcón mostrando una focaccia con romero recién horneada",
     incoming:
       "Llevaba meses intentando con videos de YouTube y siempre se me moría la masa madre al 4to día. Le pregunté al Chef IA, me dijo qué harina usar y hoy dobló su tamaño. ¡Miren esta focaccia que acabo de sacar del horno! 🙏✨",
@@ -126,7 +128,7 @@ export function Testimonials() {
                 <div className="flex min-w-0 items-center gap-2">
                   <ChevronLeft className="h-4 w-4 shrink-0 text-stone-300" aria-hidden="true" />
                   <TestimonialPhoto
-                    src={chat.photo}
+                    src={chat.avatar}
                     alt=""
                     width={512}
                     height={512}
