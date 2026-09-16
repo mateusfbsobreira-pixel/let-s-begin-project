@@ -73,6 +73,7 @@
   --color-red-offer: oklch(0.55 0.2 27);
   --color-warm-white: oklch(0.995 0.007 84);
   --color-oven-black: oklch(0.115 0.018 48);
+  --color-hero-ink: oklch(0.019 0.014 64);  /* #0B0604 cinematic vignette ink */
 
   --font-serif: "Playfair Display", "Georgia", serif;
   --font-sans: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
