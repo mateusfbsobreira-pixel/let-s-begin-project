@@ -13,8 +13,22 @@ const TRUST_SIGNALS = [
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-[url('/images/fundo-dobra-1.webp')] bg-cover bg-center">
-      <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-gradient-to-b from-oven/85 via-oven/70 to-oven" />
+    <section
+      className="relative overflow-hidden bg-cover bg-center sm:bg-right"
+      style={{ backgroundImage: `url(${heroCinematicBakery})` }}
+    >
+      {/* Cinematic horizontal vignette: dark, crisp side for typography; glowing oven stays vibrant on the right */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 bg-gradient-to-r from-hero-ink/92 via-hero-ink/60 to-hero-ink/20"
+      />
+      {/* Extra flat scrim on small screens, where the copy is centered over the whole frame */}
+      <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-hero-ink/75 lg:hidden" />
+      {/* Bottom fade into the dark contrast of Section 2 */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-oven to-transparent"
+      />
 
       <div className="relative mx-auto max-w-7xl px-4 pb-20 pt-14 sm:px-6 sm:pt-20">
         <div className="grid items-center gap-14 lg:grid-cols-2">
