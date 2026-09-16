@@ -6,6 +6,10 @@ import { ContrastSection } from "@/components/landing/ContrastSection";
 import { BreadGallery } from "@/components/landing/BreadGallery";
 import { MasterBooks } from "@/components/landing/MasterBooks";
 import { AppTour } from "@/components/landing/AppTour";
+import { Testimonials } from "@/components/landing/Testimonials";
+import { FinalOffer } from "@/components/landing/FinalOffer";
+import { Guarantee } from "@/components/landing/Guarantee";
+import { FaqSection, Footer } from "@/components/landing/FaqFooter";
 
 const TITLE =
   "La Casa del Pan Artesanal — App Interactiva + Chef IA por $6.90";
@@ -37,7 +41,12 @@ function Index() {
         <BreadGallery />
         <MasterBooks />
         <AppTour />
+        <Testimonials />
+        <FinalOffer />
+        <Guarantee />
+        <FaqSection />
       </main>
+      <Footer />
     </div>
   );
 }
