@@ -1,5 +1,5 @@
 import { Check, Infinity as InfinityIcon, Lock, ShieldCheck, Zap } from "lucide-react";
-import heroCinematicBakery from "@/assets/hero-cinematic-bakery.jpg";
+import heroCinematicBakery from "@/assets/hero-cinematic-bakery.png.asset.json";
 import { CHECKOUT_URL } from "./config";
 import { PhoneMockup } from "./PhoneMockup";
 import { FloatingCards } from "./FloatingCards";
@@ -15,19 +15,19 @@ export function Hero() {
   return (
     <section
       className="relative overflow-hidden bg-cover bg-center sm:bg-right"
-      style={{ backgroundImage: `url(${heroCinematicBakery})` }}
+      style={{ backgroundImage: `url(${heroCinematicBakery.url})` }}
     >
       {/* Cinematic horizontal vignette: dark, crisp side for typography; glowing oven stays vibrant on the right */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 bg-gradient-to-r from-hero-ink/92 via-hero-ink/60 to-hero-ink/20"
+        className="pointer-events-none absolute inset-0 bg-gradient-to-r from-hero-ink/90 via-hero-ink/55 to-transparent"
       />
       {/* Extra flat scrim on small screens, where the copy is centered over the whole frame */}
-      <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-hero-ink/75 lg:hidden" />
+      <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-hero-ink/70 lg:hidden" />
       {/* Bottom fade into the dark contrast of Section 2 */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-oven to-transparent"
+        className="pointer-events-none absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-oven to-transparent"
       />
 
       <div className="relative mx-auto max-w-7xl px-4 pb-20 pt-14 sm:px-6 sm:pt-20">
