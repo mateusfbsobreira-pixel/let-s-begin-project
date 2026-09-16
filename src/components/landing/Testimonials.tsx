@@ -12,52 +12,46 @@ import {
   Video,
   Wifi,
 } from "lucide-react";
-import mariaAvatar from "@/assets/maria-gonzalez-avatar.jpg";
-import carlosAvatar from "@/assets/carlos-rodriguez-avatar.jpg";
-import anaAvatar from "@/assets/ana-silva-avatar.jpg";
+import mariaPhoto from "@/assets/maria-sourdough.jpg";
+import carlosPhoto from "@/assets/carlos-baguettes.jpg";
+import sofiaPhoto from "@/assets/sofia-focaccia.jpg";
 
 const chats = [
   {
     name: "María González 🇲🇽",
-    photo: "/images/depoimento-maria.jpg",
-    fallbackPhoto: "/images/pao-1.webp",
-    fallbackAvatar: mariaAvatar,
-    photoAlt: "María González mostrando su hogaza artesanal recién horneada",
+    photo: mariaPhoto,
+    photoAlt: "María González mostrando su hogaza de masa madre recién horneada",
     incoming:
-      "¡Hola Chef! No puedo creer lo que logré este domingo... ¡mira esta hogaza! Mi esposo pensó que lo compré en una panadería gourmet francesa 😭🥖❤️",
+      "¡Hola Chef! No puedo creer lo que logré este domingo... ¡mira esta hogaza! Mi esposo no podía creer que lo hice en nuestro horno casero, pensó que lo compré en una panadería francesa 😭🥖❤️",
     incomingTime: "10:42 a. m.",
     reply:
-      "¡Qué belleza de hogaza rústica, María! Ese alveolado abierto y el greñado están de campeonato mundial. ¡Felicidades, Maestra! 👨‍🍳✨",
+      "¡Qué belleza de hogaza, María! Ese alveolado abierto y el greñado están de campeonato mundial. ¡Felicidades, Maestra Panadera! 👨‍🍳✨",
     replyTime: "10:44 a. m.",
     statusTime: "10:47",
     battery: 87,
   },
   {
     name: "Carlos Rodríguez 🇦🇷",
-    photo: "/images/depoimento-carlos.jpg",
-    fallbackPhoto: "/images/pao-2.webp",
-    fallbackAvatar: carlosAvatar,
-    photoAlt: "Carlos Rodríguez mostrando baguettes artesanales recién horneadas",
+    photo: carlosPhoto,
+    photoAlt: "Carlos Rodríguez sosteniendo baguettes artesanales en papel kraft",
     incoming:
       "Buenas tardes equipo, les comparto que con la guía de ventas y la calculadora del Chef IA vendí mis primeras 8 baguettes hoy a los vecinos del edificio. ¡Recuperé los $6.90 y ya tengo 14 pedidos para el sábado! 🚀💰",
     incomingTime: "4:15 p. m.",
     reply:
-      "¡Brutal resultado Carlos! Ese es exactamente el poder de calcular bien los costos y la fermentación. ¡Mucho éxito con esos pedidos! 👏🔥",
+      "¡Brutal resultado Carlos! Ese es exactamente el poder de calcular bien los costos y la fermentación. ¡A seguir creciendo ese negocio! 👏🔥",
     replyTime: "4:18 p. m.",
     statusTime: "4:23",
     battery: 63,
   },
   {
-    name: "Ana Patricia Silva 🇵🇪",
-    photo: "/images/depoimento-ana.jpg",
-    fallbackPhoto: "/images/pao-4.webp",
-    fallbackAvatar: anaAvatar,
-    photoAlt: "Ana Patricia Silva mostrando una focaccia recién horneada",
+    name: "Sofía Alarcón 🇨🇴",
+    photo: sofiaPhoto,
+    photoAlt: "Sofía Alarcón mostrando una focaccia con romero recién horneada",
     incoming:
-      "Llevaba meses intentando con videos de YouTube y siempre se me moría la masa madre. Le pregunté al Chef IA, me dijo qué harina usar y hoy dobló su tamaño. ¡Miren esta focaccia que acabo de sacar del horno! 🙏✨",
+      "Llevaba meses intentando con videos de YouTube y siempre se me moría la masa madre al 4to día. Le pregunté al Chef IA, me dijo qué harina usar y hoy dobló su tamaño. ¡Miren esta focaccia que acabo de sacar del horno! 🙏✨",
     incomingTime: "7:22 p. m.",
     reply:
-      "¡Esa masa madre está súper activa y llena de vida, Ana! La focaccia se ve dorada y crujiente. ¡A disfrutarla con la familia! 💪🥖",
+      "¡Esa masa madre está súper activa y llena de vida, Sofía! La focaccia se ve dorada y crujiente. ¡A disfrutarla con la familia! 💪🥖",
     replyTime: "7:25 p. m.",
     statusTime: "7:31",
     battery: 94,
