@@ -71,6 +71,8 @@
   --color-paper: oklch(1 0 0);
   --color-wine: oklch(0.38 0.15 27);
   --color-red-offer: oklch(0.55 0.2 27);
+  --color-warm-white: oklch(0.995 0.007 84);
+  --color-oven-black: oklch(0.115 0.018 48);
 
   --font-serif: "Playfair Display", "Georgia", serif;
   --font-sans: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
@@ -155,6 +157,16 @@
   background-image: url("/images/fundo-dobra-2-4.webp");
   background-position: center;
   background-size: cover;
+}
+
+@utility warm-section-glow {
+  background: radial-gradient(ellipse 55% 40% at 50% 30%, oklch(0.68 0.128 82 / 12%), transparent 72%);
+  pointer-events: none;
+}
+
+@utility cta-shine {
+  background: linear-gradient(90deg, transparent, oklch(1 0 0 / 28%), transparent);
+  animation: shine 2.8s linear infinite;
 }
 
 @layer base {
