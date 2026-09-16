@@ -36,10 +36,10 @@ export function Testimonials() {
           <span className="inline-flex rounded-full border border-gold/30 bg-gold/10 px-4 py-1.5 text-xs font-bold uppercase text-gold-bright">
             ⭐ Comunidad de Maestros Panaderos
           </span>
-          <h2 className="mt-5 font-serif text-3xl font-bold leading-tight text-cream sm:text-4xl">
+          <h2 className="mt-5 font-serif text-2xl font-bold leading-tight text-cream sm:text-4xl">
             Historias Reales de Alumnos Que Ya Transformaron Su Cocina
           </h2>
-          <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-cream/75 sm:text-base">
+          <p className="mx-auto mt-3 max-w-3xl text-base leading-relaxed text-cream/85 sm:text-lg">
             Desde principiantes que nunca habían tocado una masa hasta
             emprendedores vendiendo en su vecindario.
           </p>
@@ -73,7 +73,7 @@ export function Testimonials() {
                 ))}
               </div>
 
-              <blockquote className="mt-4 flex-1 text-sm leading-7 text-cream/80">
+              <blockquote className="mt-4 flex-1 text-base leading-7 text-cream/85">
                 “{testimonial.quote}”
               </blockquote>
 

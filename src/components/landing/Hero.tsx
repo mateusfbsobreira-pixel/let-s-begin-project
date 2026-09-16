@@ -12,16 +12,8 @@ const TRUST_SIGNALS = [
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden">
-      {/* Warm golden backlight */}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute left-1/2 top-1/3 h-[600px] w-[900px] max-w-none -translate-x-1/2 -translate-y-1/2"
-        style={{
-          background:
-            "radial-gradient(ellipse, rgba(201,151,42,0.15) 0%, transparent 65%)",
-        }}
-      />
+    <section className="relative overflow-hidden bg-[url('/images/fundo-dobra-1.webp')] bg-cover bg-center">
+      <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-gradient-to-b from-oven/85 via-oven/70 to-oven" />
 
       <div className="relative mx-auto max-w-7xl px-4 pb-20 pt-14 sm:px-6 sm:pt-20">
         <div className="grid items-center gap-14 lg:grid-cols-2">
@@ -31,7 +23,7 @@ export function Hero() {
               ✨ La Nueva Era de la Panadería · Edición 2026
             </span>
 
-            <h1 className="text-shadow-gold mt-6 font-serif text-4xl font-bold leading-[1.1] text-cream sm:text-5xl xl:text-[3.4rem]">
+            <h1 className="text-shadow-gold mt-6 font-serif text-3xl font-bold leading-[1.18] text-cream sm:text-5xl lg:text-6xl">
               Convierte Tu Cocina en una Auténtica{" "}
               <span className="bg-gradient-to-r from-gold via-gold-bright to-gold-deep bg-clip-text text-transparent">
                 Panadería Artesanal
@@ -39,7 +31,7 @@ export function Hero() {
               — Con Tu Propia Aplicación Interactiva y un Chef IA en Tiempo Real
             </h1>
 
-            <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg lg:mx-0">
+            <p className="mx-auto mt-6 max-w-3xl text-base font-medium leading-relaxed text-cream/90 sm:text-lg lg:mx-0">
               Logra panes con corteza dorada y crujiente, alvéolos abiertos y
               aroma de panadería europea desde el primer intento. Sin equipos
               costosos, sin recetas confusas en PDF y con asistencia inteligente

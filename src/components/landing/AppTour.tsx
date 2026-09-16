@@ -323,11 +323,11 @@ export function AppTour() {
           <span className="inline-flex items-center rounded-full border border-amber-500/30 text-amber-300 bg-amber-950/40 px-4 py-1.5 text-xs sm:text-sm font-bold uppercase tracking-wider">
             📱 Explora Tu Plataforma por Dentro
           </span>
-          <h2 className="font-serif text-3xl sm:text-4xl text-stone-100 mt-5 leading-tight">
+          <h2 className="mt-5 font-serif text-2xl font-bold leading-tight text-cream sm:text-4xl">
             Una Experiencia Diseñada Exclusivamente para Que Tus Panes Queden
             Perfectos
           </h2>
-          <p className="text-stone-300 max-w-2xl mx-auto mt-3">
+          <p className="mx-auto mt-3 max-w-3xl text-base leading-relaxed text-cream/85 sm:text-lg">
             Haz clic en cada herramienta y descubre por qué más de 500 alumnos
             ya no hornean sin ella.
           </p>

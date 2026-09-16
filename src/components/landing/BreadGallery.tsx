@@ -41,7 +41,7 @@ export function BreadGallery() {
           <span className="mb-3 inline-block rounded-full border border-gold/40 bg-gold/15 px-4 py-1.5 text-xs font-bold uppercase text-gold-mute">
             🌾 Sabor, Aroma y Textura Real
           </span>
-          <h2 className="font-serif text-3xl font-bold leading-tight text-artisan-ink sm:text-4xl">
+          <h2 className="font-serif text-2xl font-bold leading-tight text-artisan-ink sm:text-4xl">
             Todo lo Que Aprenderás a Hornear con Tus Propias Manos
           </h2>
           <p className="mx-auto mt-2 max-w-2xl text-base leading-relaxed text-artisan-ink/80 sm:text-lg">

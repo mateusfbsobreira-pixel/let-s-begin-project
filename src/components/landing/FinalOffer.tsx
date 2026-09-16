@@ -29,13 +29,13 @@ export function FinalOffer() {
           <span className="inline-flex rounded-full bg-gold/15 px-4 py-1.5 text-xs font-bold uppercase text-gold-mute">
             ⚡ Oferta Exclusiva de Lanzamiento
           </span>
-          <h2 className="mt-4 font-serif text-2xl font-bold leading-tight text-artisan-ink sm:text-3xl">
+          <h2 className="mt-4 font-serif text-2xl font-bold leading-tight text-artisan-ink sm:text-4xl">
             Todo lo Que Recibes Hoy en un Solo Acceso Vitalicio:
           </h2>
 
           <ul className="mx-auto mt-7 space-y-3 text-left">
             {benefits.map((benefit) => (
-              <li key={benefit} className="flex gap-3 text-sm leading-relaxed text-artisan-ink/80 sm:text-base">
+               <li key={benefit} className="flex gap-3 text-base leading-relaxed text-artisan-ink/85 sm:text-lg">
                 <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-emerald-cta text-paper">
                   <Check className="h-3.5 w-3.5" strokeWidth={3} aria-hidden="true" />
                 </span>
