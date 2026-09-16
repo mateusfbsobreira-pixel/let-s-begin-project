@@ -31,6 +31,9 @@ export function StickyMobileBar() {
               <span className="text-lg font-black text-gold sm:text-xl">
                 $6.90 USD
               </span>
+              <span className="truncate text-[10px] font-semibold text-cream/60 sm:text-xs">
+                • En tu moneda local
+              </span>
             </p>
             <p className="mt-1 flex items-center gap-1 text-[11px] font-semibold text-cream/75 sm:text-xs">
               <Clock className="h-3 w-3 text-gold-bright" aria-hidden="true" />
