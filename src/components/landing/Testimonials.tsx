@@ -114,13 +114,13 @@ export function Testimonials() {
               className="relative mx-auto w-full max-w-[23rem] overflow-hidden rounded-[2.5rem] border-[3px] border-[#C9972A]/40 bg-[#0B141A] p-2 shadow-2xl shadow-black/80 transition-all duration-300 hover:border-[#C9972A] hover:shadow-[0_0_30px_rgba(201,151,42,0.4)] sm:p-2.5"
             >
               <div className="relative flex h-7 items-center justify-between px-3 pt-1 text-[11px] font-semibold text-stone-300">
-                <span>09:41</span>
+                <span>{chat.statusTime}</span>
                 <span className="absolute left-1/2 top-1.5 h-4 w-20 -translate-x-1/2 rounded-full bg-black" aria-hidden="true" />
-                <span className="flex items-center gap-1" aria-label="Señal, wifi y batería al 87 por ciento">
+                <span className="flex items-center gap-1" aria-label={`Señal, wifi y batería al ${chat.battery} por ciento`}>
                   <Signal className="h-3.5 w-3.5" aria-hidden="true" />
                   <Wifi className="h-3.5 w-3.5" aria-hidden="true" />
                   <BatteryMedium className="h-4 w-4" aria-hidden="true" />
-                  <span className="text-[9px]">87%</span>
+                  <span className="text-[9px]">{chat.battery}%</span>
                 </span>
               </div>
 
