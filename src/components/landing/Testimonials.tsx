@@ -21,7 +21,7 @@ import sofiaAvatar from "@/assets/sofia-avatar.jpg";
 
 const chats = [
   {
-    name: "María González 🇲🇽",
+    name: "María González",
     photo: mariaPhoto,
     avatar: mariaAvatar,
     photoAlt: "María González mostrando su hogaza de masa madre recién horneada",
@@ -35,7 +35,7 @@ const chats = [
     battery: 87,
   },
   {
-    name: "Carlos Rodríguez 🇦🇷",
+    name: "Carlos Rodríguez",
     photo: carlosPhoto,
     avatar: carlosAvatar,
     photoAlt: "Carlos Rodríguez sosteniendo baguettes artesanales en papel kraft",
@@ -49,7 +49,7 @@ const chats = [
     battery: 63,
   },
   {
-    name: "Sofía Alarcón 🇨🇴",
+    name: "Sofía Alarcón",
     photo: sofiaPhoto,
     avatar: sofiaAvatar,
     photoAlt: "Sofía Alarcón mostrando una focaccia con romero recién horneada",
