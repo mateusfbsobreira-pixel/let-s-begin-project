@@ -29,6 +29,8 @@ const chats = [
     reply:
       "¡Qué belleza de hogaza rústica, María! Ese alveolado abierto y el greñado están de campeonato mundial. ¡Felicidades, Maestra! 👨‍🍳✨",
     replyTime: "10:44 a. m.",
+    statusTime: "10:47",
+    battery: 87,
   },
   {
     name: "Carlos Rodríguez 🇦🇷",
@@ -42,6 +44,8 @@ const chats = [
     reply:
       "¡Brutal resultado Carlos! Ese es exactamente el poder de calcular bien los costos y la fermentación. ¡Mucho éxito con esos pedidos! 👏🔥",
     replyTime: "4:18 p. m.",
+    statusTime: "4:23",
+    battery: 63,
   },
   {
     name: "Ana Patricia Silva 🇵🇪",
@@ -55,6 +59,8 @@ const chats = [
     reply:
       "¡Esa masa madre está súper activa y llena de vida, Ana! La focaccia se ve dorada y crujiente. ¡A disfrutarla con la familia! 💪🥖",
     replyTime: "7:25 p. m.",
+    statusTime: "7:31",
+    battery: 94,
   },
 ];
 
