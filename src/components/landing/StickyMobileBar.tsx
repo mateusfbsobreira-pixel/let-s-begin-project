@@ -29,7 +29,7 @@ export function StickyMobileBar() {
             <p className="flex items-baseline gap-2 leading-none">
               <span className="text-xs text-cream/50 line-through">$230</span>
               <span className="whitespace-nowrap text-lg font-black text-gold sm:text-xl">
-                $6.90 USD
+                $6.90 Dólares
               </span>
             </p>
             <p className="mt-1.5 flex items-center gap-1 whitespace-nowrap text-[11px] font-semibold text-cream/75 sm:text-xs">
@@ -44,7 +44,7 @@ export function StickyMobileBar() {
             className="h-auto shrink-0 rounded-full bg-emerald-cta px-4 py-3 text-sm font-bold text-paper shadow-xl transition-transform hover:scale-[1.03] hover:bg-emerald-cta-hover sm:px-7 sm:text-base"
           >
             <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer">
-              Acceder Ahora »
+              Acceder por $6.90 Dólares »
             </a>
           </Button>
         </div>

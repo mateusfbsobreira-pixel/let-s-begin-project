@@ -3,6 +3,7 @@ const heroCinematicBakeryUrl = "/images/hero-cinematic-bakery.png";
 import { CHECKOUT_URL } from "./config";
 import { PhoneMockup } from "./PhoneMockup";
 import { FloatingCards } from "./FloatingCards";
+import { PaymentMethods } from "./PaymentMethods";
 
 const TRUST_SIGNALS = [
   { icon: Lock, text: "Pago 100% Seguro por Hotmart" },
@@ -65,12 +66,16 @@ export function Hero() {
                   aria-hidden="true"
                   className="absolute inset-y-0 w-1/3 animate-shine bg-gradient-to-r from-transparent via-white/30 to-transparent"
                 />
-                SÍ, QUIERO MI APLICACIÓN + 8 LIBROS POR $6.90 USD »
+                SÍ, QUIERO MI APLICACIÓN + 8 LIBROS POR $6.90 DÓLARES »
               </a>
 
+              <PaymentMethods />
+
               <p className="mx-auto mt-4 max-w-xl text-xs font-medium leading-relaxed text-cream/75 sm:text-sm lg:mx-0">
-                🌎 Pagas en tu moneda local: Hotmart convierte automáticamente
-                los $6.90 USD al valor de tu país al pagar.
+                *Pago único sin mensualidades. Precio en dólares americanos
+                ($6.90 Dólares). Al pagar, Hotmart lo convierte automáticamente
+                al valor exacto de tu moneda local (pesos mexicanos, colombianos,
+                chilenos, soles, etc.).
               </p>
 
               {/* Trust signals */}
