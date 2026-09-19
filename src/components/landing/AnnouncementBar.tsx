@@ -10,7 +10,7 @@ export function AnnouncementBar() {
           👑 Edición 2026
         </span>
         Tu Aplicación Interactiva + Chef IA 24/7 + 8 Libros Maestros por solo
-        $6.90 USD (Pago Único Vitalicio)
+        $6.90 Dólares (Pago Único Para Siempre)
         <span className="ml-2 inline-flex items-center gap-1 rounded-full border border-gold/45 px-2.5 py-0.5 text-[11px] font-bold text-gold-bright">
           ⏳ Expira en <span className="font-mono">{label}</span>
         </span>

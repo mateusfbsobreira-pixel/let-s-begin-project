@@ -13,9 +13,9 @@ import { FaqSection, Footer } from "@/components/landing/FaqFooter";
 import { StickyMobileBar } from "@/components/landing/StickyMobileBar";
 
 const TITLE =
-  "La Casa del Pan Artesanal — App Interactiva + Chef IA por $6.90";
+  "La Casa del Pan Artesanal — App Interactiva + Chef IA por $6.90 Dólares";
 const DESCRIPTION =
-  "Convierte tu cocina en una auténtica panadería artesanal: aplicación interactiva, Chef IA en tiempo real y 8 libros maestros. Pago único de $6.90 USD.";
+  "Convierte tu cocina en una auténtica panadería artesanal: aplicación interactiva, Chef IA en tiempo real y 8 libros maestros. Pago único de $6.90 Dólares.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
