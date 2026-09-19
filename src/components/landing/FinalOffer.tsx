@@ -2,6 +2,7 @@ import { Check, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { CHECKOUT_URL } from "./config";
 import { useCountdown } from "@/hooks/use-countdown";
+import { PaymentMethods } from "./PaymentMethods";
 
 const benefits = [
   "Aplicación Oficial La Casa del Pan para iPhone, Android y PC (Valor $49)",
@@ -78,10 +79,10 @@ export function FinalOffer() {
             </p>
             <p className="mt-2 text-xl font-bold text-artisan-ink">Hoy Por Solo:</p>
             <p className="my-2 text-6xl font-black leading-none text-emerald-cta sm:text-7xl">
-              $6.90 USD
+              $6.90 Dólares
             </p>
             <p className="text-sm text-artisan-ink/65">
-              Un solo pago • Acceso vitalicio garantizado
+              *Pago único de $6.90 Dólares al pagar, sin mensualidades ni cargos sorpresa.
             </p>
           </div>
 
@@ -109,7 +110,7 @@ export function FinalOffer() {
             </ul>
             <p className="mt-3 text-sm leading-6 text-cream/80">
               Hotmart detecta tu país y convierte automáticamente los{" "}
-              <span className="font-bold text-gold-bright">$6.90 USD</span> al
+               <span className="font-bold text-gold-bright">$6.90 Dólares</span> al
               valor de tu moneda local en el instante de pagar. Acepta tarjetas
               locales de débito y crédito y también pago en efectivo (OXXO,
               Efecty, PagoEfectivo y otros puntos habilitados según tu país).
@@ -122,9 +123,11 @@ export function FinalOffer() {
           >
             <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer">
               <span className="cta-shine absolute inset-y-0 w-1/3" aria-hidden="true" />
-              <span className="relative">SÍ, QUIERO MI ACCESO COMPLETO POR $6.90 »</span>
+              <span className="relative">SÍ, QUIERO MI ACCESO COMPLETO POR $6.90 DÓLARES »</span>
             </a>
           </Button>
+
+          <PaymentMethods variant="light" />
 
           <div className="mt-5 flex items-center justify-center gap-1 text-gold-mute" aria-hidden="true">
             {Array.from({ length: 5 }).map((_, index) => (

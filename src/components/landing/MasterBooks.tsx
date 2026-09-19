@@ -145,7 +145,7 @@ export function MasterBooks() {
             $230 USD
           </p>
           <p className="mt-1 text-4xl font-black leading-tight text-emerald-cta sm:text-5xl">
-            HOY POR SOLO $6.90 USD
+            HOY POR SOLO $6.90 DÓLARES
           </p>
           <p className="mt-3 text-sm text-artisan-ink/70">
             97% de descuento especial • Pago único de por vida • Sin mensualidades
@@ -155,7 +155,7 @@ export function MasterBooks() {
             className="mt-5 h-auto w-full max-w-md whitespace-normal rounded-full bg-emerald-cta px-6 py-4 text-base font-bold text-paper shadow-xl transition-all hover:scale-105 hover:bg-emerald-cta-hover sm:text-lg"
           >
             <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer">
-              QUIERO MI ACCESO COMPLETO POR $6.90 »
+              QUIERO MI ACCESO COMPLETO POR $6.90 DÓLARES »
             </a>
           </Button>
         </div>

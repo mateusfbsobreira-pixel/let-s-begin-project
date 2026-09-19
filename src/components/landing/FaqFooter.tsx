@@ -15,12 +15,12 @@ const faqs = [
   {
     question: "¿Tengo que pagar alguna mensualidad por el Chef IA o el App?",
     answer:
-      "¡Jamás! Tu pago de hoy de $6.90 USD es un pago ÚNICO y para toda la vida. No existen mensualidades, ni suscripciones, ni cargos sorpresa en tu tarjeta.",
+      "¡Jamás! Tu pago de hoy de $6.90 Dólares es un pago ÚNICO y para toda la vida. No existen mensualidades, ni suscripciones, ni cargos sorpresa en tu tarjeta.",
   },
   {
     question: "¿Puedo pagar en la moneda de mi país si no tengo dólares (USD)?",
     answer:
-      "¡Claro que sí! El precio base es de $6.90 USD, pero Hotmart detecta automáticamente desde qué país estás pagando y convierte ese monto al instante a tu moneda local: pesos mexicanos, colombianos, chilenos, argentinos, soles peruanos, euros o la moneda de tu país. Antes de confirmar verás el valor exacto ya convertido, sin hacer ningún cálculo manual. Además puedes usar tarjetas locales de débito o crédito, o pagar en efectivo en los puntos habilitados para tu país (OXXO en México, Efecty en Colombia, PagoEfectivo en Perú y muchos otros).",
+      "El valor de la oferta es de $6.90 Dólares americanos. Al hacer clic en comprar, Hotmart detectará automáticamente tu país y te mostrará el valor exacto convertido a tu moneda local (pesos mexicanos, colombianos, chilenos, soles peruanos, euros, etc.). Puedes pagar con tarjetas locales de débito/crédito o en efectivo en los puntos autorizados de tu país (OXXO en México, Efecty en Colombia, PagoEfectivo en Perú, etc.).",
   },
   {
     question: "¿También recibiré los libros en formato PDF para descargar e imprimir?",
