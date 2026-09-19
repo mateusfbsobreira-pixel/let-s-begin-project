@@ -15,7 +15,7 @@ const faqs = [
   {
     question: "¿Tengo que pagar alguna mensualidad por el Chef IA o el App?",
     answer:
-      "¡Jamás! Tu pago de hoy de $6.90 USD es un pago ÚNICO y para toda la vida. No existen mensualidades, ni suscripciones, ni cargos sorpresa en tu tarjeta.",
+      "¡Jamás! Tu pago de hoy de $6.90 Dólares es un pago ÚNICO y para toda la vida. No existen mensualidades, ni suscripciones, ni cargos sorpresa en tu tarjeta.",
   },
   {
     question: "¿Puedo pagar en la moneda de mi país si no tengo dólares (USD)?",

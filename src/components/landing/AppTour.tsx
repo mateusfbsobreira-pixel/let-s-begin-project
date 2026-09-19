@@ -371,7 +371,7 @@ export function AppTour() {
         >
           <p className="font-serif text-xl sm:text-2xl text-stone-100">
             Todo esto disponible en tu celular hoy por solo{" "}
-            <span className="text-emerald-400 font-bold">$6.90 USD</span>{" "}
+            <span className="text-emerald-400 font-bold">$6.90 Dólares</span>{" "}
             <span className="text-stone-300 text-base">
               (Pago único para siempre).
             </span>
