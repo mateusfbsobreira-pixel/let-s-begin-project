@@ -6,6 +6,7 @@ export function Guarantee() {
           src="/images/selo-garantia-7dias-transparente.webp"
           alt="Sello de garantía de satisfacción por 7 días"
           loading="lazy"
+           decoding="async"
           className="mx-auto mb-6 w-36 drop-shadow-md sm:w-44"
         />
         <h2 className="font-serif text-2xl font-bold leading-tight text-artisan-ink sm:text-4xl">

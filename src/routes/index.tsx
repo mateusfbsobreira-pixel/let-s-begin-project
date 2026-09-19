@@ -19,6 +19,14 @@ const DESCRIPTION =
 
 export const Route = createFileRoute("/")({
   head: () => ({
+    links: [
+      {
+        rel: "preload",
+        as: "image",
+        href: "/images/hero-cinematic-bakery.png",
+        fetchPriority: "high",
+      },
+    ],
     meta: [
       { title: TITLE },
       { name: "description", content: DESCRIPTION },

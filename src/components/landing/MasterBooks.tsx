@@ -102,6 +102,7 @@ export function MasterBooks() {
                   src={book.image}
                   alt={`Portada de ${book.title}`}
                   loading="lazy"
+                   decoding="async"
                   className="h-full w-full object-contain drop-shadow-xl"
                 />
               </div>
