@@ -25,6 +25,7 @@ export function FinalOffer() {
             src="/images/todos-productos.webp"
             alt="Aplicación y colección completa de La Casa del Pan Artesanal"
             loading="lazy"
+             decoding="async"
             className="mx-auto h-auto w-full max-w-3xl object-contain drop-shadow-2xl"
           />
         </div>

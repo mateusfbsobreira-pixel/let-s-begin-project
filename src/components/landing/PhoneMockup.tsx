@@ -60,7 +60,9 @@ export function PhoneMockup() {
                 alt="Pan artesanal de corteza dorada del Método Completo"
                 width={1024}
                 height={768}
-                loading="lazy"
+                 loading="eager"
+                 fetchPriority="high"
+                 decoding="async"
                 className="h-32 w-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-oven via-oven/40 to-transparent" />

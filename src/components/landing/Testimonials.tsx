@@ -82,6 +82,7 @@ function TestimonialPhoto({
       src={src}
       alt={alt}
       loading="lazy"
+       decoding="async"
       width={width}
       height={height}
       className={className}
