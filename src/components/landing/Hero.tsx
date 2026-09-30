@@ -58,8 +58,6 @@ export function Hero() {
             <div className="mt-9">
               <a
                 href={CHECKOUT_URL}
-                target="_blank"
-                rel="noopener noreferrer"
                 className="group relative inline-flex w-full items-center justify-center overflow-hidden rounded-full bg-emerald-cta px-8 py-4 text-sm font-extrabold uppercase tracking-wide text-cream shadow-[0_10px_40px_-8px_rgba(22,163,74,0.6)] transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_14px_50px_-6px_rgba(22,163,74,0.8)] sm:w-auto sm:text-base"
               >
                 <span
@@ -68,6 +66,10 @@ export function Hero() {
                 />
                 SÍ, QUIERO MI APLICACIÓN + 8 LIBROS POR $6.90 DÓLARES »
               </a>
+
+              <p className="mt-2 text-center text-[11px] font-bold uppercase tracking-wider text-emerald-400/90 sm:text-xs">
+                ✅ Pago Único de Por Vida · Sin Mensualidades · Sin Suscripciones
+              </p>
 
               <PaymentMethods />
 

@@ -155,10 +155,13 @@ export function MasterBooks() {
             asChild
             className="mt-5 h-auto w-full max-w-md whitespace-normal rounded-full bg-emerald-cta px-6 py-4 text-base font-bold text-paper shadow-xl transition-all hover:scale-105 hover:bg-emerald-cta-hover sm:text-lg"
           >
-            <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer">
+            <a href={CHECKOUT_URL}>
               QUIERO MI ACCESO COMPLETO POR $6.90 DÓLARES »
             </a>
           </Button>
+          <p className="mt-2 text-xs font-bold uppercase tracking-wider text-emerald-600">
+            ✅ Pago Único · Sin Mensualidades
+          </p>
         </div>
       </div>
     </section>

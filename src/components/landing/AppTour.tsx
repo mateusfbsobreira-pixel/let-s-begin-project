@@ -378,13 +378,14 @@ export function AppTour() {
           </p>
           <a
             href={CHECKOUT_URL}
-            target="_blank"
-            rel="noopener noreferrer"
             className="group relative mt-5 inline-flex items-center justify-center gap-2 overflow-hidden rounded-xl bg-emerald-cta px-8 py-4 text-sm sm:text-base font-bold uppercase tracking-wider text-white shadow-[0_10px_40px_-10px_rgba(22,163,74,0.6)] transition-transform hover:scale-105"
           >
             <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/25 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
             SÍ, Quiero Mi Aplicación Interactiva »
           </a>
+          <p className="mt-2 text-[11px] font-bold uppercase tracking-wider text-emerald-400/90 sm:text-xs">
+            ✅ Pago Único · Sin Cobros Mensuales
+          </p>
           <p className="mt-4 text-xs sm:text-sm text-stone-400">
             ⚡ Acceso inmediato • 7 Días de Garantía Total
           </p>
