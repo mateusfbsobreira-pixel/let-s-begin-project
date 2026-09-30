@@ -8,9 +8,14 @@ import {
 
 const faqs = [
   {
-    question: "¿Cómo funciona la aplicación en mi teléfono? ¿Ocupa memoria?",
+    question: "¿Esto es un pago único o me van a cobrar cada mes?",
     answer:
-      "Es sumamente fácil: no necesitas descargar archivos pesados de las tiendas de apps. Nuestra plataforma utiliza tecnología PWA de última generación. Puedes agregar el ícono oficial a la pantalla de inicio de tu iPhone o Android con 1 solo toque y usarla cómodamente en tu cocina sin ocupar espacio (0 MB).",
+      "Es la pregunta más importante y la respuesta es clara: tu pago de $6.90 Dólares es ÚNICO y PARA SIEMPRE. No existe ninguna mensualidad, suscripción ni cargo oculto. Pagas una sola vez hoy y el acceso a la app, al Chef IA y a los 8 libros es tuyo de por vida. Punto.",
+  },
+  {
+    question: "¿Necesito instalar algo o saber de tecnología para usar la app?",
+    answer:
+      "¡Para nada! Si sabes enviar un mensaje de WhatsApp, ya sabes todo lo necesario. La app se abre con un solo toque desde la pantalla de tu celular — como abrir una página de internet. No necesitas descargar nada pesado, no ocupa memoria (0 MB) y funciona perfectamente en cualquier iPhone o Android, sin importar si es nuevo o tiene varios años.",
   },
   {
     question: "¿Tengo que pagar alguna mensualidad por el Chef IA o el App?",
@@ -58,10 +63,10 @@ export function FaqSection() {
               value={`faq-${index + 1}`}
               className="rounded-xl border border-gold-mute/35 bg-oven-soft px-5 data-[state=open]:border-gold/60"
             >
-              <AccordionTrigger className="py-5 text-left text-base font-bold leading-snug text-cream hover:text-gold hover:no-underline sm:text-lg [&>svg]:text-gold">
+              <AccordionTrigger className="py-5 text-left text-lg font-bold leading-snug text-cream hover:text-gold hover:no-underline sm:text-xl [&>svg]:text-gold">
                 {faq.question}
               </AccordionTrigger>
-              <AccordionContent className="pb-5 text-base leading-7 text-cream/85 sm:text-lg">
+              <AccordionContent className="pb-5 text-lg leading-relaxed text-cream/85 sm:text-xl">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>

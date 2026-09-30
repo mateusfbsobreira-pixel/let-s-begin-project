@@ -37,6 +37,7 @@ export function StickyMobileBar() {
               Oferta expira en{" "}
               <span className="font-mono font-bold text-gold-bright">{label}</span>
             </p>
+            <p className="text-[9px] font-bold text-emerald-400/80 sm:text-[10px]">Pago único · Sin mensualidades</p>
           </div>
 
           <Button
@@ -44,7 +45,8 @@ export function StickyMobileBar() {
             className="h-auto shrink-0 rounded-full bg-emerald-cta px-4 py-3 text-sm font-bold text-paper shadow-xl transition-transform hover:scale-[1.03] hover:bg-emerald-cta-hover sm:px-7 sm:text-base"
           >
             <a href={CHECKOUT_URL}>
-              Acceder por $6.90 Dólares »
+              <span className="sm:hidden">Quiero Mi Pan »</span>
+              <span className="hidden sm:inline">Empezar a Hornear por $6.90 »</span>
             </a>
           </Button>
         </div>
