@@ -122,11 +122,15 @@ export function FinalOffer() {
             asChild
             className="group relative mt-6 h-auto w-full overflow-hidden whitespace-normal rounded-full bg-emerald-cta px-6 py-5 text-base font-bold text-paper shadow-2xl transition-transform hover:scale-[1.03] hover:bg-emerald-cta-hover sm:px-8 sm:text-lg"
           >
-            <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer">
+            <a href={CHECKOUT_URL}>
               <span className="cta-shine absolute inset-y-0 w-1/3" aria-hidden="true" />
               <span className="relative">SÍ, QUIERO MI ACCESO COMPLETO POR $6.90 DÓLARES »</span>
             </a>
           </Button>
+
+          <p className="mt-2 text-center text-[11px] font-bold uppercase tracking-wider text-emerald-600 sm:text-xs">
+            ✅ Pago Único de Por Vida · Sin Mensualidades · Sin Suscripciones
+          </p>
 
           <PaymentMethods variant="light" />
 

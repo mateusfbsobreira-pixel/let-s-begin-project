@@ -43,7 +43,7 @@ export function StickyMobileBar() {
             asChild
             className="h-auto shrink-0 rounded-full bg-emerald-cta px-4 py-3 text-sm font-bold text-paper shadow-xl transition-transform hover:scale-[1.03] hover:bg-emerald-cta-hover sm:px-7 sm:text-base"
           >
-            <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer">
+            <a href={CHECKOUT_URL}>
               Acceder por $6.90 Dólares »
             </a>
           </Button>
