@@ -40,7 +40,7 @@ export function FinalOffer() {
 
           <ul className="mx-auto mt-7 space-y-3 text-left">
             {benefits.map((benefit) => (
-               <li key={benefit} className="flex gap-3 text-base leading-relaxed text-artisan-ink/85 sm:text-lg">
+               <li key={benefit} className="flex gap-3 text-lg leading-relaxed text-artisan-ink/85 sm:text-xl">
                 <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-emerald-cta text-paper">
                   <Check className="h-3.5 w-3.5" strokeWidth={3} aria-hidden="true" />
                 </span>
