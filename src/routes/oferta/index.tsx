@@ -3,9 +3,11 @@ import { AnnouncementBar } from "@/components/landing/AnnouncementBar";
 import { Navbar } from "@/components/landing/Navbar";
 import { Hero } from "@/components/landing/Hero";
 import { ContrastSection } from "@/components/landing/ContrastSection";
+import { EpiphanyStory } from "@/components/landing/EpiphanyStory";
 import { BreadGallery } from "@/components/landing/BreadGallery";
 import { MasterBooks } from "@/components/landing/MasterBooks";
 import { AppTour } from "@/components/landing/AppTour";
+import { NotForYou } from "@/components/landing/NotForYou";
 import { Testimonials } from "@/components/landing/Testimonials";
 import { FinalOffer } from "@/components/landing/FinalOffer";
 import { Guarantee } from "@/components/landing/Guarantee";
@@ -48,10 +50,12 @@ function Oferta() {
       <main>
         <Hero />
         <ContrastSection />
+        <EpiphanyStory />
         <BreadGallery />
         <MasterBooks />
         <Testimonials />
         <AppTour />
+        <NotForYou />
         <FinalOffer />
         <Guarantee />
         <PostPurchaseSteps />

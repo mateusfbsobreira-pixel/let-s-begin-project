@@ -118,6 +118,15 @@ export function FinalOffer() {
             </p>
           </div>
 
+          <div className="mt-6 space-y-4 rounded-xl border border-gold/20 bg-oven-deep/50 p-5 text-left">
+            <p className="text-base leading-relaxed text-artisan-ink/80 sm:text-lg">
+              <span className="font-bold text-red-offer">Opción 1:</span> Cerrar esta página, seguir comprando pan industrial lleno de químicos y olvidar que esta oportunidad existió.
+            </p>
+            <p className="text-base leading-relaxed text-artisan-ink/95 sm:text-lg">
+              <span className="font-bold text-emerald-cta">Opción 2:</span> Invertir <span className="font-bold text-gold-mute">$6.90 Dólares</span> hoy, recibir acceso inmediato a la app, los 8 libros y el Chef IA, y hornear tu primer pan artesanal este mismo fin de semana — con 7 días de garantía total para probarlo sin riesgo.
+            </p>
+          </div>
+
           <Button
             asChild
             className="group relative mt-6 h-auto w-full overflow-hidden whitespace-normal rounded-full bg-emerald-cta px-6 py-5 text-base font-bold text-paper shadow-2xl transition-transform hover:scale-[1.03] hover:bg-emerald-cta-hover sm:px-8 sm:text-lg"
