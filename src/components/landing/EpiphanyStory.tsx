@@ -42,10 +42,17 @@ export function EpiphanyStory() {
             Así encontré <strong>La Casa del Pan</strong>. Por primera vez nadie me juzgó ni me habló con tecnicismos fríos. Descubrí que hacer pan artesanal no depende de fuerza en los brazos ni de hornos caros de panadería. Solo dependía de entender los secretos del agua, la harina y el tiempo correcto de reposo.
           </p>
 
-          <div className="my-8 rounded-2xl border border-gold/30 bg-oven-deep/60 p-6 sm:p-8">
-            <p className="font-serif text-lg italic leading-relaxed text-gold-bright sm:text-2xl">
-              «El siguiente domingo sucedió el milagro. El horno comenzó a cantar. La corteza se doró con vetas color caramelo. Al cortar la primera rebanada, el crujido se escuchó en toda la sala. El vapor tibio salió perfumando cada rincón de la casa... y cuando mi familia dio el primer bocado, hubo un silencio total. Mi esposo me miró con ojos brillantes y me dijo: <em>Dime por favor que no compraste esto en una panadería francesa</em>. Sonreí con las manos en el delantal y le respondí: <strong>Lo hice yo, con mis propias manos</strong>».
+          <div className="my-8 rounded-2xl border-2 border-gold/40 bg-oven-deep p-6 sm:p-8 shadow-xl">
+            <p className="mb-3 text-xs font-bold uppercase tracking-wider text-gold-bright">
+              ✨ El Domingo de la Transformación:
             </p>
+            <div className="space-y-4 text-base font-normal leading-relaxed text-cream sm:text-xl">
+              <p>El siguiente domingo todo cambió por completo.</p>
+              <p>El horno llenó la casa de un aroma a pan caliente que no sentía desde mi niñez. El pan salió con una corteza dorada y crujiente, exactamente como el de las mejores panaderías.</p>
+              <p>Al apoyar el cuchillo y cortar la primera rebanada, el crujido se escuchó en toda la cocina.</p>
+              <p className="rounded-xl border border-gold/20 bg-black/40 p-4 font-medium text-gold-bright">Cuando mi familia dio el primer bocado, hubo un silencio total. Mi esposo me miró sorprendido y me dijo: <span className="font-bold text-white">"Dime la verdad... ¿compraste este pan en una panadería fina?"</span></p>
+              <p className="font-semibold text-emerald-400">Sonreí con las manos en el delantal y le respondí: "No... lo hice yo misma, aquí en nuestra cocina".</p>
+            </div>
           </div>
 
           <p className={`${P} text-cream/90`}>
