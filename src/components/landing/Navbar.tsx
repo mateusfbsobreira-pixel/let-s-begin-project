@@ -6,7 +6,7 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-gold/30 bg-oven/90 shadow-xl backdrop-blur-md">
       <div className="mx-auto flex min-h-18 max-w-7xl items-center justify-between gap-2 px-3 py-2 sm:min-h-20 sm:gap-4 sm:px-6">
-        <a href="#" className="flex min-w-0 items-center gap-2.5 sm:gap-3" aria-label={`${BRAND_NAME}, inicio`}>
+        <div className="flex min-w-0 items-center gap-2.5 sm:gap-3" aria-label={BRAND_NAME}>
           <span className="flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-gold/60 bg-oven-black shadow-[0_0_20px_color-mix(in_oklab,var(--color-gold)_25%,transparent)] sm:h-14 sm:w-14">
             <img
               src={logoUrl}
@@ -24,16 +24,6 @@ export function Navbar() {
             <span className="mt-1 block text-[9px] font-bold uppercase tracking-[0.3em] text-gold sm:text-[10px] sm:tracking-[0.4em]">
               Artesanal
             </span>
-          </span>
-        </a>
-
-        <div className="hidden items-center gap-2 rounded-full border border-emerald-cta/30 bg-surface/80 px-3 py-2 lg:flex">
-          <span className="relative flex h-2 w-2">
-            <span className="absolute inline-flex h-full w-full animate-ping-dot rounded-full bg-emerald-cta" />
-            <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-cta" />
-          </span>
-          <span className="text-sm font-medium text-cream/85">
-            Acceso Inmediato Activo en Todo el Mundo
           </span>
         </div>
 

@@ -1,12 +1,9 @@
 import { useEffect, useState } from "react";
-import { Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { CHECKOUT_URL } from "./config";
-import { useCountdown } from "@/hooks/use-countdown";
 
 export function StickyMobileBar() {
   const [visible, setVisible] = useState(false);
-  const { label } = useCountdown();
 
   useEffect(() => {
     const onScroll = () => setVisible(window.scrollY > 420);
@@ -33,9 +30,7 @@ export function StickyMobileBar() {
               </span>
             </p>
             <p className="mt-1.5 flex items-center gap-1 whitespace-nowrap text-[11px] font-semibold text-cream/75 sm:text-xs">
-              <Clock className="h-3 w-3 text-gold-bright" aria-hidden="true" />
-              Oferta expira en{" "}
-              <span className="font-mono font-bold text-gold-bright">{label}</span>
+              <span className="font-bold text-gold-bright">Precio de Lanzamiento</span>
             </p>
             <p className="text-[9px] font-bold text-emerald-400/80 sm:text-[10px]">Pago único · Sin mensualidades</p>
           </div>
