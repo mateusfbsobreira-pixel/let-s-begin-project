@@ -6,14 +6,16 @@ const pains = [
   "Archivos gigantes de 300 páginas que se pierden en tu carpeta de descargas y jamás vuelves a abrir.",
   "Recetas con medidas ambiguas que no consideran la temperatura real de tu cocina ni de tu horno.",
   "Frustración y desperdicio de ingredientes logrando 'panes pesados como ladrillos'.",
+  "El pan de molde industrial del supermercado dura 30 días porque está lleno de conservantes y aditivos químicos. Tu familia merece algo mejor.",
 ];
 
 const wins = [
   "Modo Cocina Interactivo: Diseñado para usarse con manos en la masa, con tipografía grande y pantalla activa.",
   "Chef IA 24/7 en Vivo: Resuelve cualquier duda de tu fermentación en 2 segundos con soluciones exactas.",
   "Temporizadores Inteligentes: Te avisan el momento preciso de autólisis, pliegues, reposo y horneado.",
-  "Acceso Instantáneo PWA: 1 toque en la pantalla de inicio de tu iPhone o Android, sin ocupar memoria (0 MB).",
+  "Acceso Instantáneo Sin Descargas: 1 toque en la pantalla de inicio de tu celular. No necesitas instalar nada de la Play Store ni App Store. Ocupa 0 MB de memoria y funciona con letras grandes y claras.",
   "Lo Mejor de Ambos Mundos: ¡También incluye todos los PDFs originales descargables para imprimir cuando quieras!",
+  "Nutrición Real para Tu Familia: Tus hijos y nietos comerán pan hecho solo con harina, agua y sal — el alimento más saludable y natural del mundo, horneado con amor por tus propias manos.",
 ];
 
 export function ContrastSection() {
