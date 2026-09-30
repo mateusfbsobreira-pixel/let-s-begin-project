@@ -14,11 +14,11 @@ import { FaqSection, Footer } from "@/components/landing/FaqFooter";
 import { StickyMobileBar } from "@/components/landing/StickyMobileBar";
 
 const TITLE =
-  "La Casa del Pan Artesanal — App Interactiva + Chef IA por $6.90 Dólares";
+  "Oferta Especial — La Casa del Pan Artesanal · App + Chef IA + 8 Libros por $6.90";
 const DESCRIPTION =
   "Convierte tu cocina en una auténtica panadería artesanal: aplicación interactiva, Chef IA en tiempo real y 8 libros maestros. Pago único de $6.90 Dólares.";
 
-export const Route = createFileRoute("/")({
+export const Route = createFileRoute("/oferta/")({
   head: () => ({
     links: [
       {
@@ -37,10 +37,10 @@ export const Route = createFileRoute("/")({
       { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
-  component: Index,
+  component: Oferta,
 });
 
-function Index() {
+function Oferta() {
   return (
     <div className="min-h-screen bg-oven text-foreground">
       <AnnouncementBar />
