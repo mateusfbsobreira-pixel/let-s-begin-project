@@ -40,20 +40,34 @@ export function Hero() {
             </span>
 
             <h1 className="text-shadow-gold mt-6 font-serif text-3xl font-bold leading-[1.18] text-cream sm:text-5xl lg:text-6xl">
-              Este Fin de Semana, Tu Casa Se Llenará del Aroma a{" "}
+              El Pan Calientito de la Abuela, Hecho por Tus Manos — Sin Culpa,{" "}
               <span className="bg-gradient-to-r from-gold via-gold-bright to-gold-deep bg-clip-text text-transparent">
-                Pan Recién Horneado
+                Sin Conservantes
               </span>{" "}
-              — Aunque Nunca Hayas Hecho Uno en Tu Vida
+              y Sin Complicaciones
             </h1>
 
             <p className="mx-auto mt-6 max-w-3xl text-lg font-medium leading-loose text-cream/90 sm:text-xl lg:mx-0">
-              Imagina cortar la primera rebanada y escuchar ese crujido de la
-              corteza dorada... ver la miga suave y alveolada por dentro... y
-              recibir de tu familia ese abrazo de «Mamá, ¿de verdad lo hiciste
-              tú?». Con nuestra aplicación interactiva y un Chef IA que te guía
-              paso a paso en tiempo real, lo vas a lograr este mismo fin de semana.
+              Aunque nunca hayas horneado, tu Chef IA te habla por voz y te
+              guía paso a paso con las manos en la masa. Toca 1 botón, habla,
+              y listo.
             </p>
+
+            {/* Confidence chips */}
+            <div className="mt-7 flex flex-wrap items-center justify-center gap-2.5 lg:justify-start">
+              {["Sin batidora", "Sin experiencia", "Con 1 toque en tu celular"].map(
+                (chip) => (
+                  <span
+                    key={chip}
+                    className="inline-flex items-center gap-1.5 rounded-full border border-gold/30 bg-gold/10 px-3.5 py-1.5 text-xs font-bold text-gold-bright sm:text-sm"
+                  >
+                    <Check className="h-3.5 w-3.5 text-emerald-cta" aria-hidden="true" />
+                    {chip}
+                  </span>
+                ),
+              )}
+            </div>
+
 
             {/* CTA */}
             <div className="mt-9">
