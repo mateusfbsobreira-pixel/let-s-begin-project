@@ -38,7 +38,7 @@ export function EpiphanyStory() {
 
         <div className="mt-10 space-y-5 rounded-2xl border-2 border-gold/30 bg-oven-deep/80 p-6 text-left shadow-xl sm:p-10">
           <p className={`${P} text-cream/90`}>
-            Carmen tenía 58 años y vivía en Bogotá. Intentó por años aprender a hacer pan artesanal. Compró 3 libros, vio 47 videos en YouTube, y cada vez que abría el horno… otro ladrillo. Su familia se reía con cariño, pero ella sentía vergüenza.{" "}
+            Carmen tenía 58 años y vivía en Bogotá. Intentó por años aprender a hacer pan artesanal. Compró libros de recetas y vio un montón de videos en YouTube, y cada vez que abría el horno… otro ladrillo. Su familia se reía con cariño, pero ella sentía vergüenza.{" "}
             <span className="font-semibold text-gold-bright">"¿Para qué gasto en harina si siempre me sale mal?"</span>
           </p>
           <p className={`${P} text-cream/90`}>
