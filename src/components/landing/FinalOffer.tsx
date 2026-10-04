@@ -72,33 +72,59 @@ export function FinalOffer() {
           </div>
 
           {/* Local-currency clarity: Hotmart auto-converts at checkout */}
-          <div className="mt-6 rounded-2xl border border-gold/30 bg-oven-deep p-5 text-left">
-            <p className="text-xs font-bold uppercase tracking-wider text-gold-bright">
-              🌎 Pagas en la moneda de tu país
+          <div className="mt-6 rounded-2xl border-2 border-gold/35 bg-oven-deep p-5 text-left shadow-xl sm:p-7">
+            <p className="text-center text-sm font-extrabold uppercase tracking-wide text-gold-bright sm:text-lg">
+              🌎 Pagas en Tu Moneda Local — Hotmart Convierte al Instante
             </p>
-            <ul className="mt-3 flex flex-wrap gap-2">
+
+            {/* Payment method icons */}
+            <ul className="mt-4 grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3">
               {[
-                "🇲🇽 Pesos Mexicanos",
-                "🇨🇴 Pesos Colombianos",
-                "🇨🇱 Pesos Chilenos",
-                "🇵🇪 Soles",
-                "🇪🇸 Euros",
-                "🇦🇷 ARS",
-              ].map((currency) => (
+                "💳 VISA / Mastercard",
+                "🟢 PIX (Brasil)",
+                "🏪 OXXO (México)",
+                "💵 Efecty/PSE (Colombia)",
+                "🏦 PagoEfectivo (Perú)",
+              ].map((method) => (
                 <li
-                  key={currency}
-                  className="rounded-full border border-gold/30 bg-oven px-3 py-1.5 text-xs font-semibold text-cream/85"
+                  key={method}
+                  className="flex items-center justify-center rounded-xl border border-gold/30 bg-oven px-3 py-2.5 text-center text-sm font-bold text-cream/90 sm:text-base"
                 >
-                  {currency}
+                  {method}
                 </li>
               ))}
             </ul>
-            <p className="mt-3 text-sm leading-6 text-cream/80">
-              Hotmart detecta tu país y convierte automáticamente los{" "}
-               <span className="font-bold text-gold-bright">$9.90 Dólares</span> al
-              valor de tu moneda local en el instante de pagar. Acepta tarjetas
-              locales de débito y crédito y también pago en efectivo (OXXO,
-              Efecty, PagoEfectivo y otros puntos habilitados según tu país).
+
+            <p className="mt-4 text-center text-sm leading-relaxed text-cream/80 sm:text-base">
+              Hotmart detecta tu país y cobra <span className="font-bold text-gold-bright">$9.90 Dólares</span> en tu
+              moneda local automáticamente. Sin dólares en tu tarjeta.
+            </p>
+
+            <div className="mt-4 border-t border-gold/20 pt-4">
+              <p className="text-center text-xs font-bold uppercase tracking-wider text-gold-mute sm:text-sm">
+                Así queda aproximadamente en tu país:
+              </p>
+              <ul className="mt-3 grid grid-cols-1 gap-2 sm:grid-cols-2">
+                {[
+                  "🇲🇽 México — ~$175 MXN",
+                  "🇨🇴 Colombia — ~$39.000 COP",
+                  "🇨🇱 Chile — ~$9.200 CLP",
+                  "🇵🇪 Perú — ~S/36 PEN",
+                  "🇪🇸 España — ~€9,20 EUR",
+                  "🇦🇷 Argentina — ~$9.500 ARS",
+                ].map((conversion) => (
+                  <li
+                    key={conversion}
+                    className="flex items-center justify-center rounded-xl border border-gold/25 bg-oven/80 px-3 py-2.5 text-sm font-bold text-cream/90 sm:text-base"
+                  >
+                    {conversion}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <p className="mt-5 rounded-xl border border-emerald-500/25 bg-emerald-500/10 px-4 py-3 text-center text-sm font-semibold leading-relaxed text-emerald-200 sm:text-base">
+              🔒 Serás redirigida a la plataforma Hotmart, 100% segura y verificada. Tu información está protegida.
             </p>
           </div>
 
