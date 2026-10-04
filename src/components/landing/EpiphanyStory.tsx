@@ -21,27 +21,17 @@ export function EpiphanyStory() {
 
         <div className="mt-10 space-y-5 rounded-2xl border-2 border-gold/30 bg-oven-deep/80 p-6 text-left shadow-xl sm:p-10">
           <p className={`${P} text-cream/90`}>
-            Carmen tenía 58 años y vivía en Bogotá. Durante años intentó aprender a hacer pan artesanal.
-          </p>
-          <p className={`${P} text-cream/90`}>
-            Compró 3 libros. Vio 47 videos en YouTube. Y cada vez que abría el horno… <strong>otro ladrillo.</strong>
-          </p>
-          <p className={`${P} text-cream/90`}>
-            Su familia se reía con cariño, pero ella sentía vergüenza:{" "}
+            Carmen tenía 58 años y vivía en Bogotá. Intentó por años aprender a hacer pan artesanal. Compró 3 libros, vio 47 videos en YouTube, y cada vez que abría el horno… otro ladrillo. Su familia se reía con cariño, pero ella sentía vergüenza.{" "}
             <span className="font-semibold text-gold-bright">"¿Para qué gasto en harina si siempre me sale mal?"</span>
           </p>
           <p className={`${P} text-cream/90`}>
-            Un día su hija le mostró una app en el celular. Carmen desconfió:{" "}
-            <span className="font-semibold text-gold-bright">"¿Una app? Yo no sé de tecnología."</span>
-          </p>
-          <p className={`${P} text-cream/90`}>
+            Un día su hija le mostró una app en el celular. Carmen desconfió.{" "}
+            <span className="font-semibold text-gold-bright">"¿Una app? Yo no sé de tecnología."</span>{" "}
             Pero tocó 1 botón y habló: <span className="font-semibold text-cream">"Mi masa está pegajosa, ¿qué hago?"</span> En 2 segundos, el Chef IA le respondió con voz, como una amiga paciente.
           </p>
           <p className={`${P} text-cream/95`}>
-            Ese domingo, por primera vez en años, Carmen abrió el horno y encontró… <strong>un pan dorado, crujiente por fuera y esponjosito por dentro.</strong>
-          </p>
-          <p className={`${P} rounded-xl border border-gold/20 bg-black/40 p-4 font-medium text-gold-bright`}>
-            Su nieta de 8 años le dijo: <span className="font-bold text-cream">"Abuela, ¡huele como la casa de la bisabuela!"</span>
+            Ese domingo, por primera vez en años, Carmen abrió el horno y encontró… un pan dorado, crujiente por fuera, esponjosito por dentro. Su nieta de 8 años le dijo:{" "}
+            <span className="font-bold text-gold-bright">"Abuela, ¡huele como la casa de la bisabuela!"</span>
           </p>
           <p className={`${P} font-semibold text-emerald-400`}>
             Carmen no compró tecnología. Carmen compró el orgullo de un domingo en familia.
