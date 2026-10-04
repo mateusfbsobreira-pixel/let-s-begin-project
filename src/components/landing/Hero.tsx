@@ -79,8 +79,8 @@ export function Hero() {
                   aria-hidden="true"
                   className="absolute inset-y-0 w-1/3 animate-shine bg-gradient-to-r from-transparent via-white/30 to-transparent"
                 />
-                <span className="relative sm:hidden">QUIERO HACER PAN ESTE FIN DE SEMANA »</span>
-                <span className="relative hidden sm:inline">SÍ, QUIERO MI APP + 8 LIBROS POR $9.90 EN MI MONEDA →</span>
+                <span className="relative min-h-[56px] leading-tight sm:hidden">QUIERO MI PAN ARTESANAL POR $9.90 →</span>
+                <span className="relative hidden min-h-[56px] items-center leading-tight sm:inline-flex">SÍ, QUIERO MI APP + 8 LIBROS POR $9.90 EN MI MONEDA →</span>
               </a>
 
               <p className="mt-3 text-center text-xs font-bold uppercase tracking-wider text-emerald-400/90 sm:text-sm">
@@ -90,11 +90,11 @@ export function Hero() {
               <PaymentMethods />
 
               <p className="mx-auto mt-4 max-w-xl text-xs font-medium leading-relaxed text-cream/75 sm:text-sm lg:mx-0">
-                *Pago único sin mensualidades. Precio en dólares americanos
-                ($9.90 Dólares). Al pagar, Hotmart lo convierte automáticamente
-                al valor exacto de tu moneda local (pesos mexicanos, colombianos,
-                chilenos, soles, etc.).
+                *Hotmart convierte $9.90 Dólares a tu moneda local al instante.
+                Acepta tarjeta, PIX, OXXO, Efecty y PagoEfectivo. 7 Días de
+                Garantía Total.
               </p>
+
 
               {/* Trust signals */}
               <ul className="mt-6 grid grid-cols-1 gap-2.5 text-left sm:grid-cols-2">
