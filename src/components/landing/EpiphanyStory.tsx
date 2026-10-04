@@ -1,3 +1,5 @@
+import carmenHistoria from "@/assets/carmen-historia.jpg";
+
 const P = "text-base sm:text-lg lg:text-xl leading-loose font-normal not-italic";
 
 export function EpiphanyStory() {
@@ -18,6 +20,21 @@ export function EpiphanyStory() {
             <span className="h-px w-16 bg-gold/40" />
           </div>
         </div>
+
+        <figure className="mx-auto mt-10 max-w-sm">
+          <img
+            src={carmenHistoria}
+            alt="Carmen, 58 años, sosteniendo su primer pan artesanal en su cocina en Bogotá"
+            width={1024}
+            height={1024}
+            loading="lazy"
+            decoding="async"
+            className="w-full rounded-2xl border-2 border-gold/30 object-cover shadow-xl"
+          />
+          <figcaption className="mt-3 text-center text-sm text-cream/60">
+            📸 Carmen, 58 años — Bogotá, Colombia. Su primer pan dorado, un domingo en familia.
+          </figcaption>
+        </figure>
 
         <div className="mt-10 space-y-5 rounded-2xl border-2 border-gold/30 bg-oven-deep/80 p-6 text-left shadow-xl sm:p-10">
           <p className={`${P} text-cream/90`}>
