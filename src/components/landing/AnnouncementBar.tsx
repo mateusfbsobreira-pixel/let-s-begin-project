@@ -9,7 +9,7 @@ export function AnnouncementBar() {
           </span>
           <span><span className="hidden sm:inline">🔥 </span>1.480+ alumnas ya están horneando con este método</span>
           <span className="mx-1.5 text-gold/40">·</span>
-          <span className="font-bold text-gold-bright">Acceso por $6.90</span>
+          <span className="font-bold text-gold-bright">👑 OFERTA FUNDADORAS 2026 — De $230 por SOLO $9.90 Dólares (Pago Único Para Siempre)</span>
         </p>
         <span className="rounded-full border border-gold/40 bg-gold/10 px-3 py-1 text-[11px] font-bold text-gold-bright sm:text-xs">
           🎁 Precio Especial de Lanzamiento

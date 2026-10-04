@@ -51,7 +51,7 @@ export function FinalOffer() {
               🎁 Precio Especial de Lanzamiento
             </p>
             <p className="mt-2 text-sm leading-relaxed text-cream/75 sm:text-base">
-              Estamos en fase de lanzamiento y este precio de <span className="font-bold text-gold">$6.90</span> es temporal. Cuando alcancemos nuestra meta de alumnas, el precio subirá a su valor real sin aviso previo.
+              Estamos en fase de lanzamiento y este precio de <span className="font-bold text-gold">$9.90</span> es temporal. Cuando alcancemos nuestra meta de alumnas, el precio subirá a su valor real sin aviso previo.
             </p>
           </div>
 
@@ -61,10 +61,10 @@ export function FinalOffer() {
             </p>
             <p className="mt-2 text-xl font-bold text-artisan-ink">Hoy Por Solo:</p>
             <p className="my-2 text-6xl font-black leading-none text-emerald-cta sm:text-7xl">
-              $6.90 Dólares
+              $9.90 Dólares
             </p>
             <p className="text-sm text-artisan-ink/65">
-              *Pago único de $6.90 Dólares al pagar, sin mensualidades ni cargos sorpresa.
+              *Pago único de $9.90 Dólares al pagar, sin mensualidades ni cargos sorpresa.
             </p>
           </div>
 
@@ -92,7 +92,7 @@ export function FinalOffer() {
             </ul>
             <p className="mt-3 text-sm leading-6 text-cream/80">
               Hotmart detecta tu país y convierte automáticamente los{" "}
-               <span className="font-bold text-gold-bright">$6.90 Dólares</span> al
+               <span className="font-bold text-gold-bright">$9.90 Dólares</span> al
               valor de tu moneda local en el instante de pagar. Acepta tarjetas
               locales de débito y crédito y también pago en efectivo (OXXO,
               Efecty, PagoEfectivo y otros puntos habilitados según tu país).
@@ -104,7 +104,7 @@ export function FinalOffer() {
               <span className="font-bold text-red-offer">Opción 1:</span> Cerrar esta página, seguir comprando pan industrial lleno de químicos y olvidar que esta oportunidad existió.
             </p>
             <p className="text-base leading-relaxed text-artisan-ink/95 sm:text-lg">
-              <span className="font-bold text-emerald-cta">Opción 2:</span> Invertir <span className="font-bold text-gold-mute">$6.90 Dólares</span> hoy, recibir acceso inmediato a la app, los 8 libros y el Chef IA, y hornear tu primer pan artesanal este mismo fin de semana — con 7 días de garantía total para probarlo sin riesgo.
+              <span className="font-bold text-emerald-cta">Opción 2:</span> Invertir <span className="font-bold text-gold-mute">$9.90 Dólares</span> hoy, recibir acceso inmediato a la app, los 8 libros y el Chef IA, y hornear tu primer pan artesanal este mismo fin de semana — con 7 días de garantía total para probarlo sin riesgo.
             </p>
           </div>
 
@@ -114,7 +114,7 @@ export function FinalOffer() {
           >
             <a href={CHECKOUT_URL}>
               <span className="cta-shine absolute inset-y-0 w-1/3" aria-hidden="true" />
-              <span className="relative">SÍ, QUIERO MI ACCESO COMPLETO POR $6.90 DÓLARES »</span>
+              <span className="relative">SÍ, QUIERO MI ACCESO COMPLETO POR $9.90 DÓLARES »</span>
             </a>
           </Button>
 

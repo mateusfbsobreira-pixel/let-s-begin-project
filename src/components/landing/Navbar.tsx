@@ -30,7 +30,7 @@ export function Navbar() {
         <Button asChild className="group relative h-auto shrink-0 overflow-hidden whitespace-nowrap rounded-full bg-gradient-to-r from-gold-deep to-gold-bright px-3 py-2.5 text-[11px] font-extrabold text-oven shadow-lg transition-transform hover:scale-[1.03] sm:px-5 sm:py-3 sm:text-sm">
           <a href={CHECKOUT_URL}>
             <span className="cta-shine absolute inset-y-0 w-1/3" aria-hidden="true" />
-            <span className="relative">Empezar por $6.90 »</span>
+            <span className="relative">Empezar por $9.90 »</span>
           </a>
         </Button>
       </div>
