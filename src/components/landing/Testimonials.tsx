@@ -40,7 +40,7 @@ const chats = [
     avatar: carlosAvatar,
     photoAlt: "Carlos Rodríguez sosteniendo baguettes artesanales en papel kraft",
     incoming:
-      "Buenas tardes equipo, les comparto que con la guía de ventas y la calculadora del Chef IA vendí mis primeras 8 baguettes hoy a los vecinos del edificio. ¡Recuperé los $6.90 y ya tengo 14 pedidos para el sábado! 🚀💰",
+      "Buenas tardes equipo, les comparto que con la guía de ventas y la calculadora del Chef IA vendí mis primeras 8 baguettes hoy a los vecinos del edificio. ¡Recuperé los $9.90 y ya tengo 14 pedidos para el sábado! 🚀💰",
     incomingTime: "4:15 p. m.",
     reply:
       "¡Brutal resultado Carlos! Ese es exactamente el poder de calcular bien los costos y la fermentación. ¡A seguir creciendo ese negocio! 👏🔥",

@@ -370,7 +370,7 @@ export function AppTour() {
         >
           <p className="font-serif text-xl sm:text-2xl text-stone-100">
             Todo esto disponible en tu celular hoy por solo{" "}
-            <span className="text-emerald-400 font-bold">$6.90 Dólares</span>{" "}
+            <span className="text-emerald-400 font-bold">$9.90 Dólares</span>{" "}
             <span className="text-stone-300 text-base">
               (Pago único para siempre).
             </span>
@@ -380,7 +380,7 @@ export function AppTour() {
             className="group relative mt-5 inline-flex items-center justify-center gap-2 overflow-hidden rounded-xl bg-emerald-cta px-8 py-4 text-base font-bold uppercase tracking-wider text-white shadow-[0_10px_40px_-10px_rgba(22,163,74,0.6)] transition-transform hover:scale-105"
           >
             <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/25 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
-            QUIERO EMPEZAR A HORNEAR POR $6.90 »
+            QUIERO EMPEZAR A HORNEAR POR $9.90 »
           </a>
           <p className="mt-2 text-xs font-bold uppercase tracking-wider text-emerald-400/90 sm:text-sm">
             ✅ Pago Único · Sin Mensualidades · Sin Suscripciones
