@@ -59,6 +59,9 @@ export function FinalOffer() {
             <p className="text-lg font-bold text-red-offer line-through">
               Valor Total Real: $230 USD
             </p>
+            <p className="mx-auto mt-3 max-w-md rounded-lg border border-red-offer/30 bg-red-offer/5 px-3 py-2 text-sm font-bold text-red-offer sm:text-base">
+              Precio Fundadoras: 1.480 de 2.000 plazas ocupadas. Cuando se agoten, el precio sube a $19.90.
+            </p>
             <p className="mt-2 text-xl font-bold text-artisan-ink">Hoy Por Solo:</p>
             <p className="my-2 text-6xl font-black leading-none text-emerald-cta sm:text-7xl">
               $9.90 Dólares
