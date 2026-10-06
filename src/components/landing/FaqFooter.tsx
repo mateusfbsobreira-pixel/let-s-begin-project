@@ -10,7 +10,7 @@ const faqs = [
   {
     question: "¿Esto es un pago único o me van a cobrar cada mes?",
     answer:
-      "Es la pregunta más importante y la respuesta es clara: tu pago de $6.90 Dólares es ÚNICO y PARA SIEMPRE. No existe ninguna mensualidad, suscripción ni cargo oculto. Pagas una sola vez hoy y el acceso a la app, al Chef IA y a los 8 libros es tuyo de por vida. Punto.",
+      "Es la pregunta más importante y la respuesta es clara: tu pago de $9.90 Dólares es ÚNICO y PARA SIEMPRE. No existe ninguna mensualidad, suscripción ni cargo oculto. Pagas una sola vez hoy y el acceso a la app, al Chef IA y a los 8 libros es tuyo de por vida. Punto.",
   },
   {
     question: "¿Necesito instalar algo o saber de tecnología para usar la app?",
@@ -20,12 +20,12 @@ const faqs = [
   {
     question: "¿Tengo que pagar alguna mensualidad por el Chef IA o el App?",
     answer:
-      "¡Jamás! Tu pago de hoy de $6.90 Dólares es un pago ÚNICO y para toda la vida. No existen mensualidades, ni suscripciones, ni cargos sorpresa en tu tarjeta.",
+      "¡Jamás! Tu pago de hoy de $9.90 Dólares es un pago ÚNICO y para toda la vida. No existen mensualidades, ni suscripciones, ni cargos sorpresa en tu tarjeta.",
   },
   {
     question: "¿Puedo pagar en la moneda de mi país si no tengo dólares (USD)?",
     answer:
-      "El valor de la oferta es de $6.90 Dólares americanos. Al hacer clic en comprar, Hotmart detectará automáticamente tu país y te mostrará el valor exacto convertido a tu moneda local (pesos mexicanos, colombianos, chilenos, soles peruanos, euros, etc.). Puedes pagar con tarjetas locales de débito/crédito o en efectivo en los puntos autorizados de tu país (OXXO en México, Efecty en Colombia, PagoEfectivo en Perú, etc.).",
+      "El valor de la oferta es de $9.90 Dólares americanos. Al hacer clic en comprar, Hotmart detectará automáticamente tu país y te mostrará el valor exacto convertido a tu moneda local (pesos mexicanos, colombianos, chilenos, soles peruanos, euros, etc.). Puedes pagar con tarjetas locales de débito/crédito o en efectivo en los puntos autorizados de tu país (OXXO en México, Efecty en Colombia, PagoEfectivo en Perú, etc.).",
   },
   {
     question: "¿También recibiré los libros en formato PDF para descargar e imprimir?",
