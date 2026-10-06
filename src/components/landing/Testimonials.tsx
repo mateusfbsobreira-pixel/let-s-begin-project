@@ -162,7 +162,7 @@ export function Testimonials() {
                 controlsList="nodownload noplaybackrate noremoteplayback"
                 disablePictureInPicture
                 onContextMenu={(e) => e.preventDefault()}
-                className="aspect-[9/16] w-full bg-black object-cover"
+                className="aspect-[9/16] w-full bg-black object-contain"
               />
               <figcaption className="flex flex-col items-center gap-2 p-4 text-center">
                 <p className="text-base font-bold leading-snug text-stone-100">
