@@ -19,7 +19,13 @@ import sofiaPhoto from "@/assets/sofia-focaccia.jpg";
 import mariaAvatar from "@/assets/maria-avatar.jpg";
 import carlosAvatar from "@/assets/carlos-avatar.jpg";
 import sofiaAvatar from "@/assets/sofia-avatar.jpg";
-import videoStill from "@/assets/video-testimonial-still.jpg";
+import carmenVideo from "@/assets/depoimento-carmen.mp4.asset.json";
+import sofiaVideo from "@/assets/depoimento-sofia.mp4.asset.json";
+
+const videoTestimonials = [
+  { src: carmenVideo.url, caption: "Carmen, 62 años — Medellín 🇨🇴" },
+  { src: sofiaVideo.url, caption: "Sofía, 57 años — Puebla 🇲🇽" },
+];
 import ugcCarmen from "@/assets/ugc-carmen-bread.jpg";
 import ugcRosa from "@/assets/ugc-rosa-bread.jpg";
 
@@ -141,31 +147,30 @@ export function Testimonials() {
           </p>
         </header>
 
-        {/* 1. VÍDEO TESTIMONIO */}
-        <div className="mx-auto mt-12 w-full max-w-xs sm:max-w-sm">
-          <figure className="relative overflow-hidden rounded-3xl border-2 border-[#C9972A]/60 bg-[#1F1008] shadow-2xl shadow-black/60 transition-all duration-300 hover:border-[#C9972A] hover:shadow-[0_0_30px_rgba(201,151,42,0.35)]">
-            {/* Quando houver vídeo real, substituir por:
-                <video src={VIDEO_URL} autoPlay muted loop playsInline className="aspect-[9/16] w-full object-cover" /> */}
-            <TestimonialPhoto
-              src={videoStill}
-              alt="María Elena, 62 años, en su cocina lista para grabar su testimonio en video"
-              width={720}
-              height={1280}
-              className="aspect-[9/16] w-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-black/40" aria-hidden="true" />
-            <figcaption className="absolute inset-x-0 bottom-0 flex flex-col items-center gap-2 p-4 text-center">
-              <span className="flex h-14 w-14 items-center justify-center rounded-full border-2 border-[#C9972A] bg-black/50 text-[#FCD34D] shadow-lg backdrop-blur-sm">
-                <Play className="ml-0.5 h-6 w-6 fill-current" aria-hidden="true" />
-              </span>
-              <p className="text-sm font-bold leading-snug text-stone-100 sm:text-base">
-                ▶️ Video testimonio — María Elena, 62 años, Guadalajara 🇲🇽
-              </p>
-              <span className="rounded-full border border-[#C9972A]/40 bg-black/40 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-[#FCD34D]">
-                Con subtítulos · Sin editar
-              </span>
-            </figcaption>
-          </figure>
+        {/* 1. VÍDEOS TESTIMONIO */}
+        <div className="mx-auto mt-12 grid max-w-3xl grid-cols-1 gap-8 sm:grid-cols-2">
+          {videoTestimonials.map((v) => (
+            <figure
+              key={v.caption}
+              className="overflow-hidden rounded-3xl border-2 border-[#C9972A]/60 bg-[#1F1008] shadow-2xl shadow-black/60 transition-all duration-300 hover:border-[#C9972A]"
+            >
+              <video
+                src={v.src}
+                controls
+                playsInline
+                preload="metadata"
+                className="aspect-[9/16] w-full bg-black object-cover"
+              />
+              <figcaption className="flex flex-col items-center gap-2 p-4 text-center">
+                <p className="text-base font-bold leading-snug text-stone-100">
+                  {v.caption}
+                </p>
+                <span className="rounded-full border border-[#C9972A]/40 bg-black/40 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-[#FCD34D]">
+                  ▶️ Toca para escuchar · Sin editar
+                </span>
+              </figcaption>
+            </figure>
+          ))}
         </div>
 
         {/* 2. FOTOS UGC */}
