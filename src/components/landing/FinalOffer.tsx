@@ -75,7 +75,7 @@ export function FinalOffer() {
               <span className="rounded-full bg-emerald-cta px-3 py-1 text-sm font-extrabold text-paper">96% DE DESCUENTO</span>
             </div>
             <p className="mt-4 text-base font-extrabold uppercase tracking-wide text-artisan-ink">
-              Pago único · Cero mensualidades · Acceso vitalicio
+              Pago único para siempre · Sin suscripciones ni mensualidades · Acceso vitalicio
             </p>
           </div>
 
@@ -102,11 +102,11 @@ export function FinalOffer() {
           >
             <a href={CHECKOUT_URL}>
               <span className="cta-shine absolute inset-y-0 w-1/3" aria-hidden="true" />
-              <span className="relative">SÍ, QUIERO EL PAQUETE COMPLETO POR $9.90 USD →</span>
+              <span className="relative">QUIERO EL PAQUETE COMPLETO POR $9.90 USD →</span>
             </a>
           </Button>
-          <p className="mt-3 text-sm italic leading-relaxed text-artisan-ink/70">
-            (Precio fijado en $9.90 Dólares Americanos. En la siguiente pantalla verás el valor convertido automáticamente a la moneda de tu país)
+          <p className="mt-3 text-sm leading-relaxed text-artisan-ink/70">
+            💡 Precio fijado en $9.90 USD (Dólares Americanos). En la siguiente pantalla de pago seguro, Hotmart mostrará el valor exacto convertido a la moneda de tu país (ej: aprox. $185 MXN, $42.000 COP, S/ 38 PEN).
           </p>
           <p className="mt-3 text-sm leading-relaxed text-artisan-ink/70">
             🔒 Pago 100% encriptado y seguro procesado por Hotmart · Recibes acceso inmediato a tu correo en menos de 2 minutos

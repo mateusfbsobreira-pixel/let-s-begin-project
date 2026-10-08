@@ -101,7 +101,7 @@ export function MasterBooks() {
             HOY EN ACCESO FUNDADORAS: SOLO $9.90 USD
           </p>
           <span className="mt-4 inline-block rounded-full bg-red-offer px-4 py-2 text-sm font-extrabold uppercase text-paper sm:text-base">
-            🔥 96% de Descuento · Pago Único Para Siempre · Cero Mensualidades
+            🔥 96% de Descuento · Pago Único Para Siempre · Sin Suscripciones ni Mensualidades
           </span>
           <p className="mt-4 text-base italic leading-relaxed text-artisan-ink/75 sm:text-lg">
             Acceso vitalicio a los 8 libros en PDF para descargar + Acceso ilimitado al App PWA (0 MB de espacio, funciona en cualquier celular).
@@ -110,8 +110,11 @@ export function MasterBooks() {
             asChild
             className="mt-6 h-auto min-h-[56px] w-full max-w-md whitespace-normal rounded-full bg-emerald-cta px-6 py-4 text-base font-extrabold text-paper shadow-xl transition-all hover:scale-105 hover:bg-emerald-cta-hover sm:text-lg"
           >
-            <a href={CHECKOUT_URL}>QUIERO TODO EL PAQUETE POR $9.90 EN MI MONEDA →</a>
+            <a href={CHECKOUT_URL}>QUIERO EL PAQUETE COMPLETO POR $9.90 USD →</a>
           </Button>
+          <p className="mt-3 text-sm leading-relaxed text-artisan-ink/70">
+            💡 Precio fijado en $9.90 USD (Dólares Americanos). En la siguiente pantalla de pago seguro, Hotmart mostrará el valor exacto convertido a la moneda de tu país (ej: aprox. $185 MXN, $42.000 COP, S/ 38 PEN).
+          </p>
           <p className="mt-3 text-sm font-semibold text-artisan-ink/70">
             ✅ Garantía Blindada de 7 Días · Pago 100% Seguro por Hotmart
           </p>

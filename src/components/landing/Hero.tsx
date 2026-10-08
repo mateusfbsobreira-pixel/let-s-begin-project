@@ -84,12 +84,15 @@ export function Hero() {
                   aria-hidden="true"
                   className="absolute inset-y-0 w-1/3 animate-shine bg-gradient-to-r from-transparent via-white/30 to-transparent"
                 />
-                <span className="relative min-h-[56px] leading-tight sm:hidden">QUIERO MI ACCESO POR $9.90 EN MI MONEDA →</span>
-                <span className="relative hidden min-h-[56px] items-center leading-tight sm:inline-flex">SÍ, QUIERO MI ACCESO VITALICIO POR $9.90 EN MI MONEDA →</span>
+                <span className="relative min-h-[56px] leading-tight">QUIERO EL PAQUETE COMPLETO POR $9.90 USD →</span>
               </a>
 
+              <p className="mt-3 text-center text-[11px] leading-relaxed text-cream/80 sm:text-xs">
+                💡 Precio fijado en $9.90 USD (Dólares Americanos). En la siguiente pantalla de pago seguro, Hotmart mostrará el valor exacto convertido a la moneda de tu país (ej: aprox. $185 MXN, $42.000 COP, S/ 38 PEN).
+              </p>
+
               <p className="mt-3 text-center text-xs font-bold uppercase tracking-wider text-emerald-400/90 sm:text-sm">
-                ✅ Un Solo Pago de Por Vida · Cero Mensualidades · 7 Días de Garantía
+                ✅ Pago único para siempre · Sin suscripciones ni mensualidades · 7 Días de Garantía
               </p>
 
               <PaymentMethods />
