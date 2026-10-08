@@ -38,13 +38,18 @@ export function StickyMobileBar() {
 
           <Button
             asChild
-            className="h-auto shrink-0 rounded-full bg-emerald-cta px-4 py-3 text-sm font-bold text-paper shadow-xl transition-transform hover:scale-[1.03] hover:bg-emerald-cta-hover sm:px-7 sm:text-base"
+            className="h-auto shrink-0 rounded-full bg-emerald-cta px-4 py-2.5 text-paper shadow-xl transition-transform hover:scale-[1.03] hover:bg-emerald-cta-hover sm:px-7 sm:py-3"
           >
             <a href={CHECKOUT_URL}>
-              <span className="sm:hidden">QUIERO EL PAQUETE »</span>
-              <span className="hidden sm:inline">QUIERO EL PAQUETE COMPLETO POR $9.90 USD »</span>
+              <span className="flex flex-col items-center justify-center leading-tight">
+                <span className="text-base font-extrabold uppercase sm:text-lg">QUIERO EL PAQUETE COMPLETO</span>
+                <span className="text-[13px] font-bold text-gold-bright sm:text-sm">
+                  POR SOLO $9.90 DÓLARES (USD) →
+                </span>
+              </span>
             </a>
           </Button>
+
         </div>
       </div>
     </div>

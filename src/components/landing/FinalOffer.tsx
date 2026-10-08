@@ -1,6 +1,7 @@
 import { Check, ShieldCheck, Smartphone, Lock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { CHECKOUT_URL } from "./config";
+import { CurrencyBox } from "./CurrencyBox";
 
 const benefits = [
   ["Acceso de por vida a los 8 Libros Maestros en PDF", "Descárgalos en celular, tablet o computadora"],
@@ -11,14 +12,6 @@ const benefits = [
   ["Actualizaciones futuras y nuevas recetas incluidas para siempre", ""],
 ];
 
-const conversions = [
-  ["🇲🇽 México", "aprox. $185 MXN", "Tarjeta u OXXO"],
-  ["🇨🇴 Colombia", "aprox. $42.000 COP", "Tarjeta, PSE o Baloto"],
-  ["🇨🇱 Chile", "aprox. $9.500 CLP", "Tarjeta o Webpay"],
-  ["🇵🇪 Perú", "aprox. S/ 38 PEN", "Tarjeta o PagoEfectivo"],
-  ["🇪🇸 España/Europa", "aprox. 9,20 €", "+IVA local"],
-  ["🇺🇸 Resto del mundo", "$9.90 USD", ""],
-];
 
 const seals = [
   { Icon: ShieldCheck, title: "Garantía Incondicional de 7 Días", text: "Si no te encanta, te devolvemos el 100% de tu dinero con un solo clic, sin preguntas." },
@@ -70,47 +63,43 @@ export function FinalOffer() {
               Valor real de todo el paquete: <span className="line-through">$230.00 USD</span>
             </p>
             <p className="mt-3 text-lg font-bold uppercase text-artisan-ink">Hoy por solo:</p>
-            <div className="mt-1 flex flex-wrap items-center justify-center gap-3">
-              <span className="text-6xl font-black leading-none text-emerald-cta sm:text-7xl">$9.90 USD</span>
-              <span className="rounded-full bg-emerald-cta px-3 py-1 text-sm font-extrabold text-paper">96% DE DESCUENTO</span>
+            <div className="mt-1 flex flex-wrap items-center justify-center gap-x-3 gap-y-2">
+              <span className="text-4xl font-black leading-tight text-emerald-cta sm:text-5xl">
+                SOLO $9.90 DÓLARES AMERICANOS <span className="whitespace-nowrap">(USD)</span>
+              </span>
+              <span className="rounded-full bg-emerald-cta px-3.5 py-1.5 text-xs font-extrabold uppercase tracking-wide text-paper sm:text-sm">
+                96% DE DESCUENTO · PAGO ÚNICO
+              </span>
             </div>
             <p className="mt-4 text-base font-extrabold uppercase tracking-wide text-artisan-ink">
               Pago único para siempre · Sin suscripciones ni mensualidades · Acceso vitalicio
             </p>
+
           </div>
 
-          <div className="mt-7 rounded-2xl border border-[#E8DFC8] bg-paper p-5 text-left">
-            <p className="text-base font-bold leading-relaxed text-artisan-ink">
-              🌎 Tu banco o tarjeta cobrará el equivalente exacto en tu moneda local:
-            </p>
-            <ul className="mt-3 space-y-2">
-              {conversions.map(([country, price, methods]) => (
-                <li key={country} className="flex flex-wrap items-baseline justify-between gap-x-3 border-b border-[#E8DFC8]/70 pb-2 text-base text-artisan-ink last:border-0">
-                  <span className="font-semibold">{country}</span>
-                  <span>
-                    <span className="font-bold">{price}</span>
-                    {methods && <span className="text-sm text-artisan-ink/60"> · {methods}</span>}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </div>
+          <CurrencyBox className="mt-7" />
 
           <Button
             asChild
-            className="group relative mt-7 h-auto w-full animate-pulse overflow-hidden whitespace-normal rounded-full bg-emerald-cta px-6 py-5 text-base font-extrabold text-paper shadow-2xl transition-transform [animation-duration:2.5s] hover:scale-[1.03] hover:animate-none hover:bg-emerald-cta-hover sm:px-8 sm:text-lg"
+            className="group relative mt-7 h-auto w-full animate-pulse overflow-hidden whitespace-normal rounded-full bg-emerald-cta px-6 py-5 text-paper shadow-2xl transition-transform [animation-duration:2.5s] hover:scale-[1.03] hover:animate-none hover:bg-emerald-cta-hover sm:px-8"
           >
             <a href={CHECKOUT_URL}>
               <span className="cta-shine absolute inset-y-0 w-1/3" aria-hidden="true" />
-              <span className="relative">QUIERO EL PAQUETE COMPLETO POR $9.90 USD →</span>
+              <span className="relative flex flex-col items-center justify-center leading-tight">
+                <span className="text-base font-extrabold uppercase sm:text-lg">QUIERO EL PAQUETE COMPLETO</span>
+                <span className="text-[13px] font-bold text-gold-bright sm:text-sm">
+                  POR SOLO $9.90 DÓLARES (USD) →
+                </span>
+              </span>
             </a>
           </Button>
-          <p className="mt-3 text-sm leading-relaxed text-artisan-ink/70">
-            💡 Precio fijado en $9.90 USD (Dólares Americanos). En la siguiente pantalla de pago seguro, Hotmart mostrará el valor exacto convertido a la moneda de tu país (ej: aprox. $185 MXN, $42.000 COP, S/ 38 PEN).
+          <p className="mt-3 text-[13px] font-bold leading-relaxed text-artisan-ink sm:text-sm">
+            ✅ Pago único para siempre · Sin suscripciones mensuales · Garantía blindada de 7 días
           </p>
           <p className="mt-3 text-sm leading-relaxed text-artisan-ink/70">
             🔒 Pago 100% encriptado y seguro procesado por Hotmart · Recibes acceso inmediato a tu correo en menos de 2 minutos
           </p>
+
 
           <div className="mt-8 grid gap-4 border-t border-[#E8DFC8] pt-7 text-left sm:grid-cols-3">
             {seals.map(({ Icon, title, text }) => (
