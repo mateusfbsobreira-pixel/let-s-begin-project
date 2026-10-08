@@ -3,14 +3,14 @@ import { CHECKOUT_URL } from "./config";
 import chefAvatar from "@/assets/maria-avatar.jpg";
 
 const books = [
-  { n: 1, title: "El Despertar de la Masa Madre Fácil", benefit: "Tu masa madre viva en 5 días", value: "$25.00", img: "/images/livro-principal.webp" },
-  { n: 2, title: "Panes Rústicos Europeos de Corteza Crujiente", benefit: "Corteza que cruje al cortar", value: "$25.00", img: "/images/bonus-1-paes-gourmet.webp" },
-  { n: 3, title: "Panes Rápidos en Sartén y Sin Horno", benefit: "Listos en 30 minutos", value: "$20.00", img: "/images/bonus-2-pizzas.webp" },
-  { n: 4, title: "Brioches, Roscas y Panes Dulces de la Abuela", benefit: "Suaves como una nube", value: "$25.00", img: "/images/bonus-3-brownies.webp" },
-  { n: 5, title: "Panes Saludables, Integrales y con Semillas", benefit: "Sin conservantes, 100% natural", value: "$20.00", img: "/images/bonus-4-masas-dulces.webp" },
-  { n: 6, title: "Focaccias y Panes Rellenos Italianos", benefit: "Solo 4 ingredientes", value: "$20.00", img: "/images/bonus-5-vender.webp" },
-  { n: 7, title: "Baguettes y Panes de Desayuno Exprés", benefit: "Sin tiempos complicados", value: "$20.00", img: "/images/bonus-6-galletas.webp" },
-  { n: 8, title: "Secretos de Horneado y Conservación Prolongada", benefit: "Pan fresco toda la semana", value: "$20.00", img: "/images/todos-productos.webp" },
+  { n: 1, title: "El Método Completo del Pan Artesanal", benefit: "Masa madre, fermentación lenta y técnicas de horneado perfecto", value: "$20.00", img: "/images/livro-principal.webp", tag: "Libro Principal" },
+  { n: 2, title: "30 Recetas de Pan Artesanal Gourmet", benefit: "Recetas consagradas explicadas paso a paso", value: "$15.00", img: "/images/bonus-1-paes-gourmet.webp", tag: "Bono 1" },
+  { n: 3, title: "Pizzas Artesanales Caseras", benefit: "Masa crocante profesional + las 3 salsas maestras", value: "$12.00", img: "/images/bonus-2-pizzas.webp", tag: "Bono 2" },
+  { n: 4, title: "Brownies Gourmet Fudgy", benefit: "Corteza brillante y centro húmedo intenso", value: "$10.00", img: "/images/bonus-3-brownies.webp", tag: "Bono 3" },
+  { n: 5, title: "Masas Dulces y Panes Rellenos", benefit: "Brioches suaves, roscas y trenzas gourmet", value: "$15.00", img: "/images/bonus-4-masas-dulces.webp", tag: "Bono 4" },
+  { n: 6, title: "Recetas Premium para Vender Desde Casa", benefit: "Costos, empaques y estrategias de ingreso extra", value: "$15.00", img: "/images/bonus-5-vender.webp", tag: "Bono 5" },
+  { n: 7, title: "Pequeñas Obras de Arte", benefit: "40 recetas de galletas y confitería fina artesanal", value: "$12.00", img: "/images/bonus-6-galletas.webp", tag: "Bono 6" },
+  { n: 8, title: "Las Recetas Secretas de La Casa del Pan", benefit: "Prefermentos y fórmulas de autor · Solo lanzamiento", value: "$20.00", img: "/images/todos-productos.webp", tag: "Bono Exclusivo" },
 ];
 
 function BookCover({ title, img }: { title: string; img: string }) {
@@ -31,7 +31,7 @@ function ChefVisual() {
         <img src={chefAvatar} alt="" loading="lazy" className="h-9 w-9 rounded-full border-2 border-gold object-cover" />
         <div>
           <p className="text-xs font-bold text-cream">Chef Panadera</p>
-          <p className="text-[10px] text-emerald-cta">● respondiendo...</p>
+          <p className="text-[10px] text-emerald-cta">● responde en menos de 2 s</p>
         </div>
       </div>
       <div className="flex items-center gap-1 self-start rounded-2xl rounded-tl-none bg-surface px-3 py-2">
@@ -40,21 +40,38 @@ function ChefVisual() {
         ))}
         <span className="ml-1 text-[10px] text-cream/70">0:02</span>
       </div>
+      <span className="self-start rounded-full bg-gold/20 px-2 py-0.5 text-[9px] font-bold uppercase text-gold">⭐ El Secreto del Maestro</span>
+    </div>
+  );
+}
+
+function CookModeVisual() {
+  return (
+    <div className="flex h-full w-full items-center justify-center rounded-xl bg-oven p-3">
+      <div className="w-28 rounded-[1.2rem] border-2 border-gold/60 bg-oven-black p-2">
+        <p className="text-center text-[8px] font-bold uppercase text-gold">☀ Pantalla activa</p>
+        {["Mezcla la harina", "Amasa 10 min", "Deja reposar"].map((t, i) => (
+          <p key={t} className="mt-1 flex items-center gap-1 text-[10px] font-bold text-cream">
+            <span className={i < 2 ? "text-emerald-cta" : "text-cream/40"}>{i < 2 ? "✔" : "○"}</span>{t}
+          </p>
+        ))}
+        <div className="mt-1.5 h-1 w-full rounded-full bg-surface"><div className="h-1 w-2/3 rounded-full bg-emerald-cta" /></div>
+      </div>
     </div>
   );
 }
 
 function TimerVisual() {
   return (
-    <div className="flex h-full w-full items-center justify-center rounded-xl bg-oven p-3">
-      <div className="w-24 rounded-[1.2rem] border-2 border-gold/60 bg-oven-black p-2 text-center">
-        <p className="text-[8px] font-bold uppercase text-gold">Fermentación</p>
-        <p className="font-mono text-2xl font-black text-cream">45:00</p>
-        <div className="mx-auto mt-1 h-1 w-full rounded-full bg-surface">
-          <div className="h-1 w-2/3 rounded-full bg-emerald-cta" />
+    <div className="flex h-full w-full items-center justify-center gap-2 rounded-xl bg-oven p-3">
+      {[["Autólisis", "30"], ["Fermentación", "45"], ["Horno vapor", "25"]].map(([l, m], i) => (
+        <div key={l} className="text-center">
+          <div className={`flex h-12 w-12 items-center justify-center rounded-full border-4 ${i === 1 ? "border-emerald-cta" : "border-gold/60"} bg-oven-black`}>
+            <span className="font-mono text-sm font-black text-cream">{m}:00</span>
+          </div>
+          <p className="mt-1 text-[8px] font-bold uppercase text-gold">{l}</p>
         </div>
-        <p className="mt-1 text-[8px] text-cream/70">Horno 220°C</p>
-      </div>
+      ))}
     </div>
   );
 }
@@ -64,8 +81,9 @@ function DiplomaVisual() {
     <div className="flex h-full w-full items-center justify-center rounded-xl bg-oven p-3">
       <div className="relative w-full max-w-[150px] rounded-sm border-4 border-double border-gold bg-artisan-cream px-2 py-3 text-center">
         <p className="font-serif text-[8px] uppercase tracking-widest text-gold-mute">Diploma Oficial</p>
-        <p className="font-serif text-[10px] font-bold text-artisan-ink">Panadera Artesanal</p>
+        <p className="font-serif text-[10px] font-bold text-artisan-ink">🌾 Maestro Panadero Artesanal</p>
         <p className="mt-1 font-serif text-xs italic text-artisan-ink">Tu Nombre</p>
+        <p className="mt-1 font-mono text-[7px] text-gold-mute">REG-2026-PAN-OFICIAL</p>
         <span className="absolute -bottom-3 -right-3 flex h-8 w-8 items-center justify-center rounded-full bg-wine text-[8px] font-bold text-paper shadow-md ring-2 ring-wine/40">
           4K
         </span>
@@ -75,9 +93,10 @@ function DiplomaVisual() {
 }
 
 const bonuses = [
-  { title: "ASISTENTE CHEF 24/7 ILIMITADA", text: "Tu guía personal que te responde por voz en 2 segundos, incluso a medianoche y con harina en las manos.", value: "$59.00", Visual: ChefVisual },
-  { title: "MODO COCINA + TEMPORIZADORES INTELIGENTES", text: "Pantalla siempre encendida para cocinar sin tocar el teléfono con las manos pegajosas.", value: "$25.00", Visual: TimerVisual },
-  { title: "CERTIFICADO OFICIAL DE PANADERA ARTESANAL 4K", text: "Generado en alta resolución con tu nombre oficial para imprimir y enmarcar con orgullo.", value: "$22.00", Visual: DiplomaVisual },
+  { title: "CHEF PANADERO IA 24/7 ILIMITADO", text: "Tu mentor privado disponible día y noche. Responde por voz o texto incluso con las manos llenas de masa.", value: "$59.00", Visual: ChefVisual },
+  { title: "MODO COCINA CON PANTALLA SIEMPRE ACTIVA", text: "La pantalla nunca se apaga mientras cocinas. Letras grandes, checklist paso a paso y retoma exactamente donde lo dejaste.", value: "$25.00", Visual: CookModeVisual },
+  { title: "TEMPORIZADORES INTELIGENTES INTEGRADOS", text: "Avisos sonoros precisos para cada etapa de tu pan. Nunca más se te pasará un levado ni se te quemará la corteza.", value: null, Visual: TimerVisual },
+  { title: "CERTIFICADO OFICIAL DE MAESTRO PANADERO ARTESANAL 4K", text: "Documento oficial nominal en Ultra-HD para enmarcar con orgullo o presentar si decides vender tus creaciones.", value: "$22.00", Visual: DiplomaVisual },
 ];
 
 export function MasterBooks() {
@@ -97,9 +116,11 @@ export function MasterBooks() {
           </p>
         </header>
 
-        <div className="mt-12 grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4">
+        <h3 className="mt-12 text-center font-serif text-2xl font-bold text-artisan-ink sm:text-3xl">Todo Lo Que Recibes</h3>
+        <div className="mt-8 grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4">
           {books.map((b) => (
             <article key={b.n} className="group flex flex-col rounded-2xl border border-gold/35 bg-paper p-4 text-center shadow-md transition-all duration-300 hover:-translate-y-1 hover:border-gold hover:shadow-xl">
+              <span className="mx-auto mb-3 inline-block rounded-full bg-wine px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-paper">{b.tag}</span>
               <BookCover title={b.title} img={b.img} />
               <h3 className="mt-4 font-serif text-base font-bold leading-snug text-artisan-ink sm:text-lg">{b.title}</h3>
               <p className="mt-1 flex-1 text-sm leading-snug text-artisan-ink/70 sm:text-base">{b.benefit}</p>
@@ -111,9 +132,12 @@ export function MasterBooks() {
           ))}
         </div>
 
+        <p className="mt-6 text-center text-lg font-bold text-artisan-ink/80">
+          *Total solo en libros y recetarios: <span className="text-red-offer line-through">$119.00 USD</span>*
+        </p>
         <div className="mt-14 text-center">
           <span className="inline-block rounded-full bg-wine px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-paper">
-            + 3 Súper Bonos Exclusivos
+            + Las 4 Herramientas de Tu App
           </span>
         </div>
         <div className="mx-auto mt-6 max-w-4xl space-y-5">
@@ -125,10 +149,10 @@ export function MasterBooks() {
               <div className="flex-1 text-center sm:text-left">
                 <h3 className="font-sans text-lg font-extrabold leading-snug text-artisan-ink sm:text-xl">{title}</h3>
                 <p className="mt-1 text-base leading-relaxed text-artisan-ink/75 sm:text-lg">{text}</p>
-                <p className="mt-2 text-base font-bold text-artisan-ink/80">
+                {value ? <p className="mt-2 text-base font-bold text-artisan-ink/80">
                   Valor: <span className="text-red-offer line-through">{value}</span>{" "}
                   <span className="text-emerald-cta">¡GRATIS HOY!</span>
-                </p>
+                </p> : <p className="mt-2 text-base font-bold text-emerald-cta">¡Incluido en tu app!</p>}
               </div>
             </article>
           ))}
@@ -137,26 +161,25 @@ export function MasterBooks() {
         <div className="mx-auto mt-12 max-w-3xl rounded-3xl border-2 border-gold bg-paper p-6 text-center shadow-xl sm:p-10">
           <p className="text-lg font-bold uppercase text-artisan-ink/80 sm:text-xl">
             Valor total real de todo el paquete:{" "}
-            <span className="text-red-offer line-through decoration-gold decoration-2">$281.00 USD</span>
+            <span className="text-red-offer line-through decoration-gold decoration-2">$230.00 USD</span>
           </p>
           <p className="mt-4 text-4xl font-black leading-tight text-emerald-cta sm:text-5xl">
             HOY EN ACCESO FUNDADORAS: SOLO $9.90 USD
           </p>
           <span className="mt-4 inline-block rounded-full bg-red-offer px-4 py-2 text-sm font-extrabold uppercase text-paper sm:text-base">
-            🔥 96% de Descuento — Pago Único Para Siempre
+            🔥 96% de Descuento · Pago Único Para Siempre · Cero Mensualidades
           </span>
           <p className="mt-4 text-base italic leading-relaxed text-artisan-ink/75 sm:text-lg">
-            *(Menos de lo que gastas en 2 barras de pan en la panadería, y te
-            sirve para toda la vida)*
+            Acceso vitalicio a los 8 libros en PDF para descargar + Acceso ilimitado al App PWA (0 MB de espacio, funciona en cualquier celular).
           </p>
           <Button
             asChild
             className="mt-6 h-auto min-h-[56px] w-full max-w-md whitespace-normal rounded-full bg-emerald-cta px-6 py-4 text-base font-extrabold text-paper shadow-xl transition-all hover:scale-105 hover:bg-emerald-cta-hover sm:text-lg"
           >
-            <a href={CHECKOUT_URL}>QUIERO MI BIBLIOTECA COMPLETA POR $9.90 →</a>
+            <a href={CHECKOUT_URL}>QUIERO TODO EL PAQUETE POR $9.90 EN MI MONEDA →</a>
           </Button>
           <p className="mt-3 text-sm font-semibold text-artisan-ink/70">
-            Acceso vitalicio instantáneo · Sin pagos mensuales · Garantía de 7 días
+            ✅ Garantía Blindada de 7 Días · Pago 100% Seguro por Hotmart
           </p>
         </div>
       </div>
