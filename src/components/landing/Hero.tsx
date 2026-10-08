@@ -110,33 +110,9 @@ export function Hero() {
 
               <PaymentMethods />
 
-              {/* Local-currency micro-box: Hotmart converts at checkout */}
-              <div className="mx-auto mt-4 max-w-xl rounded-xl border border-gold/30 bg-oven/80 p-3.5 text-center lg:mx-0">
-                <p className="text-[11px] font-extrabold uppercase tracking-wide text-gold-bright sm:text-xs">
-                  🌎 Pagas en Tu Moneda Local — Hotmart Convierte al Instante
-                </p>
-                <ul className="mt-2.5 flex flex-wrap items-center justify-center gap-1.5 lg:justify-start">
-                  {[
-                    "🇲🇽 ~$185 MXN",
-                    "🇨🇴 ~$42.000 COP",
-                    "🇨🇱 ~$9.500 CLP",
-                    "🇵🇪 ~S/38 PEN",
-                    "🇪🇸 ~€9,20 EUR",
-                  ].map((currency) => (
-                    <li
-                      key={currency}
-                      className="rounded-lg border border-gold/25 bg-cream/95 px-2.5 py-1 text-[11px] font-bold text-oven-deep sm:text-xs"
-                    >
-                      {currency}
-                    </li>
-                  ))}
-                </ul>
-                <p className="mt-2.5 text-[11px] font-medium leading-relaxed text-cream/75 sm:text-xs">
-                  *Al tocar el botón serás dirigida a Hotmart (100% seguro),
-                  donde verás el valor exacto en la moneda de tu país. Acepta
-                  OXXO, PSE, Baloto, PagoEfectivo y Tarjeta.
-                </p>
-              </div>
+              {/* Local-currency conversion box */}
+              <CurrencyBox className="mx-auto mt-4 max-w-xl lg:mx-0" />
+
 
 
               {/* Trust signals */}
