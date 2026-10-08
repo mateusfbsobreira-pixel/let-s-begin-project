@@ -32,7 +32,8 @@ export function StickyMobileBar() {
             <p className="mt-1.5 flex items-center gap-1 whitespace-nowrap text-[11px] font-semibold text-cream/75 sm:text-xs">
               <span className="font-bold text-gold-bright">Precio de Lanzamiento</span>
             </p>
-            <p className="text-[9px] font-bold text-emerald-400/80 sm:text-[10px]">Pago único · Sin mensualidades</p>
+            <p className="text-[9px] font-bold text-emerald-400/80 sm:text-[10px]">Pago único para siempre · Sin suscripciones</p>
+            <p className="text-[9px] font-semibold text-cream/60 sm:text-[10px]">💡 Precio en USD — Hotmart convierte a tu moneda</p>
           </div>
 
           <Button
@@ -40,8 +41,8 @@ export function StickyMobileBar() {
             className="h-auto shrink-0 rounded-full bg-emerald-cta px-4 py-3 text-sm font-bold text-paper shadow-xl transition-transform hover:scale-[1.03] hover:bg-emerald-cta-hover sm:px-7 sm:text-base"
           >
             <a href={CHECKOUT_URL}>
-              <span className="sm:hidden">Quiero Mi Pan »</span>
-              <span className="hidden sm:inline">Empezar a Hornear por $9.90 »</span>
+              <span className="sm:hidden">QUIERO EL PAQUETE »</span>
+              <span className="hidden sm:inline">QUIERO EL PAQUETE COMPLETO POR $9.90 USD »</span>
             </a>
           </Button>
         </div>
