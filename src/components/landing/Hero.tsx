@@ -48,14 +48,19 @@ export function Hero() {
             </h1>
 
             <p className="mx-auto mt-6 max-w-3xl text-lg font-medium leading-loose text-cream/90 sm:text-xl lg:mx-0">
-              Aunque nunca hayas horneado, tu Chef IA te habla por voz y te
-              guía paso a paso con las manos en la masa. Toca 1 botón, habla,
-              y listo.
+              Aunque nunca hayas tocado una masa: tu Chef virtual te habla por
+              voz y te guía paso a paso, incluso con las manos en la masa. Toca
+              1 botón en tu celular y hornea este fin de semana sin
+              conservantes.
             </p>
 
             {/* Confidence chips */}
             <div className="mt-7 flex flex-wrap items-center justify-center gap-2.5 lg:justify-start">
-              {["Sin batidora", "Sin experiencia", "Con 1 toque en tu celular"].map(
+              {[
+                "Sin batidoras costosas",
+                "Sin experiencia previa",
+                "En cualquier celular (0 MB de espacio)",
+              ].map(
                 (chip) => (
                   <span
                     key={chip}
@@ -79,21 +84,43 @@ export function Hero() {
                   aria-hidden="true"
                   className="absolute inset-y-0 w-1/3 animate-shine bg-gradient-to-r from-transparent via-white/30 to-transparent"
                 />
-                <span className="relative min-h-[56px] leading-tight sm:hidden">QUIERO MI PAN ARTESANAL POR $9.90 →</span>
-                <span className="relative hidden min-h-[56px] items-center leading-tight sm:inline-flex">SÍ, QUIERO MI APP + 8 LIBROS POR $9.90 EN MI MONEDA →</span>
+                <span className="relative min-h-[56px] leading-tight sm:hidden">QUIERO MI ACCESO POR $9.90 EN MI MONEDA →</span>
+                <span className="relative hidden min-h-[56px] items-center leading-tight sm:inline-flex">SÍ, QUIERO MI ACCESO VITALICIO POR $9.90 EN MI MONEDA →</span>
               </a>
 
               <p className="mt-3 text-center text-xs font-bold uppercase tracking-wider text-emerald-400/90 sm:text-sm">
-                ✅ Pago Único · Sin Mensualidades · 7 Días de Garantía Total
+                ✅ Un Solo Pago de Por Vida · Cero Mensualidades · 7 Días de Garantía
               </p>
 
               <PaymentMethods />
 
-              <p className="mx-auto mt-4 max-w-xl text-xs font-medium leading-relaxed text-cream/75 sm:text-sm lg:mx-0">
-                *Hotmart convierte $9.90 Dólares a tu moneda local al instante.
-                Acepta tarjeta, PIX, OXXO, Efecty y PagoEfectivo. 7 Días de
-                Garantía Total.
-              </p>
+              {/* Local-currency micro-box: Hotmart converts at checkout */}
+              <div className="mx-auto mt-4 max-w-xl rounded-xl border border-gold/30 bg-oven/80 p-3.5 text-center lg:mx-0">
+                <p className="text-[11px] font-extrabold uppercase tracking-wide text-gold-bright sm:text-xs">
+                  🌎 Pagas en Tu Moneda Local — Hotmart Convierte al Instante
+                </p>
+                <ul className="mt-2.5 flex flex-wrap items-center justify-center gap-1.5 lg:justify-start">
+                  {[
+                    "🇲🇽 ~$185 MXN",
+                    "🇨🇴 ~$42.000 COP",
+                    "🇨🇱 ~$9.500 CLP",
+                    "🇵🇪 ~S/38 PEN",
+                    "🇪🇸 ~€9,20 EUR",
+                  ].map((currency) => (
+                    <li
+                      key={currency}
+                      className="rounded-lg border border-gold/25 bg-cream/95 px-2.5 py-1 text-[11px] font-bold text-oven-deep sm:text-xs"
+                    >
+                      {currency}
+                    </li>
+                  ))}
+                </ul>
+                <p className="mt-2.5 text-[11px] font-medium leading-relaxed text-cream/75 sm:text-xs">
+                  *Al tocar el botón serás dirigida a Hotmart (100% seguro),
+                  donde verás el valor exacto en la moneda de tu país. Acepta
+                  OXXO, PSE, Baloto, PagoEfectivo y Tarjeta.
+                </p>
+              </div>
 
 
               {/* Trust signals */}
