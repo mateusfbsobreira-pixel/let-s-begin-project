@@ -1,15 +1,13 @@
-import { CheckCircle2 } from "lucide-react";
-
-const conditions = [
-  "Si la app no te parece la herramienta de cocina más útil que has tenido...",
-  "Si el Chef IA no responde tu duda en menos de 5 segundos...",
-  "Si tu pan no arranca al menos un 'wow' de alguien en tu casa...",
+const seals = [
+  "🔒 Compra 100% Protegida por Hotmart",
+  "⚡ Devolución Inmediata en 1 Clic",
+  "📱 Acceso Directo a tu Correo",
 ];
 
 export function Guarantee() {
   return (
     <section className="border-t border-gold-mute/10 bg-warm-white px-4 py-16">
-      <div className="mx-auto max-w-3xl text-center">
+      <div className="mx-auto max-w-3xl rounded-3xl border border-[#E8DFC8] bg-[#FDFBF7] p-6 text-center shadow-lg sm:p-10">
         <img
           src="/images/selo-garantia-7dias-transparente.webp"
           alt="Sello de garantía de satisfacción por 7 días"
@@ -18,27 +16,28 @@ export function Guarantee() {
           className="mx-auto mb-6 w-36 drop-shadow-md sm:w-44"
         />
         <h2 className="font-serif text-2xl font-bold leading-tight text-artisan-ink sm:text-4xl">
-          Si Tu Primer Pan No Sale Perfecto, Te Devolvemos Cada Centavo
+          Pruébalo Durante 7 Días: El Riesgo es Todo Nuestro
         </h2>
-        <p className="mx-auto mt-5 max-w-3xl text-lg leading-relaxed text-artisan-ink/85 sm:text-xl">
-          No te pedimos que confíes ciegamente. Te pedimos que pruebes. Accede
-          hoy, habla con el Chef IA, pon en marcha los temporizadores y hornea
-          tu primer pan este fin de semana.
+        <p className="mx-auto mt-5 text-lg leading-relaxed text-artisan-ink/85 sm:text-xl">
+          Queremos que entres tranquila. Descarga los libros, pregúntale lo que quieras al Chef
+          virtual y hornea tu primer pan este mismo fin de semana con tu familia.
         </p>
-        <ul className="mx-auto mt-6 max-w-2xl space-y-3 text-left">
-          {conditions.map((c) => (
-            <li key={c} className="flex items-start gap-3">
-              <CheckCircle2 className="mt-1 h-6 w-6 shrink-0 text-emerald-cta" aria-hidden="true" />
-              <span className="text-lg leading-relaxed text-artisan-ink/85 sm:text-xl">{c}</span>
+        <p className="mx-auto mt-4 text-lg leading-relaxed text-artisan-ink/85 sm:text-xl">
+          Si por cualquier razón sientes que esto no es para ti, o simplemente no te gustó el
+          resultado de tus panes, solo nos mandas un mensajito o solicitas la devolución con un solo
+          clic en Hotmart. Te devolvemos cada centavo de tus $9.90 Dólares sin hacerte preguntas ni
+          pedirte explicaciones. <strong className="text-artisan-ink">Sin rencores y seguimos siendo amigos.</strong>
+        </p>
+        <ul className="mt-7 grid gap-3 sm:grid-cols-3">
+          {seals.map((s) => (
+            <li
+              key={s}
+              className="rounded-xl border border-[#E8DFC8] bg-paper px-3 py-3 text-base font-bold leading-snug text-artisan-ink"
+            >
+              {s}
             </li>
           ))}
         </ul>
-        <p className="mx-auto mt-6 max-w-3xl text-lg font-bold leading-relaxed text-artisan-ink sm:text-xl">
-          Solo escríbenos a soporte@lacasadelpanartesanal.shop y te devolvemos
-          el 100% de tu dinero al instante. Sin formularios largos, sin
-          preguntas incómodas y sin demoras. Tienes 7 días completos para
-          decidir con total tranquilidad.
-        </p>
       </div>
     </section>
   );
