@@ -320,7 +320,7 @@ export function Testimonials() {
             href={CHECKOUT_URL}
             className="mt-6 inline-flex min-h-[56px] items-center justify-center rounded-full bg-emerald-cta px-8 py-4 text-center text-base font-extrabold uppercase text-paper shadow-lg transition-colors hover:bg-emerald-cta-hover sm:text-lg"
           >
-            QUIERO HORNEAR COMO ELLAS POR $9.90 →
+            QUIERO HORNEAR COMO ELLAS POR $9.90 USD →
           </a>
           <p className="text-sm text-stone-300">
             Acceso inmediato para siempre · Garantía de 7 días

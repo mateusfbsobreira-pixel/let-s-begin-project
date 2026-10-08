@@ -78,7 +78,7 @@ export function EpiphanyStory() {
               href={CHECKOUT_URL}
               className="inline-flex min-h-[56px] w-full max-w-lg items-center justify-center rounded-full bg-emerald-cta px-6 py-4 text-base font-extrabold uppercase text-paper shadow-xl transition-all hover:scale-105 hover:bg-emerald-cta-hover sm:text-lg"
             >
-              QUIERO VIVIR LA MISMA EXPERIENCIA POR $9.90 →
+              QUIERO VIVIR LA MISMA EXPERIENCIA POR $9.90 USD →
             </a>
             <p className="mt-3 text-sm font-semibold text-artisan-ink/70 sm:text-base">
               Acceso inmediato para siempre · Menos de lo que cuestan 2 panes de panadería
