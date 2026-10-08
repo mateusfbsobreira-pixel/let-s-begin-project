@@ -81,12 +81,12 @@ const chats = [
 const ugcPhotos = [
   {
     src: ugcSilvia,
-    alt: "Marraqueta chilena recién horneada, con un gomo abierto a mano mostrando la miga, foto enviada por Silvia Valenzuela",
-    name: "Silvia Valenzuela",
+    alt: "Marraqueta chilena recién horneada, con un gomo abierto a mano mostrando la miga, foto enviada por Claudia Muñoz",
+    name: "Claudia Muñoz",
     age: "49 años",
     city: "Santiago, Chile",
     quote:
-      "En mi casa no se puede vivir sin un buen pan al desayuno. Estaba gastando una fortuna comprando afuera porque los panes de supermercado vienen llenos de químicos y conservantes. Con la guía del Chef virtual, aprendí a hornearlo en mi horno normal: ¡quedó con esa corteza crujiente que suena al partirlo y una miga suavecita! Mis hijos le pusieron mantequilla derretida y no dejaron ni una miga. Saber exactamente lo que come mi familia no tiene precio.",
+      "Les juro que pensé que no me iba a salir... En mi casa somos fanáticos del pan al desayuno y ya me daba rabia gastar tanta plata en la panadería, o comprar ese pan de bolsa lleno de químicos que dura semanas sin ponerse duro.\n\nAyer me animé, seguí el paso a paso del app y no lo podía creer cuando abrí el horno: sonaba crujiente al tocarlo y por dentro una nube. Mis hijos le untaron mantequilla todavía calientito y voló en 10 minutos, no dejaron ni las migas jajaja. Qué alivio saber que les estoy dando algo sano hecho por mí.",
   },
   {
     src: ugcRosa,
@@ -190,7 +190,7 @@ export function Testimonials() {
               />
               <figcaption className="flex flex-1 flex-col gap-2 p-5 text-center">
                 <Stars />
-                <blockquote className="text-base font-semibold leading-relaxed text-stone-100 sm:text-lg">
+                <blockquote className="whitespace-pre-line text-base font-semibold leading-relaxed text-stone-100 sm:text-lg">
                   “{item.quote}”
                 </blockquote>
                 <p className="mt-auto pt-1 text-sm text-stone-300">
