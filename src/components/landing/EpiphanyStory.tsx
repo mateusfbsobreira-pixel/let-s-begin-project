@@ -19,7 +19,7 @@ export function EpiphanyStory() {
             <figure className="lg:sticky lg:top-24">
               <img
                 src={carmenCarta}
-                alt="Carmen, 57 años, sosteniendo su pan rústico partido a la mitad en su cocina"
+                alt="Marta Elena, 61 años, sosteniendo su pan rústico partido a la mitad en su cocina"
                 width={896}
                 height={1120}
                 loading="lazy"
@@ -30,7 +30,7 @@ export function EpiphanyStory() {
 
             <div>
               <h2 className="font-serif text-3xl font-bold leading-tight text-artisan-ink sm:text-4xl">
-                La Carta de Carmen
+                La Carta de Marta
               </h2>
               <div className="mt-6 space-y-5">
                 <p className={`${P} font-serif text-2xl font-bold text-artisan-ink`}>
@@ -41,7 +41,7 @@ export function EpiphanyStory() {
                 </p>
                 <p className={P}>
                   Un día vi el anuncio de La Casa del Pan. Mi esposo me miró y me dijo:{" "}
-                  <span className="font-semibold text-wine">"¿Otra vez vas a gastar en eso, Carmen?"</span>.
+                  <span className="font-semibold text-wine">"¿Otra vez vas a gastar en eso, Marta?"</span>.
                 </p>
                 <p className={P}>
                   Dudé un momento, pero cuando vi que eran solo nueve dólares con noventa, un solo pago para siempre y con garantía, me dije:{" "}
@@ -64,7 +64,7 @@ export function EpiphanyStory() {
 
               <div className="mt-6 flex flex-wrap items-center gap-3 border-t border-gold/30 pt-5">
                 <p className="font-serif text-lg font-bold text-artisan-ink">
-                  Carmen Ortiz (57 años) — Guadalajara, México
+                  Marta Elena Restrepo (61 años) — Medellín, Colombia
                 </p>
                 <span className="rounded-full border border-gold/50 bg-gold/15 px-3 py-1 text-xs font-bold text-artisan-ink">
                   ⭐ Alumna Fundadora · Certificada 2026
