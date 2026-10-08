@@ -1,6 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { CHECKOUT_URL } from "./config";
-import chefAvatar from "@/assets/maria-avatar.jpg";
+import toolChef from "@/assets/tool-chef-ia.jpg";
+import toolCocina from "@/assets/tool-modo-cocina.jpg";
+import toolTimer from "@/assets/tool-temporizadores.jpg";
+import toolCert from "@/assets/tool-certificado.jpg";
 
 const books = [
   { n: 1, title: "El Método Completo del Pan Artesanal", benefit: "Masa madre, fermentación lenta y técnicas de horneado perfecto", value: "$20.00", img: "/images/livro-principal.webp", tag: "Libro Principal" },
@@ -24,79 +27,11 @@ function BookCover({ title, img }: { title: string; img: string }) {
   );
 }
 
-function ChefVisual() {
-  return (
-    <div className="flex h-full w-full flex-col justify-center gap-2 rounded-xl bg-oven p-3">
-      <div className="flex items-center gap-2">
-        <img src={chefAvatar} alt="" loading="lazy" className="h-9 w-9 rounded-full border-2 border-gold object-cover" />
-        <div>
-          <p className="text-xs font-bold text-cream">Chef Panadera</p>
-          <p className="text-[10px] text-emerald-cta">● responde en menos de 2 s</p>
-        </div>
-      </div>
-      <div className="flex items-center gap-1 self-start rounded-2xl rounded-tl-none bg-surface px-3 py-2">
-        {[3, 6, 9, 5, 8, 4, 7, 3, 6].map((h, i) => (
-          <span key={i} className="w-1 rounded-full bg-gold" style={{ height: `${h * 2}px` }} />
-        ))}
-        <span className="ml-1 text-[10px] text-cream/70">0:02</span>
-      </div>
-      <span className="self-start rounded-full bg-gold/20 px-2 py-0.5 text-[9px] font-bold uppercase text-gold">⭐ El Secreto del Maestro</span>
-    </div>
-  );
-}
-
-function CookModeVisual() {
-  return (
-    <div className="flex h-full w-full items-center justify-center rounded-xl bg-oven p-3">
-      <div className="w-28 rounded-[1.2rem] border-2 border-gold/60 bg-oven-black p-2">
-        <p className="text-center text-[8px] font-bold uppercase text-gold">☀ Pantalla activa</p>
-        {["Mezcla la harina", "Amasa 10 min", "Deja reposar"].map((t, i) => (
-          <p key={t} className="mt-1 flex items-center gap-1 text-[10px] font-bold text-cream">
-            <span className={i < 2 ? "text-emerald-cta" : "text-cream/40"}>{i < 2 ? "✔" : "○"}</span>{t}
-          </p>
-        ))}
-        <div className="mt-1.5 h-1 w-full rounded-full bg-surface"><div className="h-1 w-2/3 rounded-full bg-emerald-cta" /></div>
-      </div>
-    </div>
-  );
-}
-
-function TimerVisual() {
-  return (
-    <div className="flex h-full w-full items-center justify-center gap-2 rounded-xl bg-oven p-3">
-      {[["Autólisis", "30"], ["Fermentación", "45"], ["Horno vapor", "25"]].map(([l, m], i) => (
-        <div key={l} className="text-center">
-          <div className={`flex h-12 w-12 items-center justify-center rounded-full border-4 ${i === 1 ? "border-emerald-cta" : "border-gold/60"} bg-oven-black`}>
-            <span className="font-mono text-sm font-black text-cream">{m}:00</span>
-          </div>
-          <p className="mt-1 text-[8px] font-bold uppercase text-gold">{l}</p>
-        </div>
-      ))}
-    </div>
-  );
-}
-
-function DiplomaVisual() {
-  return (
-    <div className="flex h-full w-full items-center justify-center rounded-xl bg-oven p-3">
-      <div className="relative w-full max-w-[150px] rounded-sm border-4 border-double border-gold bg-artisan-cream px-2 py-3 text-center">
-        <p className="font-serif text-[8px] uppercase tracking-widest text-gold-mute">Diploma Oficial</p>
-        <p className="font-serif text-[10px] font-bold text-artisan-ink">🌾 Maestro Panadero Artesanal</p>
-        <p className="mt-1 font-serif text-xs italic text-artisan-ink">Tu Nombre</p>
-        <p className="mt-1 font-mono text-[7px] text-gold-mute">REG-2026-PAN-OFICIAL</p>
-        <span className="absolute -bottom-3 -right-3 flex h-8 w-8 items-center justify-center rounded-full bg-wine text-[8px] font-bold text-paper shadow-md ring-2 ring-wine/40">
-          4K
-        </span>
-      </div>
-    </div>
-  );
-}
-
 const bonuses = [
-  { title: "CHEF PANADERO IA 24/7 ILIMITADO", text: "Tu mentor privado disponible día y noche. Responde por voz o texto incluso con las manos llenas de masa.", value: "$59.00", Visual: ChefVisual },
-  { title: "MODO COCINA CON PANTALLA SIEMPRE ACTIVA", text: "La pantalla nunca se apaga mientras cocinas. Letras grandes, checklist paso a paso y retoma exactamente donde lo dejaste.", value: "$25.00", Visual: CookModeVisual },
-  { title: "TEMPORIZADORES INTELIGENTES INTEGRADOS", text: "Avisos sonoros precisos para cada etapa de tu pan. Nunca más se te pasará un levado ni se te quemará la corteza.", value: null, Visual: TimerVisual },
-  { title: "CERTIFICADO OFICIAL DE MAESTRO PANADERO ARTESANAL 4K", text: "Documento oficial nominal en Ultra-HD para enmarcar con orgullo o presentar si decides vender tus creaciones.", value: "$22.00", Visual: DiplomaVisual },
+  { title: "Chef Panadero IA 24/7 Ilimitado", text: "Tu mentor privado disponible día y noche. Le hablas con las manos llenas de masa y te responde por voz en segundos, con la paciencia de una amiga.", value: "$59.00", img: toolChef, alt: "Señora en su cocina recibiendo un consejo del Chef IA en el celular" },
+  { title: "Modo Cocina con Pantalla Siempre Activa", text: "La pantalla nunca se apaga mientras cocinas. Letras grandes, checklist paso a paso y retomas exactamente donde lo dejaste.", value: "$25.00", img: toolCocina, alt: "Celular en la bancada mostrando una receta con checklist junto a la masa" },
+  { title: "Temporizadores Inteligentes Integrados", text: "Avisos sonoros precisos para cada etapa de tu pan. Nunca más se te pasará un levado ni se te quemará la corteza.", value: "$15.00", img: toolTimer, alt: "Celular con temporizador de fermentación y pan rústico recién horneado" },
+  { title: "Certificado Oficial de Maestro Panadero 4K", text: "Documento nominal en Ultra-HD para enmarcar con orgullo o presentar si decides vender tus creaciones.", value: "$22.00", img: toolCert, alt: "Diploma de Maestro Panadero Artesanal enmarcado en madera" },
 ];
 
 export function MasterBooks() {
@@ -140,19 +75,18 @@ export function MasterBooks() {
             + Las 4 Herramientas de Tu App
           </span>
         </div>
-        <div className="mx-auto mt-6 max-w-4xl space-y-5">
-          {bonuses.map(({ title, text, value, Visual }) => (
-            <article key={title} className="flex flex-col gap-4 rounded-2xl border-2 border-gold/50 bg-paper p-4 shadow-lg sm:flex-row sm:items-center sm:p-5">
-              <div className="h-32 w-full shrink-0 sm:w-48">
-                <Visual />
-              </div>
-              <div className="flex-1 text-center sm:text-left">
-                <h3 className="font-sans text-lg font-extrabold leading-snug text-artisan-ink sm:text-xl">{title}</h3>
-                <p className="mt-1 text-base leading-relaxed text-artisan-ink/75 sm:text-lg">{text}</p>
-                {value ? <p className="mt-2 text-base font-bold text-artisan-ink/80">
-                  Valor: <span className="text-red-offer line-through">{value}</span>{" "}
-                  <span className="text-emerald-cta">¡GRATIS HOY!</span>
-                </p> : <p className="mt-2 text-base font-bold text-emerald-cta">¡Incluido en tu app!</p>}
+        <div className="mx-auto mt-6 grid max-w-6xl gap-6 md:grid-cols-2">
+          {bonuses.map(({ title, text, value, img, alt }) => (
+            <article key={title} className="flex flex-col overflow-hidden rounded-2xl border border-gold/30 bg-paper shadow-md transition-all hover:shadow-xl">
+              <img src={img} alt={alt} width={1200} height={896} loading="lazy" decoding="async" className="aspect-[4/3] w-full object-cover" />
+              <div className="flex flex-1 flex-col p-5 sm:p-6">
+                <span className="self-start rounded-full border border-gold/50 px-3 py-1 text-[11px] font-bold uppercase tracking-widest text-gold-mute">Herramienta Exclusiva</span>
+                <h3 className="mt-3 font-serif text-2xl font-bold leading-snug text-artisan-ink">{title}</h3>
+                <p className="mt-2 flex-1 text-lg leading-relaxed text-artisan-ink/75">{text}</p>
+                <div className="mt-4 flex flex-wrap items-center gap-3">
+                  <span className="text-base font-bold text-red-offer line-through">Valor: {value}</span>
+                  <span className="rounded-full bg-emerald-cta px-3 py-1 text-sm font-extrabold uppercase text-paper">¡Incluido $0 Hoy!</span>
+                </div>
               </div>
             </article>
           ))}
