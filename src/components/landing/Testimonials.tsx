@@ -43,7 +43,7 @@ const chats = [
       "Chef mire esto por favor!! 😭❤️ No me lo puedo creer, es mi primer pan y salió crujiente por fuera y suavecito como nube adentro! Mi marido pensó que lo había comprado en la panadería de la esquina jajaja, no me creía hasta que vio la harina en la mesada 😂 Gracias de corazón por responder tan rápido cada duda!!",
     incomingTime: "10:42 a. m.",
     reply:
-      "¡¡Ayyyy Teresa qué emoción más hermosa!! 🥹🥖 Me hiciste sonreír de oreja a oreja! Mira ese colorcito dorado tan lindo que te quedó, tienes manos de oro de verdad. Qué alegría por ti y por tu familia, ¡a disfrutarlo calientito con café!",
+      "¡¡Ayyyy Teresa qué emoción más hermosa!! ❤️✨ Me hiciste sonreír de oreja a oreja! Mira ese colorcito dorado tan lindo que te quedó, tienes manos de oro de verdad. Qué alegría por ti y por tu familia, ¡a disfrutarlo calientito con café!",
     replyTime: "10:44 a. m.",
     statusTime: "10:47",
     battery: 87,
@@ -59,7 +59,7 @@ const chats = [
     reply:
       "¡¡Esaaa Carlos, qué crack!! 👏🤩 Qué hermosura de baguettes, mira esa forma tan prolija! Ver a tu mamá disfrutando de tu pan no tiene precio. ¡Qué felicidad me da leerte con tanto entusiasmo, felicidades de corazón!",
     replyTime: "4:18 p. m.",
-    statusTime: "4:23",
+    statusTime: "16:23",
     battery: 63,
   },
   {
