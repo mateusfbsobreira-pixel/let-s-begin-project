@@ -248,6 +248,9 @@ export function Testimonials() {
                       <h4 className="truncate font-sans text-[12px] font-bold text-stone-100">
                         {chat.name}
                       </h4>
+                      <p className="truncate text-[10px] text-stone-400">
+                        {chat.meta}
+                      </p>
                       <p className="flex items-center gap-1 text-[10px] text-[#25D366]">
                         <span className="h-1 w-1 rounded-full bg-[#25D366]" aria-hidden="true" />
                         en línea
