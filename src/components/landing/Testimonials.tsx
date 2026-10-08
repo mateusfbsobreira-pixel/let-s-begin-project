@@ -40,24 +40,24 @@ const chats = [
     avatar: mariaAvatar,
     photoAlt: "Teresa M. mostrando su hogaza de masa madre recién horneada",
     incoming:
-      "¡Hola Chef! No puedo creer lo que logré este domingo... ¡mira esta hogaza! Mi esposo pensó que la compré en una panadería francesa 😭🥖❤️",
+      "Chef mire esto por favor!! 😭❤️ No me lo puedo creer, es mi primer pan y salió crujiente por fuera y suavecito como nube adentro! Mi marido pensó que lo había comprado en la panadería de la esquina jajaja, no me creía hasta que vio la harina en la mesada 😂 Gracias de corazón por responder tan rápido cada duda!!",
     incomingTime: "10:42 a. m.",
     reply:
-      "¡Qué belleza de hogaza, Teresa! Ese alveolado y el greñado están de campeonato mundial. ¡Felicidades, Maestra Panadera! 👨‍🍳✨",
+      "¡¡Ayyyy Teresa qué emoción más hermosa!! 🥹🥖 Me hiciste sonreír de oreja a oreja! Mira ese colorcito dorado tan lindo que te quedó, tienes manos de oro de verdad. Qué alegría por ti y por tu familia, ¡a disfrutarlo calientito con café!",
     replyTime: "10:44 a. m.",
     statusTime: "10:47",
     battery: 87,
   },
   {
-    name: "María del Pilar S.",
+    name: "Carlos M.",
     photo: carlosPhoto,
     avatar: carlosAvatar,
-    photoAlt: "María del Pilar S. sosteniendo baguettes artesanales en papel kraft",
+    photoAlt: "Carlos M. sosteniendo baguettes artesanales en papel kraft",
     incoming:
-      "Con la calculadora del Chef IA vendí mis primeras 8 baguettes hoy a los vecinos. ¡Recuperé los $9.90 y ya tengo 14 pedidos! 🚀💰",
+      "Chef buenas tardes! Mire cómo me salieron las baguettes!! 🥖🔥 Les puse el vapor como me enseñó en el chat y el crujido que hacen al apretarlas es de locos! Toda la casa huele a panadería y mi mamá ya se comió media con queso jajaja. Qué genial este método de verdad, estoy feliz!",
     incomingTime: "4:15 p. m.",
     reply:
-      "¡Brutal resultado, María del Pilar! Ese es exactamente el poder de calcular bien los costos y la fermentación. 👏🔥",
+      "¡¡Esaaa Carlos, qué crack!! 👏🤩 Qué hermosura de baguettes, mira esa forma tan prolija! Ver a tu mamá disfrutando de tu pan no tiene precio. ¡Qué felicidad me da leerte con tanto entusiasmo, felicidades de corazón!",
     replyTime: "4:18 p. m.",
     statusTime: "4:23",
     battery: 63,
@@ -68,10 +68,10 @@ const chats = [
     avatar: sofiaAvatar,
     photoAlt: "Graciela F. mostrando una focaccia con romero recién horneada",
     incoming:
-      "Llevaba meses intentando con YouTube y la masa se me moría al 4to día. Le pregunté al Chef IA y hoy dobló su tamaño. ¡Miren esta focaccia! 🙏✨",
+      "Chef querida! Le escribo con una sonrisa enorme porque mire esta focaccia por Diosss!! 😍✨ Llevaba tanto tiempo tirando masas a la basura que ya casi me daba por vencida. Le pregunté anoche con miedo y mire qué belleza me quedó hoy! Esponjosita, llena de burbujas y un sabor increíble 🙏❤️",
     incomingTime: "7:22 p. m.",
     reply:
-      "¡Esa masa madre está súper activa, Graciela! La focaccia se ve dorada y crujiente. ¡A disfrutarla en familia! 💪🥖",
+      "¡¡Mi Graciela bella, qué espectáculo!! ❤️ Me da tanta emoción leerte porque sé las ganas que tenías de lograrlo. Ya no se tira nada más nunca, ¡mira esa miga infladita! Te mando un abrazo gigante, te mereces este momento de triunfo ✨",
     replyTime: "7:25 p. m.",
     statusTime: "7:31",
     battery: 94,
