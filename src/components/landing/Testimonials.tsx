@@ -73,7 +73,7 @@ const chats = [
     reply:
       "¡¡Mi Graciela bella, qué espectáculo!! ❤️ Me da tanta emoción leerte porque sé las ganas que tenías de lograrlo. Ya no se tira nada más nunca, ¡mira esa miga infladita! Te mando un abrazo gigante, te mereces este momento de triunfo ✨",
     replyTime: "19:25",
-    statusTime: "7:31",
+    statusTime: "19:31",
     battery: 94,
   },
 ];
