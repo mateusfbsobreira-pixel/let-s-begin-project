@@ -62,8 +62,9 @@ export function FinalOffer() {
             <p className="text-lg text-artisan-ink/50">
               Valor real de todo el paquete: <span className="line-through">$230.00 USD</span>
             </p>
-            <p className="mt-3 text-lg font-bold uppercase text-artisan-ink">Hoy por solo:</p>
+            <p className="mt-3 text-lg font-bold uppercase text-artisan-ink">Precio de lanzamiento:</p>
             <div className="mt-1 flex flex-wrap items-center justify-center gap-x-3 gap-y-2">
+
               <span className="text-4xl font-black leading-tight text-emerald-cta sm:text-5xl">
                 SOLO $9.90 DÓLARES AMERICANOS <span className="whitespace-nowrap">(USD)</span>
               </span>
