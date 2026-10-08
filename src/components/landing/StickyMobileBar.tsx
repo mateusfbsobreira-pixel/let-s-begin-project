@@ -26,14 +26,15 @@ export function StickyMobileBar() {
             <p className="flex items-baseline gap-2 leading-none">
               <span className="text-xs text-cream/50 line-through">$230</span>
               <span className="whitespace-nowrap text-lg font-black text-gold sm:text-xl">
-                $9.90 Dólares
+                $9.90 Dólares (USD)
               </span>
             </p>
             <p className="mt-1.5 flex items-center gap-1 whitespace-nowrap text-[11px] font-semibold text-cream/75 sm:text-xs">
               <span className="font-bold text-gold-bright">Precio de Lanzamiento</span>
             </p>
-            <p className="text-[9px] font-bold text-emerald-400/80 sm:text-[10px]">Pago único para siempre · Sin suscripciones</p>
-            <p className="text-[9px] font-semibold text-cream/60 sm:text-[10px]">💡 Precio en USD — Hotmart convierte a tu moneda</p>
+            <p className="text-[9px] font-bold text-emerald-400/80 sm:text-[10px]">✅ Pago único · Sin mensualidades · Garantía 7 días</p>
+            <p className="text-[9px] font-semibold text-cream/60 sm:text-[10px]">💡 Hotmart convierte a tu moneda local</p>
+
           </div>
 
           <Button
