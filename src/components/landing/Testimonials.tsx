@@ -26,7 +26,7 @@ import { CHECKOUT_URL } from "./config";
 
 const mainVideo = {
   src: sofiaVideo.url,
-  tag: "⭐ Testimonio en Video · Carmen (57 años, México)",
+  tag: "⭐ Testimonio en Video · Carmen Ortiz (57 años) — Guadalajara, México",
   quote: "«Mi esposo me dijo para qué gastar... hoy no compra pan en la panadería, solo quiere el mío.»",
 };
 void carmenVideo;
@@ -35,43 +35,46 @@ import ugcRosa from "@/assets/ugc-rosa-bread.jpg";
 
 const chats = [
   {
-    name: "María González",
+    name: "Teresa M.",
+    meta: "52 años · México",
     photo: mariaPhoto,
     avatar: mariaAvatar,
-    photoAlt: "María González mostrando su hogaza de masa madre recién horneada",
+    photoAlt: "Teresa M. mostrando su hogaza de masa madre recién horneada",
     incoming:
       "¡Hola Chef! No puedo creer lo que logré este domingo... ¡mira esta hogaza! Mi esposo pensó que la compré en una panadería francesa 😭🥖❤️",
     incomingTime: "10:42 a. m.",
     reply:
-      "¡Qué belleza de hogaza, María! Ese alveolado y el greñado están de campeonato mundial. ¡Felicidades, Maestra Panadera! 👨‍🍳✨",
+      "¡Qué belleza de hogaza, Teresa! Ese alveolado y el greñado están de campeonato mundial. ¡Felicidades, Maestra Panadera! 👨‍🍳✨",
     replyTime: "10:44 a. m.",
     statusTime: "10:47",
     battery: 87,
   },
   {
-    name: "Carlos Rodríguez",
+    name: "María del Pilar S.",
+    meta: "66 años · España",
     photo: carlosPhoto,
     avatar: carlosAvatar,
-    photoAlt: "Carlos Rodríguez sosteniendo baguettes artesanales en papel kraft",
+    photoAlt: "María del Pilar S. sosteniendo baguettes artesanales en papel kraft",
     incoming:
       "Con la calculadora del Chef IA vendí mis primeras 8 baguettes hoy a los vecinos. ¡Recuperé los $9.90 y ya tengo 14 pedidos! 🚀💰",
     incomingTime: "4:15 p. m.",
     reply:
-      "¡Brutal resultado Carlos! Ese es exactamente el poder de calcular bien los costos y la fermentación. 👏🔥",
+      "¡Brutal resultado, María del Pilar! Ese es exactamente el poder de calcular bien los costos y la fermentación. 👏🔥",
     replyTime: "4:18 p. m.",
     statusTime: "4:23",
     battery: 63,
   },
   {
-    name: "Sofía Alarcón",
+    name: "Graciela F.",
+    meta: "58 años · Argentina",
     photo: sofiaPhoto,
     avatar: sofiaAvatar,
-    photoAlt: "Sofía Alarcón mostrando una focaccia con romero recién horneada",
+    photoAlt: "Graciela F. mostrando una focaccia con romero recién horneada",
     incoming:
       "Llevaba meses intentando con YouTube y la masa se me moría al 4to día. Le pregunté al Chef IA y hoy dobló su tamaño. ¡Miren esta focaccia! 🙏✨",
     incomingTime: "7:22 p. m.",
     reply:
-      "¡Esa masa madre está súper activa, Sofía! La focaccia se ve dorada y crujiente. ¡A disfrutarla en familia! 💪🥖",
+      "¡Esa masa madre está súper activa, Graciela! La focaccia se ve dorada y crujiente. ¡A disfrutarla en familia! 💪🥖",
     replyTime: "7:25 p. m.",
     statusTime: "7:31",
     battery: 94,
@@ -80,20 +83,20 @@ const chats = [
 
 const ugcPhotos = [
   {
-    src: ugcRosa,
-    alt: "Pan casero rústico fatiado de Rosa María R.",
-    name: "Rosa María R.",
-    age: "62 años",
-    city: "Bogotá, Colombia",
-    quote: "Nunca en mi vida había hecho pan. Tenía miedo de no entender el app, pero es tan fácil como mandar un audio de WhatsApp. Mis nietos se lo comieron todo en una tarde.",
+    src: ugcCarmen,
+    alt: "Pan redondo con corteza dorada de Silvia Valenzuela",
+    name: "Silvia Valenzuela",
+    age: "49 años",
+    city: "Santiago, Chile",
+    quote: "Me ahorré una fortuna y cuidé la salud de mi familia: dejé el pan lleno de conservantes. Ahora lo hago con 4 ingredientes comunes de la alacena y sé exactamente lo que comen mis hijos.",
   },
   {
-    src: ugcCarmen,
-    alt: "Pan redondo con corteza dorada de Elena S.",
-    name: "Elena S.",
-    age: "54 años",
-    city: "Santiago, Chile",
-    quote: "Me ahorré una fortuna. Antes compraba pan caro artesanal, ahora lo hago con 4 ingredientes comunes de la alacena y la Chef virtual me responde cualquier duda al segundo.",
+    src: ugcRosa,
+    alt: "Pan casero rústico fatiado de Rosa María Benavides",
+    name: "Rosa María Benavides",
+    age: "64 años",
+    city: "Lima, Perú",
+    quote: "Nunca pensé que entendería el celular, pero el Modo Cocina deja la pantalla encendida mientras amaso. El orgullo de ver mi pan dorado crecer en el horno no tiene precio.",
   },
 ];
 
