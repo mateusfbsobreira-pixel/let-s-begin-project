@@ -1,58 +1,89 @@
-import carmenHistoria from "@/assets/carmen-historia.jpg";
+import carmenCarta from "@/assets/carmen-carta.jpg";
+import { CHECKOUT_URL } from "./config";
 
-const P = "text-base sm:text-lg lg:text-xl leading-loose font-normal not-italic";
+const P = "text-lg leading-relaxed text-artisan-ink/85 sm:text-xl";
 
 export function EpiphanyStory() {
   return (
-    <section className="relative overflow-hidden border-y border-gold/20 bg-gradient-to-b from-oven-black via-oven-soft to-oven-black">
+    <section className="relative overflow-hidden border-y border-gold/20 bg-gradient-to-b from-oven-black via-oven-soft to-oven-black px-4 py-16 sm:py-24">
       <div className="warm-section-glow absolute inset-0" aria-hidden />
-      <div className="relative mx-auto max-w-3xl px-4 py-16 sm:py-24">
-        <div className="text-center">
-          <span className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-gold/10 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-gold-bright">
-            🌾 Una Historia Real
-          </span>
-          <h2 className="mt-6 font-serif text-2xl font-bold leading-tight text-cream sm:text-4xl lg:text-5xl">
-            La Historia de Carmen — O Cómo Un Pan Cambió Todo
-          </h2>
-          <div aria-hidden className="mt-6 flex items-center justify-center gap-3 text-gold/60">
-            <span className="h-px w-16 bg-gold/40" />
-            <span>🌾</span>
-            <span className="h-px w-16 bg-gold/40" />
+      <div className="relative mx-auto max-w-6xl">
+        <div className="relative overflow-hidden rounded-3xl border border-gold/30 bg-paper p-6 shadow-xl sm:p-10">
+          <div className="text-center">
+            <span className="inline-block rounded-full bg-gold px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-artisan-ink">
+              🥖 Historia Real de Una Alumna Fundadora
+            </span>
           </div>
-        </div>
 
-        <figure className="mx-auto mt-10 max-w-sm">
-          <img
-            src={carmenHistoria}
-            alt="Carmen, 58 años, sosteniendo su primer pan artesanal en su cocina en Bogotá"
-            width={1024}
-            height={1024}
-            loading="lazy"
-            decoding="async"
-            className="w-full rounded-2xl border-2 border-gold/30 object-cover shadow-xl"
-          />
-          <figcaption className="mt-3 text-center text-sm text-cream/60">
-            📸 Carmen, 58 años — Bogotá, Colombia. Su primer pan dorado, un domingo en familia.
-          </figcaption>
-        </figure>
+          <div className="mt-8 grid gap-8 lg:grid-cols-[2fr_3fr] lg:items-start">
+            <figure className="lg:sticky lg:top-24">
+              <img
+                src={carmenCarta}
+                alt="Carmen, 57 años, sosteniendo su pan rústico partido a la mitad en su cocina"
+                width={896}
+                height={1120}
+                loading="lazy"
+                decoding="async"
+                className="aspect-[4/5] w-full rounded-2xl border-2 border-gold/40 object-cover shadow-lg"
+              />
+            </figure>
 
-        <div className="mt-10 space-y-5 rounded-2xl border-2 border-gold/30 bg-oven-deep/80 p-6 text-left shadow-xl sm:p-10">
-          <p className={`${P} text-cream/90`}>
-            Carmen tenía 58 años y vivía en Bogotá. Intentó por años aprender a hacer pan artesanal. Compró libros de recetas y vio un montón de videos en YouTube, y cada vez que abría el horno… otro ladrillo. Su familia se reía con cariño, pero ella sentía vergüenza.{" "}
-            <span className="font-semibold text-gold-bright">"¿Para qué gasto en harina si siempre me sale mal?"</span>
-          </p>
-          <p className={`${P} text-cream/90`}>
-            Un día su hija le mostró una app en el celular. Carmen desconfió.{" "}
-            <span className="font-semibold text-gold-bright">"¿Una app? Yo no sé de tecnología."</span>{" "}
-            Pero tocó 1 botón y habló: <span className="font-semibold text-cream">"Mi masa está pegajosa, ¿qué hago?"</span> En 2 segundos, el Chef IA le respondió con voz, como una amiga paciente.
-          </p>
-          <p className={`${P} text-cream/95`}>
-            Ese domingo, por primera vez en años, Carmen abrió el horno y encontró… un pan dorado, crujiente por fuera, esponjosito por dentro. Su nieta de 8 años le dijo:{" "}
-            <span className="font-bold text-gold-bright">"Abuela, ¡huele como la casa de la bisabuela!"</span>
-          </p>
-          <p className={`${P} font-semibold text-emerald-400`}>
-            Carmen no compró tecnología. Carmen compró el orgullo de un domingo en familia.
-          </p>
+            <div>
+              <h2 className="font-serif text-3xl font-bold leading-tight text-artisan-ink sm:text-4xl">
+                La Carta de Carmen
+              </h2>
+              <div className="mt-6 space-y-5">
+                <p className={`${P} font-serif text-2xl font-bold text-artisan-ink`}>
+                  «Durante meses me sentí una pésima cocinera...
+                </p>
+                <p className={P}>
+                  Compraba harinas caras, miraba videos en YouTube y seguía recetas en PDF. Pero siempre pasaba lo mismo: la pantalla del teléfono se me apagaba justo cuando tenía las manos llenas de masa, los tiempos nunca me coincidían y mis panes salían duros como un ladrillo. Mi familia los dejaba en la mesa y yo terminaba tirando los ingredientes a la basura con una frustración enorme.
+                </p>
+                <p className={P}>
+                  Un día vi el anuncio de La Casa del Pan. Mi esposo me miró y me dijo:{" "}
+                  <span className="font-semibold text-wine">"¿Otra vez vas a gastar en eso, Carmen?"</span>.
+                </p>
+                <p className={P}>
+                  Dudé un momento, pero cuando vi que eran solo nueve dólares con noventa, un solo pago para siempre y con garantía, me dije:{" "}
+                  <span className="font-semibold text-artisan-ink">"¿Qué pierdo por probar?"</span>.
+                </p>
+                <p className={P}>
+                  Ese mismo sábado preparé la masa. Cuando sentí que se me pegaba en las manos y no sabía qué hacer, abrí el chat y le pregunté al Chef virtual. ¡Me contestó a los dos segundos! Me dijo exactamente cómo corregir la humedad y cuándo encender el horno. El Modo Cocina mantuvo la pantalla encendida todo el tiempo, sin tener que tocar el celular con las manos sucias.
+                </p>
+                <p className={`${P} font-semibold text-artisan-ink`}>
+                  El domingo por la mañana, toda mi casa olía a panadería europea.
+                </p>
+                <p className={P}>
+                  Cuando saqué el pan del horno, la corteza crujía de verdad y por dentro estaba suavecito como una nube. Mis hijos repitieron tres veces y mi esposo, el mismo que me había dicho que no gastara, me dio un beso y me dijo:{" "}
+                  <span className="font-bold text-emerald-cta">"Vieja, por favor no vuelvas a comprar pan en la panadería"</span>.
+                </p>
+                <p className={`${P} rounded-xl border-l-4 border-gold bg-artisan-cream p-4 font-semibold text-artisan-ink`}>
+                  Si yo pude lograrlo a mis 57 años y sin saber nada de tecnología, tú también puedes. Es la mejor platita que he invertido en mi vida.»
+                </p>
+              </div>
+
+              <div className="mt-6 flex flex-wrap items-center gap-3 border-t border-gold/30 pt-5">
+                <p className="font-serif text-lg font-bold text-artisan-ink">
+                  Carmen Ortiz (57 años) — Guadalajara, México
+                </p>
+                <span className="rounded-full border border-gold/50 bg-gold/15 px-3 py-1 text-xs font-bold text-artisan-ink">
+                  ⭐ Alumna Fundadora · Certificada 2026
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-10 text-center">
+            <a
+              href={CHECKOUT_URL}
+              className="inline-flex min-h-[56px] w-full max-w-lg items-center justify-center rounded-full bg-emerald-cta px-6 py-4 text-base font-extrabold uppercase text-paper shadow-xl transition-all hover:scale-105 hover:bg-emerald-cta-hover sm:text-lg"
+            >
+              QUIERO VIVIR LA MISMA EXPERIENCIA POR $9.90 →
+            </a>
+            <p className="mt-3 text-sm font-semibold text-artisan-ink/70 sm:text-base">
+              Acceso inmediato para siempre · Menos de lo que cuestan 2 panes de panadería
+            </p>
+          </div>
         </div>
       </div>
     </section>
