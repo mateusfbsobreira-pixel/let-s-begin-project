@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { CHECKOUT_URL } from "./config";
+import { CurrencyBox } from "./CurrencyBox";
 import toolChef from "@/assets/tool-chef-ia.jpg";
 import toolCocina from "@/assets/tool-modo-cocina.jpg";
 import toolTimer from "@/assets/tool-temporizadores.jpg";
@@ -97,28 +98,36 @@ export function MasterBooks() {
             Valor total real de todo el paquete:{" "}
             <span className="text-red-offer line-through decoration-gold decoration-2">$230.00 USD</span>
           </p>
-          <p className="mt-4 text-4xl font-black leading-tight text-emerald-cta sm:text-5xl">
-            HOY EN ACCESO FUNDADORAS: SOLO $9.90 USD
-          </p>
-          <span className="mt-4 inline-block rounded-full bg-red-offer px-4 py-2 text-sm font-extrabold uppercase text-paper sm:text-base">
-            🔥 96% de Descuento · Pago Único Para Siempre · Sin Suscripciones ni Mensualidades
-          </span>
+          <div className="mt-4 flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
+            <p className="text-3xl font-black leading-tight text-emerald-cta sm:text-4xl">
+              SOLO $9.90 DÓLARES AMERICANOS <span className="whitespace-nowrap">(USD)</span>
+            </p>
+            <span className="rounded-full bg-red-offer px-4 py-2 text-xs font-extrabold uppercase tracking-wide text-paper sm:text-sm">
+              🔥 96% de Descuento · Pago Único
+            </span>
+          </div>
           <p className="mt-4 text-base italic leading-relaxed text-artisan-ink/75 sm:text-lg">
             Acceso vitalicio a los 8 libros en PDF para descargar + Acceso ilimitado al App PWA (0 MB de espacio, funciona en cualquier celular).
           </p>
           <Button
             asChild
-            className="mt-6 h-auto min-h-[56px] w-full max-w-md whitespace-normal rounded-full bg-emerald-cta px-6 py-4 text-base font-extrabold text-paper shadow-xl transition-all hover:scale-105 hover:bg-emerald-cta-hover sm:text-lg"
+            className="mt-6 h-auto min-h-[56px] w-full max-w-md whitespace-normal rounded-full bg-emerald-cta px-6 py-4 text-paper shadow-xl transition-all hover:scale-105 hover:bg-emerald-cta-hover"
           >
-            <a href={CHECKOUT_URL}>QUIERO EL PAQUETE COMPLETO POR $9.90 USD →</a>
+            <a href={CHECKOUT_URL}>
+              <span className="flex flex-col items-center justify-center leading-tight">
+                <span className="text-base font-extrabold uppercase sm:text-lg">QUIERO EL PAQUETE COMPLETO</span>
+                <span className="text-[13px] font-bold text-gold-bright sm:text-sm">
+                  POR SOLO $9.90 DÓLARES (USD) →
+                </span>
+              </span>
+            </a>
           </Button>
-          <p className="mt-3 text-sm leading-relaxed text-artisan-ink/70">
-            💡 Precio fijado en $9.90 USD (Dólares Americanos). En la siguiente pantalla de pago seguro, Hotmart mostrará el valor exacto convertido a la moneda de tu país (ej: aprox. $185 MXN, $42.000 COP, S/ 38 PEN).
+          <p className="mt-3 text-[13px] font-bold leading-relaxed text-artisan-ink sm:text-sm">
+            ✅ Pago único para siempre · Sin suscripciones mensuales · Garantía blindada de 7 días
           </p>
-          <p className="mt-3 text-sm font-semibold text-artisan-ink/70">
-            ✅ Garantía Blindada de 7 Días · Pago 100% Seguro por Hotmart
-          </p>
+          <CurrencyBox className="mt-5" />
         </div>
+
       </div>
     </section>
   );

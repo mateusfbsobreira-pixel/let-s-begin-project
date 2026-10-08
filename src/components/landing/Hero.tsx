@@ -4,6 +4,7 @@ import { CHECKOUT_URL } from "./config";
 import { PhoneMockup } from "./PhoneMockup";
 import { FloatingCards } from "./FloatingCards";
 import { PaymentMethods } from "./PaymentMethods";
+import { CurrencyBox } from "./CurrencyBox";
 
 const TRUST_SIGNALS = [
   { icon: Lock, text: "Pago 100% Seguro por Hotmart" },
@@ -74,8 +75,18 @@ export function Hero() {
             </div>
 
 
+            {/* Price block */}
+            <div className="mt-9 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 lg:justify-start">
+              <p className="text-2xl font-black uppercase leading-tight text-cream sm:text-3xl">
+                Solo $9.90 Dólares Americanos <span className="whitespace-nowrap">(USD)</span>
+              </p>
+              <span className="rounded-full bg-emerald-cta px-3.5 py-1.5 text-xs font-extrabold uppercase tracking-wide text-paper sm:text-sm">
+                96% de Descuento · Pago Único
+              </span>
+            </div>
+
             {/* CTA */}
-            <div className="mt-9">
+            <div className="mt-6">
               <a
                 href={CHECKOUT_URL}
                 className="group relative inline-flex min-h-[56px] w-full items-center justify-center overflow-hidden rounded-full bg-emerald-cta px-8 py-4 text-lg font-extrabold uppercase tracking-wide text-cream shadow-[0_10px_40px_-8px_rgba(22,163,74,0.6)] transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_14px_50px_-6px_rgba(22,163,74,0.8)] sm:w-auto sm:py-5"
@@ -84,46 +95,24 @@ export function Hero() {
                   aria-hidden="true"
                   className="absolute inset-y-0 w-1/3 animate-shine bg-gradient-to-r from-transparent via-white/30 to-transparent"
                 />
-                <span className="relative min-h-[56px] leading-tight">QUIERO EL PAQUETE COMPLETO POR $9.90 USD →</span>
+                <span className="relative flex min-h-[56px] flex-col items-center justify-center leading-tight">
+                  <span className="text-base font-extrabold sm:text-lg">QUIERO EL PAQUETE COMPLETO</span>
+                  <span className="text-[13px] font-bold text-gold-bright sm:text-sm">
+                    POR SOLO $9.90 DÓLARES (USD) →
+                  </span>
+                </span>
               </a>
 
-              <p className="mt-3 text-center text-[11px] leading-relaxed text-cream/80 sm:text-xs">
-                💡 Precio fijado en $9.90 USD (Dólares Americanos). En la siguiente pantalla de pago seguro, Hotmart mostrará el valor exacto convertido a la moneda de tu país (ej: aprox. $185 MXN, $42.000 COP, S/ 38 PEN).
+              <p className="mt-3 text-center text-[13px] font-bold leading-relaxed text-emerald-400/90 sm:text-sm">
+                ✅ Pago único para siempre · Sin suscripciones mensuales · Garantía blindada de 7 días
               </p>
 
-              <p className="mt-3 text-center text-xs font-bold uppercase tracking-wider text-emerald-400/90 sm:text-sm">
-                ✅ Pago único para siempre · Sin suscripciones ni mensualidades · 7 Días de Garantía
-              </p>
 
               <PaymentMethods />
 
-              {/* Local-currency micro-box: Hotmart converts at checkout */}
-              <div className="mx-auto mt-4 max-w-xl rounded-xl border border-gold/30 bg-oven/80 p-3.5 text-center lg:mx-0">
-                <p className="text-[11px] font-extrabold uppercase tracking-wide text-gold-bright sm:text-xs">
-                  🌎 Pagas en Tu Moneda Local — Hotmart Convierte al Instante
-                </p>
-                <ul className="mt-2.5 flex flex-wrap items-center justify-center gap-1.5 lg:justify-start">
-                  {[
-                    "🇲🇽 ~$185 MXN",
-                    "🇨🇴 ~$42.000 COP",
-                    "🇨🇱 ~$9.500 CLP",
-                    "🇵🇪 ~S/38 PEN",
-                    "🇪🇸 ~€9,20 EUR",
-                  ].map((currency) => (
-                    <li
-                      key={currency}
-                      className="rounded-lg border border-gold/25 bg-cream/95 px-2.5 py-1 text-[11px] font-bold text-oven-deep sm:text-xs"
-                    >
-                      {currency}
-                    </li>
-                  ))}
-                </ul>
-                <p className="mt-2.5 text-[11px] font-medium leading-relaxed text-cream/75 sm:text-xs">
-                  *Al tocar el botón serás dirigida a Hotmart (100% seguro),
-                  donde verás el valor exacto en la moneda de tu país. Acepta
-                  OXXO, PSE, Baloto, PagoEfectivo y Tarjeta.
-                </p>
-              </div>
+              {/* Local-currency conversion box */}
+              <CurrencyBox className="mx-auto mt-4 max-w-xl lg:mx-0" />
+
 
 
               {/* Trust signals */}

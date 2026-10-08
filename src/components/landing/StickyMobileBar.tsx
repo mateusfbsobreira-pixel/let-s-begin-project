@@ -26,25 +26,31 @@ export function StickyMobileBar() {
             <p className="flex items-baseline gap-2 leading-none">
               <span className="text-xs text-cream/50 line-through">$230</span>
               <span className="whitespace-nowrap text-lg font-black text-gold sm:text-xl">
-                $9.90 Dólares
+                $9.90 Dólares (USD)
               </span>
             </p>
             <p className="mt-1.5 flex items-center gap-1 whitespace-nowrap text-[11px] font-semibold text-cream/75 sm:text-xs">
               <span className="font-bold text-gold-bright">Precio de Lanzamiento</span>
             </p>
-            <p className="text-[9px] font-bold text-emerald-400/80 sm:text-[10px]">Pago único para siempre · Sin suscripciones</p>
-            <p className="text-[9px] font-semibold text-cream/60 sm:text-[10px]">💡 Precio en USD — Hotmart convierte a tu moneda</p>
+            <p className="text-[9px] font-bold text-emerald-400/80 sm:text-[10px]">✅ Pago único · Sin mensualidades · Garantía 7 días</p>
+            <p className="text-[9px] font-semibold text-cream/60 sm:text-[10px]">💡 Hotmart convierte a tu moneda local</p>
+
           </div>
 
           <Button
             asChild
-            className="h-auto shrink-0 rounded-full bg-emerald-cta px-4 py-3 text-sm font-bold text-paper shadow-xl transition-transform hover:scale-[1.03] hover:bg-emerald-cta-hover sm:px-7 sm:text-base"
+            className="h-auto shrink-0 rounded-full bg-emerald-cta px-4 py-2.5 text-paper shadow-xl transition-transform hover:scale-[1.03] hover:bg-emerald-cta-hover sm:px-7 sm:py-3"
           >
             <a href={CHECKOUT_URL}>
-              <span className="sm:hidden">QUIERO EL PAQUETE »</span>
-              <span className="hidden sm:inline">QUIERO EL PAQUETE COMPLETO POR $9.90 USD »</span>
+              <span className="flex flex-col items-center justify-center leading-tight">
+                <span className="text-base font-extrabold uppercase sm:text-lg">QUIERO EL PAQUETE COMPLETO</span>
+                <span className="text-[13px] font-bold text-gold-bright sm:text-sm">
+                  POR SOLO $9.90 DÓLARES (USD) →
+                </span>
+              </span>
             </a>
           </Button>
+
         </div>
       </div>
     </div>
