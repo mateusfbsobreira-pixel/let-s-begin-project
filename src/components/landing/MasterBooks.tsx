@@ -4,12 +4,12 @@ import chefAvatar from "@/assets/maria-avatar.jpg";
 
 const books = [
   { n: 1, title: "El Despertar de la Masa Madre Fácil", benefit: "Tu masa madre viva en 5 días", value: "$25.00", img: "/images/livro-principal.webp" },
-  { n: 2, title: "Panes Rústicos Europeos de Corteza Crujiente", benefit: "Corteza que cruje al cortar", value: "$25.00", img: "/images/bonus-1.webp" },
-  { n: 3, title: "Panes Rápidos en Sartén y Sin Horno", benefit: "Listos en 30 minutos", value: "$20.00", img: "/images/bonus-2.webp" },
-  { n: 4, title: "Brioches, Roscas y Panes Dulces de la Abuela", benefit: "Suaves como una nube", value: "$25.00", img: "/images/bonus-3.webp" },
-  { n: 5, title: "Panes Saludables, Integrales y con Semillas", benefit: "Sin conservantes, 100% natural", value: "$20.00", img: "/images/bonus-4.webp" },
-  { n: 6, title: "Focaccias y Panes Rellenos Italianos", benefit: "Solo 4 ingredientes", value: "$20.00", img: "/images/bonus-5.webp" },
-  { n: 7, title: "Baguettes y Panes de Desayuno Exprés", benefit: "Sin tiempos complicados", value: "$20.00", img: "/images/bonus-6.webp" },
+  { n: 2, title: "Panes Rústicos Europeos de Corteza Crujiente", benefit: "Corteza que cruje al cortar", value: "$25.00", img: "/images/bonus-1-paes-gourmet.webp" },
+  { n: 3, title: "Panes Rápidos en Sartén y Sin Horno", benefit: "Listos en 30 minutos", value: "$20.00", img: "/images/bonus-2-pizzas.webp" },
+  { n: 4, title: "Brioches, Roscas y Panes Dulces de la Abuela", benefit: "Suaves como una nube", value: "$25.00", img: "/images/bonus-3-brownies.webp" },
+  { n: 5, title: "Panes Saludables, Integrales y con Semillas", benefit: "Sin conservantes, 100% natural", value: "$20.00", img: "/images/bonus-4-masas-dulces.webp" },
+  { n: 6, title: "Focaccias y Panes Rellenos Italianos", benefit: "Solo 4 ingredientes", value: "$20.00", img: "/images/bonus-5-vender.webp" },
+  { n: 7, title: "Baguettes y Panes de Desayuno Exprés", benefit: "Sin tiempos complicados", value: "$20.00", img: "/images/bonus-6-galletas.webp" },
   { n: 8, title: "Secretos de Horneado y Conservación Prolongada", benefit: "Pan fresco toda la semana", value: "$20.00", img: "/images/todos-productos.webp" },
 ];
 
