@@ -30,7 +30,7 @@ const mainVideo = {
   quote: "«Mi esposo me dijo para qué gastar... hoy no compra pan en la panadería, solo quiere el mío.»",
 };
 void carmenVideo;
-import ugcCarmen from "@/assets/ugc-carmen-bread.jpg";
+import ugcSilvia from "@/assets/ugc-silvia-marraqueta.jpg";
 import ugcRosa from "@/assets/ugc-rosa-bread.jpg";
 
 const chats = [
@@ -80,12 +80,13 @@ const chats = [
 
 const ugcPhotos = [
   {
-    src: ugcCarmen,
-    alt: "Pan redondo con corteza dorada de Silvia Valenzuela",
+    src: ugcSilvia,
+    alt: "Marraqueta chilena recién horneada, con un gomo abierto a mano mostrando la miga, foto enviada por Silvia Valenzuela",
     name: "Silvia Valenzuela",
     age: "49 años",
     city: "Santiago, Chile",
-    quote: "Me ahorré una fortuna y cuidé la salud de mi familia: dejé el pan lleno de conservantes. Ahora lo hago con 4 ingredientes comunes de la alacena y sé exactamente lo que comen mis hijos.",
+    quote:
+      "En mi casa no se puede vivir sin un buen pan al desayuno. Estaba gastando una fortuna comprando afuera porque los panes de supermercado vienen llenos de químicos y conservantes. Con la guía del Chef virtual, aprendí a hornearlo en mi horno normal: ¡quedó con esa corteza crujiente que suena al partirlo y una miga suavecita! Mis hijos le pusieron mantequilla derretida y no dejaron ni una miga. Saber exactamente lo que come mi familia no tiene precio.",
   },
   {
     src: ugcRosa,
