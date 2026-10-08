@@ -26,7 +26,7 @@ import { CHECKOUT_URL } from "./config";
 
 const mainVideo = {
   src: sofiaVideo.url,
-  tag: "⭐ Testimonio en Video · Carmen Ortiz (57 años) — Guadalajara, México",
+  tag: "⭐ Testimonio en Video · Carmen Ortiz (61 años) — Guadalajara, México",
   quote: "«Mi esposo me dijo para qué gastar... hoy no compra pan en la panadería, solo quiere el mío.»",
 };
 void carmenVideo;

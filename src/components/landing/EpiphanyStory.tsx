@@ -19,7 +19,7 @@ export function EpiphanyStory() {
             <figure className="lg:sticky lg:top-24">
               <img
                 src={carmenCarta}
-                alt="Marta Elena, 61 años, sosteniendo su pan rústico partido a la mitad en su cocina"
+                alt="Marta Elena, 57 años, sosteniendo su pan rústico partido a la mitad en su cocina"
                 width={896}
                 height={1120}
                 loading="lazy"
@@ -64,7 +64,7 @@ export function EpiphanyStory() {
 
               <div className="mt-6 flex flex-wrap items-center gap-3 border-t border-gold/30 pt-5">
                 <p className="font-serif text-lg font-bold text-artisan-ink">
-                  Marta Elena Restrepo (61 años) — Medellín, Colombia
+                  Marta Elena Restrepo (57 años) — Medellín, Colombia
                 </p>
                 <span className="rounded-full border border-gold/50 bg-gold/15 px-3 py-1 text-xs font-bold text-artisan-ink">
                   ⭐ Alumna Fundadora · Certificada 2026
