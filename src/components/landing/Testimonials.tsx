@@ -22,10 +22,14 @@ import sofiaAvatar from "@/assets/sofia-avatar.jpg";
 import carmenVideo from "@/assets/depoimento-carmen.mp4.asset.json";
 import sofiaVideo from "@/assets/depoimento-sofia.mp4.asset.json";
 
-const videoTestimonials = [
-  { src: carmenVideo.url, caption: "Carmen, 62 años — Medellín 🇨🇴" },
-  { src: sofiaVideo.url, caption: "Sofía, 57 años — Puebla 🇲🇽" },
-];
+import { CHECKOUT_URL } from "./config";
+
+const mainVideo = {
+  src: sofiaVideo.url,
+  tag: "⭐ Testimonio en Video · Carmen (57 años, México)",
+  quote: "«Mi esposo me dijo para qué gastar... hoy no compra pan en la panadería, solo quiere el mío.»",
+};
+void carmenVideo;
 import ugcCarmen from "@/assets/ugc-carmen-bread.jpg";
 import ugcRosa from "@/assets/ugc-rosa-bread.jpg";
 
@@ -76,20 +80,20 @@ const chats = [
 
 const ugcPhotos = [
   {
-    src: ugcCarmen,
-    alt: "Pan artesanal de Carmen R. sobre una tabla de madera en su cocina",
-    name: "Carmen R.",
-    age: "58 años",
-    city: "Bogotá 🇨🇴",
-    quote: "Mi familia pensó que lo compré en una panadería francesa",
+    src: ugcRosa,
+    alt: "Pan casero rústico fatiado de Rosa María R.",
+    name: "Rosa María R.",
+    age: "62 años",
+    city: "Bogotá, Colombia",
+    quote: "Nunca en mi vida había hecho pan. Tenía miedo de no entender el app, pero es tan fácil como mandar un audio de WhatsApp. Mis nietos se lo comieron todo en una tarde.",
   },
   {
-    src: ugcRosa,
-    alt: "Rosa María T. sonriendo con su pan artesanal recién horneado",
-    name: "Rosa María T.",
-    age: "64 años",
-    city: "Lima 🇵🇪",
-    quote: "Mi masa madre dobló su tamaño en la primera vez",
+    src: ugcCarmen,
+    alt: "Pan redondo con corteza dorada de Elena S.",
+    name: "Elena S.",
+    age: "54 años",
+    city: "Santiago, Chile",
+    quote: "Me ahorré una fortuna. Antes compraba pan caro artesanal, ahora lo hago con 4 ingredientes comunes de la alacena y la Chef virtual me responde cualquier duda al segundo.",
   },
 ];
 
@@ -136,45 +140,38 @@ export function Testimonials() {
       <div className="relative mx-auto max-w-6xl">
         <header className="mx-auto max-w-3xl text-center">
           <span className="mb-3 inline-block rounded-full border border-[#C9972A]/40 bg-[#C9972A]/15 px-4 py-1.5 text-xs font-bold uppercase text-[#FCD34D]">
-            💬 Comunidad de alumnas en vivo
+            🥖 EXPERIENCIAS REALES
           </span>
           <h2 className="font-serif text-3xl font-bold leading-tight text-stone-100 sm:text-5xl">
-            Resultados Reales de Mujeres 50+ Como Tú
+            Lo Que Dicen Nuestras Alumnas Cuando Sacan Su Primer Pan del Horno
           </h2>
           <p className="mx-auto mt-3 max-w-2xl text-center text-base leading-relaxed text-stone-300 sm:text-lg">
-            Videos, fotos y conversaciones reales de nuestras alumnas
-            compartiendo sus primeros panes desde sus cocinas.
+            Más de 1.480 mujeres comunes, de 45 a 68 años, que pensaban que
+            hornear era difícil o que la tecnología no era para ellas.
           </p>
         </header>
 
-        {/* 1. VÍDEOS TESTIMONIO */}
-        <div className="mx-auto mt-12 grid max-w-3xl grid-cols-1 gap-8 sm:grid-cols-2">
-          {videoTestimonials.map((v) => (
-            <figure
-              key={v.caption}
-              className="overflow-hidden rounded-3xl border-2 border-[#C9972A]/60 bg-[#1F1008] shadow-2xl shadow-black/60 transition-all duration-300 hover:border-[#C9972A]"
-            >
-              <video
-                src={v.src}
-                controls
-                playsInline
-                preload="metadata"
-                controlsList="nodownload noplaybackrate noremoteplayback"
-                disablePictureInPicture
-                onContextMenu={(e) => e.preventDefault()}
-                className="aspect-[9/16] w-full bg-black object-contain"
-              />
-              <figcaption className="flex flex-col items-center gap-2 p-4 text-center">
-                <p className="text-base font-bold leading-snug text-stone-100">
-                  {v.caption}
-                </p>
-                <span className="rounded-full border border-[#C9972A]/40 bg-black/40 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-[#FCD34D]">
-                  ▶️ Toca para escuchar · Sin editar
-                </span>
-              </figcaption>
-            </figure>
-          ))}
-        </div>
+        {/* 1. VÍDEO PRINCIPAL */}
+        <figure className="mx-auto mt-12 max-w-md">
+          <div className="relative overflow-hidden rounded-2xl border-2 border-gold/40 bg-black shadow-2xl">
+            <span className="pointer-events-none absolute left-3 right-3 top-3 z-10 mx-auto w-fit rounded-full border border-gold/50 bg-black/70 px-3 py-1.5 text-center text-xs font-bold text-[#FCD34D] backdrop-blur-sm sm:text-sm">
+              {mainVideo.tag}
+            </span>
+            <video
+              src={mainVideo.src}
+              controls
+              playsInline
+              preload="metadata"
+              controlsList="nodownload noplaybackrate noremoteplayback"
+              disablePictureInPicture
+              onContextMenu={(e) => e.preventDefault()}
+              className="aspect-[9/16] w-full bg-black object-contain"
+            />
+          </div>
+          <figcaption className="mt-4 text-center text-lg font-semibold leading-relaxed text-stone-100">
+            {mainVideo.quote}
+          </figcaption>
+        </figure>
 
         {/* 2. FOTOS UGC */}
         <div className="mx-auto mt-12 grid max-w-4xl grid-cols-1 gap-6 sm:grid-cols-2">
@@ -214,7 +211,7 @@ export function Testimonials() {
             💬 Conversaciones reales de nuestras alumnas
           </h3>
           <p className="mx-auto mt-2 max-w-xl text-center text-sm leading-relaxed text-stone-400 sm:text-base">
-            Desliza para ver más →
+            💬 Mensajes y fotos compartidos espontáneamente en nuestra comunidad de alumnas. Desliza →
           </p>
 
           <div className="-mx-4 mt-6 flex snap-x snap-mandatory gap-5 overflow-x-auto px-4 pb-4 [scrollbar-width:thin]">
@@ -317,6 +314,15 @@ export function Testimonials() {
           <p className="max-w-3xl text-sm font-semibold leading-relaxed text-stone-100 sm:text-base">
             Calificación promedio de 4.9/5 basada en más de 500 alumnas en
             Latinoamérica y España.
+          </p>
+          <a
+            href={CHECKOUT_URL}
+            className="mt-6 inline-flex min-h-[56px] items-center justify-center rounded-full bg-emerald-cta px-8 py-4 text-center text-base font-extrabold uppercase text-paper shadow-lg transition-colors hover:bg-emerald-cta-hover sm:text-lg"
+          >
+            QUIERO HORNEAR COMO ELLAS POR $9.90 →
+          </a>
+          <p className="text-sm text-stone-300">
+            Acceso inmediato para siempre · Garantía de 7 días
           </p>
         </div>
       </div>
