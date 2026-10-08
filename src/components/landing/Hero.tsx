@@ -36,47 +36,65 @@ export function Hero() {
           {/* Copy + CTA */}
           <div className="text-center lg:text-left">
             <span className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-surface/70 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-gold-bright shadow-[0_0_24px_rgba(201,151,42,0.2)]">
-              ✨ La Nueva Era de la Panadería · Edición 2026
+              🥖 Más de 1.480 Familias Ya Están Horneando con Este Método
             </span>
 
             <h1 className="text-shadow-gold mt-6 font-serif text-3xl font-bold leading-[1.18] text-cream sm:text-5xl lg:text-6xl">
-              Convierte Tu Cocina en una Auténtica{" "}
+              El Pan Calientito de la Abuela, Hecho por Tus Manos — Sin Culpa,{" "}
               <span className="bg-gradient-to-r from-gold via-gold-bright to-gold-deep bg-clip-text text-transparent">
-                Panadería Artesanal
+                Sin Conservantes
               </span>{" "}
-              — Con Tu Propia Aplicación Interactiva y un Chef IA en Tiempo Real
+              y Sin Complicaciones
             </h1>
 
-            <p className="mx-auto mt-6 max-w-3xl text-base font-medium leading-relaxed text-cream/90 sm:text-lg lg:mx-0">
-              Logra panes con corteza dorada y crujiente, alvéolos abiertos y
-              aroma de panadería europea desde el primer intento. Sin equipos
-              costosos, sin recetas confusas en PDF y con asistencia inteligente
-              paso a paso en tu celular.
+            <p className="mx-auto mt-6 max-w-3xl text-lg font-medium leading-loose text-cream/90 sm:text-xl lg:mx-0">
+              Aunque nunca hayas horneado, tu Chef IA te habla por voz y te
+              guía paso a paso con las manos en la masa. Toca 1 botón, habla,
+              y listo.
             </p>
+
+            {/* Confidence chips */}
+            <div className="mt-7 flex flex-wrap items-center justify-center gap-2.5 lg:justify-start">
+              {["Sin batidora", "Sin experiencia", "Con 1 toque en tu celular"].map(
+                (chip) => (
+                  <span
+                    key={chip}
+                    className="inline-flex items-center gap-1.5 rounded-full border border-gold/30 bg-gold/10 px-3.5 py-1.5 text-xs font-bold text-gold-bright sm:text-sm"
+                  >
+                    <Check className="h-3.5 w-3.5 text-emerald-cta" aria-hidden="true" />
+                    {chip}
+                  </span>
+                ),
+              )}
+            </div>
+
 
             {/* CTA */}
             <div className="mt-9">
               <a
                 href={CHECKOUT_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group relative inline-flex w-full items-center justify-center overflow-hidden rounded-full bg-emerald-cta px-8 py-4 text-sm font-extrabold uppercase tracking-wide text-cream shadow-[0_10px_40px_-8px_rgba(22,163,74,0.6)] transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_14px_50px_-6px_rgba(22,163,74,0.8)] sm:w-auto sm:text-base"
+                className="group relative inline-flex min-h-[56px] w-full items-center justify-center overflow-hidden rounded-full bg-emerald-cta px-8 py-4 text-lg font-extrabold uppercase tracking-wide text-cream shadow-[0_10px_40px_-8px_rgba(22,163,74,0.6)] transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_14px_50px_-6px_rgba(22,163,74,0.8)] sm:w-auto sm:py-5"
               >
                 <span
                   aria-hidden="true"
                   className="absolute inset-y-0 w-1/3 animate-shine bg-gradient-to-r from-transparent via-white/30 to-transparent"
                 />
-                SÍ, QUIERO MI APLICACIÓN + 8 LIBROS POR $6.90 DÓLARES »
+                <span className="relative min-h-[56px] leading-tight sm:hidden">QUIERO MI PAN ARTESANAL POR $9.90 →</span>
+                <span className="relative hidden min-h-[56px] items-center leading-tight sm:inline-flex">SÍ, QUIERO MI APP + 8 LIBROS POR $9.90 EN MI MONEDA →</span>
               </a>
+
+              <p className="mt-3 text-center text-xs font-bold uppercase tracking-wider text-emerald-400/90 sm:text-sm">
+                ✅ Pago Único · Sin Mensualidades · 7 Días de Garantía Total
+              </p>
 
               <PaymentMethods />
 
               <p className="mx-auto mt-4 max-w-xl text-xs font-medium leading-relaxed text-cream/75 sm:text-sm lg:mx-0">
-                *Pago único sin mensualidades. Precio en dólares americanos
-                ($6.90 Dólares). Al pagar, Hotmart lo convierte automáticamente
-                al valor exacto de tu moneda local (pesos mexicanos, colombianos,
-                chilenos, soles, etc.).
+                *Hotmart convierte $9.90 Dólares a tu moneda local al instante.
+                Acepta tarjeta, PIX, OXXO, Efecty y PagoEfectivo. 7 Días de
+                Garantía Total.
               </p>
+
 
               {/* Trust signals */}
               <ul className="mt-6 grid grid-cols-1 gap-2.5 text-left sm:grid-cols-2">

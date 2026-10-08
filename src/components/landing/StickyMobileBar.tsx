@@ -1,12 +1,9 @@
 import { useEffect, useState } from "react";
-import { Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { CHECKOUT_URL } from "./config";
-import { useCountdown } from "@/hooks/use-countdown";
 
 export function StickyMobileBar() {
   const [visible, setVisible] = useState(false);
-  const { label } = useCountdown();
 
   useEffect(() => {
     const onScroll = () => setVisible(window.scrollY > 420);
@@ -29,22 +26,22 @@ export function StickyMobileBar() {
             <p className="flex items-baseline gap-2 leading-none">
               <span className="text-xs text-cream/50 line-through">$230</span>
               <span className="whitespace-nowrap text-lg font-black text-gold sm:text-xl">
-                $6.90 Dólares
+                $9.90 Dólares
               </span>
             </p>
             <p className="mt-1.5 flex items-center gap-1 whitespace-nowrap text-[11px] font-semibold text-cream/75 sm:text-xs">
-              <Clock className="h-3 w-3 text-gold-bright" aria-hidden="true" />
-              Oferta expira en{" "}
-              <span className="font-mono font-bold text-gold-bright">{label}</span>
+              <span className="font-bold text-gold-bright">Precio de Lanzamiento</span>
             </p>
+            <p className="text-[9px] font-bold text-emerald-400/80 sm:text-[10px]">Pago único · Sin mensualidades</p>
           </div>
 
           <Button
             asChild
             className="h-auto shrink-0 rounded-full bg-emerald-cta px-4 py-3 text-sm font-bold text-paper shadow-xl transition-transform hover:scale-[1.03] hover:bg-emerald-cta-hover sm:px-7 sm:text-base"
           >
-            <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer">
-              Acceder por $6.90 Dólares »
+            <a href={CHECKOUT_URL}>
+              <span className="sm:hidden">Quiero Mi Pan »</span>
+              <span className="hidden sm:inline">Empezar a Hornear por $9.90 »</span>
             </a>
           </Button>
         </div>

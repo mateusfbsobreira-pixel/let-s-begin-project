@@ -321,15 +321,14 @@ export function AppTour() {
         {/* Header */}
         <div className="text-center mb-10">
           <span className="inline-flex items-center rounded-full border border-amber-500/30 text-amber-300 bg-amber-950/40 px-4 py-1.5 text-xs sm:text-sm font-bold uppercase tracking-wider">
-            📱 Explora Tu Plataforma por Dentro
+            📱 Mira Lo Fácil Que Es Usar Tu App
           </span>
           <h2 className="mt-5 font-serif text-2xl font-bold leading-tight text-cream sm:text-4xl">
-            Una Experiencia Diseñada Exclusivamente para Que Tus Panes Queden
-            Perfectos
+            Tan Fácil Que Tu Celular Se Convierte en Tu Mejor Amigo en la Cocina
           </h2>
-          <p className="mx-auto mt-3 max-w-3xl text-base leading-relaxed text-cream/85 sm:text-lg">
-            Haz clic en cada herramienta y descubre por qué más de 500 alumnos
-            ya no hornean sin ella.
+          <p className="mx-auto mt-3 max-w-3xl text-lg leading-relaxed text-cream/85 sm:text-xl">
+            No necesitas saber de tecnología. Si puedes enviar un mensaje de
+            WhatsApp, puedes usar esta app sin ningún problema.
           </p>
         </div>
 
@@ -371,21 +370,22 @@ export function AppTour() {
         >
           <p className="font-serif text-xl sm:text-2xl text-stone-100">
             Todo esto disponible en tu celular hoy por solo{" "}
-            <span className="text-emerald-400 font-bold">$6.90 Dólares</span>{" "}
+            <span className="text-emerald-400 font-bold">$9.90 Dólares</span>{" "}
             <span className="text-stone-300 text-base">
               (Pago único para siempre).
             </span>
           </p>
           <a
             href={CHECKOUT_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group relative mt-5 inline-flex items-center justify-center gap-2 overflow-hidden rounded-xl bg-emerald-cta px-8 py-4 text-sm sm:text-base font-bold uppercase tracking-wider text-white shadow-[0_10px_40px_-10px_rgba(22,163,74,0.6)] transition-transform hover:scale-105"
+            className="group relative mt-5 inline-flex items-center justify-center gap-2 overflow-hidden rounded-xl bg-emerald-cta px-8 py-4 text-base font-bold uppercase tracking-wider text-white shadow-[0_10px_40px_-10px_rgba(22,163,74,0.6)] transition-transform hover:scale-105"
           >
             <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/25 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
-            SÍ, Quiero Mi Aplicación Interactiva »
+            QUIERO EMPEZAR A HORNEAR POR $9.90 »
           </a>
-          <p className="mt-4 text-xs sm:text-sm text-stone-400">
+          <p className="mt-2 text-xs font-bold uppercase tracking-wider text-emerald-400/90 sm:text-sm">
+            ✅ Pago Único · Sin Mensualidades · Sin Suscripciones
+          </p>
+          <p className="mt-4 text-base sm:text-lg text-stone-400">
             ⚡ Acceso inmediato • 7 Días de Garantía Total
           </p>
         </div>
