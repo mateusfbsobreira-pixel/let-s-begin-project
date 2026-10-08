@@ -1,32 +1,24 @@
 import { Button } from "@/components/ui/button";
 import { CHECKOUT_URL } from "./config";
-import sourdough from "@/assets/maria-sourdough.jpg";
-import focaccia from "@/assets/sofia-focaccia.jpg";
 import chefAvatar from "@/assets/maria-avatar.jpg";
 
 const books = [
-  { n: 1, title: "El Despertar de la Masa Madre Fácil", benefit: "Tu masa madre viva en 5 días", value: "$25.00", img: "/images/pao-1.webp" },
-  { n: 2, title: "Panes Rústicos Europeos de Corteza Crujiente", benefit: "Corteza que cruje al cortar", value: "$25.00", img: "/images/pao-2.webp" },
-  { n: 3, title: "Panes Rápidos en Sartén y Sin Horno", benefit: "Listos en 30 minutos", value: "$20.00", img: "/images/pao-3.webp" },
-  { n: 4, title: "Brioches, Roscas y Panes Dulces de la Abuela", benefit: "Suaves como una nube", value: "$25.00", img: "/images/pao-4.webp" },
-  { n: 5, title: "Panes Saludables, Integrales y con Semillas", benefit: "Sin conservantes, 100% natural", value: "$20.00", img: "/images/pao-5.webp" },
-  { n: 6, title: "Focaccias y Panes Rellenos Italianos", benefit: "Solo 4 ingredientes", value: "$20.00", img: focaccia },
-  { n: 7, title: "Baguettes y Panes de Desayuno Exprés", benefit: "Sin tiempos complicados", value: "$20.00", img: "/images/pao-6.webp" },
-  { n: 8, title: "Secretos de Horneado y Conservación Prolongada", benefit: "Pan fresco toda la semana", value: "$20.00", img: sourdough },
+  { n: 1, title: "El Despertar de la Masa Madre Fácil", benefit: "Tu masa madre viva en 5 días", value: "$25.00", img: "/images/livro-principal.webp" },
+  { n: 2, title: "Panes Rústicos Europeos de Corteza Crujiente", benefit: "Corteza que cruje al cortar", value: "$25.00", img: "/images/bonus-1-paes-gourmet.webp" },
+  { n: 3, title: "Panes Rápidos en Sartén y Sin Horno", benefit: "Listos en 30 minutos", value: "$20.00", img: "/images/bonus-2-pizzas.webp" },
+  { n: 4, title: "Brioches, Roscas y Panes Dulces de la Abuela", benefit: "Suaves como una nube", value: "$25.00", img: "/images/bonus-3-brownies.webp" },
+  { n: 5, title: "Panes Saludables, Integrales y con Semillas", benefit: "Sin conservantes, 100% natural", value: "$20.00", img: "/images/bonus-4-masas-dulces.webp" },
+  { n: 6, title: "Focaccias y Panes Rellenos Italianos", benefit: "Solo 4 ingredientes", value: "$20.00", img: "/images/bonus-5-vender.webp" },
+  { n: 7, title: "Baguettes y Panes de Desayuno Exprés", benefit: "Sin tiempos complicados", value: "$20.00", img: "/images/bonus-6-galletas.webp" },
+  { n: 8, title: "Secretos de Horneado y Conservación Prolongada", benefit: "Pan fresco toda la semana", value: "$20.00", img: "/images/todos-productos.webp" },
 ];
 
-function BookCover({ n, title, img }: { n: number; title: string; img: string }) {
+function BookCover({ title, img }: { title: string; img: string }) {
   return (
     <div className="relative mx-auto aspect-[3/4] w-full max-w-[180px] [perspective:800px]">
       <div className="relative h-full w-full overflow-hidden rounded-r-lg rounded-l-sm border border-gold/60 bg-oven shadow-[8px_10px_20px_-6px_rgba(0,0,0,0.55)] transition-transform duration-500 [transform:rotateY(-12deg)] group-hover:[transform:rotateY(0deg)]">
-        <img src={img} alt="" loading="lazy" decoding="async" className="absolute inset-0 h-full w-full object-cover opacity-80" />
-        <div className="absolute inset-0 bg-gradient-to-b from-oven/95 via-oven/30 to-oven/95" />
-        <div className="absolute inset-y-0 left-0 w-2.5 bg-gradient-to-r from-oven-black/80 to-transparent" />
-        <div className="absolute inset-2 rounded-sm border border-gold/50" />
-        <div className="relative flex h-full flex-col justify-between p-3 text-center">
-          <p className="text-[9px] font-bold uppercase tracking-[0.2em] text-gold">La Casa del Pan · Vol. {n}</p>
-          <p className="font-serif text-[13px] font-bold leading-tight text-cream sm:text-sm">{title}</p>
-        </div>
+        <img src={img} alt={title} loading="lazy" decoding="async" className="absolute inset-0 h-full w-full object-cover" />
+        <div className="absolute inset-y-0 left-0 w-2.5 bg-gradient-to-r from-oven-black/60 to-transparent" />
       </div>
     </div>
   );
@@ -108,7 +100,7 @@ export function MasterBooks() {
         <div className="mt-12 grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4">
           {books.map((b) => (
             <article key={b.n} className="group flex flex-col rounded-2xl border border-gold/35 bg-paper p-4 text-center shadow-md transition-all duration-300 hover:-translate-y-1 hover:border-gold hover:shadow-xl">
-              <BookCover n={b.n} title={b.title} img={b.img} />
+              <BookCover title={b.title} img={b.img} />
               <h3 className="mt-4 font-serif text-base font-bold leading-snug text-artisan-ink sm:text-lg">{b.title}</h3>
               <p className="mt-1 flex-1 text-sm leading-snug text-artisan-ink/70 sm:text-base">{b.benefit}</p>
               <p className="mt-3 rounded-full bg-artisan-cream px-3 py-1 text-sm font-bold text-artisan-ink/80">
