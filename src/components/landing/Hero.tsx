@@ -87,8 +87,9 @@ export function Hero() {
               </div>
             </div>
 
-            {/* Price block */}
-            <div className="mt-9 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 lg:justify-start">
+            {/* Price block — strictly vertical flow on mobile, nothing overlapping */}
+            <div className="mt-9 flex w-full flex-col items-center gap-3 lg:items-start">
+              <p className="text-lg font-bold text-cream/60 line-through sm:text-xl">$230 USD</p>
               <p className="text-2xl font-black uppercase leading-tight text-cream sm:text-3xl">
                 Solo $9.90 Dólares Americanos <span className="whitespace-nowrap">(USD)</span>
               </p>
@@ -98,14 +99,18 @@ export function Hero() {
             </div>
 
             {/* Local-currency conversion box */}
-            <CurrencyBox className="mx-auto mt-6 max-w-xl lg:mx-0" />
+            <CurrencyBox className="mx-auto mt-6 w-full max-w-xl lg:mx-0" />
 
-            {/* CTA */}
-            <div className="mt-6">
+            <p className="mt-5 text-center text-sm font-bold text-emerald-400/90 lg:text-left">
+              ✓ Un solo pago · Sin mensualidades · 7 días de garantía
+            </p>
+
+            {/* CTA — always after everything above, full width on mobile */}
+            <div className="mt-5 w-full">
               <a
                 id="hero-cta"
                 href={CHECKOUT_URL}
-                className="group relative inline-flex min-h-[56px] w-full items-center justify-center overflow-hidden rounded-full bg-emerald-cta px-8 py-4 text-lg font-extrabold uppercase tracking-wide text-cream shadow-[0_10px_40px_-8px_rgba(22,163,74,0.6)] transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_14px_50px_-6px_rgba(22,163,74,0.8)] sm:w-auto sm:py-5"
+                className="group relative inline-flex w-full items-center justify-center overflow-hidden rounded-2xl bg-[#107C41] px-8 py-4 text-lg font-extrabold uppercase tracking-wide text-cream shadow-xl transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_14px_50px_-6px_rgba(22,163,74,0.8)] sm:w-auto sm:rounded-full sm:py-5"
               >
                 <span
                   aria-hidden="true"
@@ -120,7 +125,7 @@ export function Hero() {
               </a>
 
               <p className="mt-3 text-center text-[13px] font-bold leading-relaxed text-emerald-400/90 sm:text-sm lg:text-left">
-                🔒 Acceso inmediato a tu correo · 7 días de garantía total
+                🔒 Acceso inmediato en tu correo
               </p>
 
               <PaymentMethods />
