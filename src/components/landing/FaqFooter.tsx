@@ -20,19 +20,9 @@ const faqs = [
       "Es un solo pago para toda la vida. Pagas una única vez los $9.90 Dólares hoy y nunca más vuelves a pagar nada. Sin suscripciones escondidas, sin mensualidades y con todas las recetas que agreguemos en el futuro ya incluidas.",
   },
   {
-    question: "¿Ocupa espacio o me va a llenar la memoria del teléfono?",
+    question: "¿Cómo y cuándo recibo mi acceso?",
     answer:
-      "No te gasta nada de memoria. No tienes que descargar aplicaciones pesadas que pongan lento tu teléfono. Funciona directamente en tu navegador de internet y los libros vienen en PDF para que los leas cuando quieras.",
-  },
-  {
-    question: "¿Puedo pagar en efectivo o con la moneda de mi país?",
-    answer:
-      "¡Sí! En la siguiente pantalla de Hotmart verás el precio exacto convertido a tu moneda local. Puedes pagar con tarjeta, o en efectivo según tu país: OXXO en México, Baloto o PSE en Colombia, Webpay en Chile o PagoEfectivo en Perú.",
-  },
-  {
-    question: "¿Necesito hornos caros o ingredientes difíciles de conseguir?",
-    answer:
-      "Para nada. El método está hecho para la cocina de casa normal. Usas el horno que ya tienes y las harinas comunes del supermercado o la tienda de la esquina. No necesitas gastar de más.",
+      "El acceso es inmediato. Apenas se confirma tu pago seguro en Hotmart, te llega todo a tu correo electrónico en menos de 1 minuto, listo para empezar a hornear.",
   },
 ];
 

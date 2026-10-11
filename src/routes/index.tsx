@@ -2,11 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { AnnouncementBar } from "@/components/landing/AnnouncementBar";
 import { Navbar } from "@/components/landing/Navbar";
 import { Hero } from "@/components/landing/Hero";
-import { ContrastSection } from "@/components/landing/ContrastSection";
-import { EpiphanyStory } from "@/components/landing/EpiphanyStory";
 import { BreadGallery } from "@/components/landing/BreadGallery";
 import { MasterBooks } from "@/components/landing/MasterBooks";
-import { AppTour } from "@/components/landing/AppTour";
 import { Testimonials } from "@/components/landing/Testimonials";
 import { FinalOffer } from "@/components/landing/FinalOffer";
 import { Guarantee } from "@/components/landing/Guarantee";
@@ -47,14 +44,11 @@ function Index() {
       <Navbar />
       <main>
         <Hero />
-        <ContrastSection />
-        <EpiphanyStory />
         <BreadGallery />
         <MasterBooks />
         <Testimonials />
-        <AppTour />
-        <FinalOffer />
         <Guarantee />
+        <FinalOffer />
         <FaqSection />
       </main>
       <StickyMobileBar />
