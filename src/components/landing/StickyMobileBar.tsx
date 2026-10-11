@@ -6,10 +6,18 @@ export function StickyMobileBar() {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setVisible(window.scrollY > 420);
+    const cta = document.getElementById("hero-cta");
+    const onScroll = () => {
+      const pastHero = cta ? cta.getBoundingClientRect().bottom < 0 : window.scrollY > 600;
+      setVisible(pastHero && window.scrollY > 600);
+    };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
+    window.addEventListener("resize", onScroll);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+    };
   }, []);
 
   return (

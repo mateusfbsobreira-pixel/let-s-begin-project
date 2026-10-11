@@ -56,7 +56,7 @@ export function Hero() {
               {[
                 "Sin batidoras costosas",
                 "Sin experiencia previa",
-                "En cualquier celular (0 MB de espacio)",
+                "En cualquier celular",
               ].map(
                 (chip) => (
                   <span
@@ -81,9 +81,13 @@ export function Hero() {
               </span>
             </div>
 
+            {/* Local-currency conversion box */}
+            <CurrencyBox className="mx-auto mt-6 max-w-xl lg:mx-0" />
+
             {/* CTA */}
             <div className="mt-6">
               <a
+                id="hero-cta"
                 href={CHECKOUT_URL}
                 className="group relative inline-flex min-h-[56px] w-full items-center justify-center overflow-hidden rounded-full bg-emerald-cta px-8 py-4 text-lg font-extrabold uppercase tracking-wide text-cream shadow-[0_10px_40px_-8px_rgba(22,163,74,0.6)] transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_14px_50px_-6px_rgba(22,163,74,0.8)] sm:w-auto sm:py-5"
               >
@@ -99,17 +103,11 @@ export function Hero() {
                 </span>
               </a>
 
-              <p className="mt-3 text-center text-[13px] font-bold leading-relaxed text-emerald-400/90 sm:text-sm">
-                🔒 Acceso inmediato en tu correo · 7 días de garantía total
+              <p className="mt-3 text-center text-[13px] font-bold leading-relaxed text-emerald-400/90 sm:text-sm lg:text-left">
+                🔒 Acceso inmediato a tu correo · 7 días de garantía total
               </p>
 
-
               <PaymentMethods />
-
-              {/* Local-currency conversion box */}
-              <CurrencyBox className="mx-auto mt-4 max-w-xl lg:mx-0" />
-
-
 
               {/* Trust signals */}
               <ul className="mt-6 grid grid-cols-1 gap-2.5 text-left sm:grid-cols-2">
@@ -131,17 +129,44 @@ export function Hero() {
             </div>
           </div>
 
-          {/* Phone showcase + floating cards */}
+          {/* Realistic phone with the app in Modo Cocina */}
           <div className="relative">
-            <img
-              src={heroPan}
-              alt="Pan artesanal dorado y crujiente partido a la mitad sobre una tabla de madera"
-              width={1024}
-              height={1024}
-              fetchPriority="high"
-              decoding="async"
-              className="mx-auto w-full max-w-xl rounded-3xl border-2 border-gold/40 object-cover shadow-2xl"
-            />
+            <div className="relative mx-auto w-[290px] sm:w-[340px]">
+              <div aria-hidden="true" className="absolute -inset-10 rounded-full bg-gold/20 blur-3xl" />
+              <div className="relative rounded-[3rem] border border-gold/30 bg-oven-deep p-2.5 shadow-2xl">
+                <div className="relative overflow-hidden rounded-[2.4rem] bg-oven">
+                  <div className="absolute left-1/2 top-2.5 z-20 h-5 w-24 -translate-x-1/2 rounded-full bg-oven-deep" />
+                  <div className="px-4 pb-5 pt-10">
+                    <p className="text-[10px] font-bold uppercase tracking-wider text-gold">🔥 Modo Cocina</p>
+                    <p className="mt-1 font-serif text-lg font-bold leading-tight text-cream">Pan Campesino Rústico</p>
+                    <p className="mt-0.5 text-[11px] text-muted-foreground">⏱ 45 min · Dificultad Fácil</p>
+                    <img
+                      src={heroPan}
+                      alt="Pan rústico dorado partido a la mitad, con corteza crujiente y miga suave"
+                      width={1024}
+                      height={1024}
+                      fetchPriority="high"
+                      decoding="async"
+                      className="mt-3 aspect-square w-full rounded-2xl border border-gold/30 object-cover"
+                    />
+                    <div className="mt-4 rounded-2xl border border-gold/25 bg-surface p-3">
+                      <div className="flex items-center justify-between text-[11px] font-bold">
+                        <span className="text-cream">Paso 1: Mezcla y Autólisis</span>
+                        <span className="text-emerald-cta">35%</span>
+                      </div>
+                      <div className="mt-2 h-2 overflow-hidden rounded-full bg-oven-deep">
+                        <div className="h-full w-[35%] rounded-full bg-emerald-cta" />
+                      </div>
+                      <ul className="mt-2.5 space-y-1 text-[11px] text-cream/85">
+                        <li>✅ 500 g de harina común</li>
+                        <li>✅ 350 ml de agua tibia</li>
+                        <li className="text-muted-foreground">⬜ Reposar 30 minutos</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
