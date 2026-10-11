@@ -7,11 +7,9 @@ import { EpiphanyStory } from "@/components/landing/EpiphanyStory";
 import { BreadGallery } from "@/components/landing/BreadGallery";
 import { MasterBooks } from "@/components/landing/MasterBooks";
 import { AppTour } from "@/components/landing/AppTour";
-import { NotForYou } from "@/components/landing/NotForYou";
 import { Testimonials } from "@/components/landing/Testimonials";
 import { FinalOffer } from "@/components/landing/FinalOffer";
 import { Guarantee } from "@/components/landing/Guarantee";
-import { PostPurchaseSteps } from "@/components/landing/PostPurchaseSteps";
 import { FaqSection, Footer } from "@/components/landing/FaqFooter";
 import { StickyMobileBar } from "@/components/landing/StickyMobileBar";
 
@@ -55,10 +53,8 @@ function Oferta() {
         <MasterBooks />
         <Testimonials />
         <AppTour />
-        <NotForYou />
         <FinalOffer />
         <Guarantee />
-        <PostPurchaseSteps />
         <FaqSection />
       </main>
       <StickyMobileBar />

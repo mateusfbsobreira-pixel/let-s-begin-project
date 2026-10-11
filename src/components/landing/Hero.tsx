@@ -1,8 +1,7 @@
 import { Check, Infinity as InfinityIcon, Lock, ShieldCheck, Zap } from "lucide-react";
 const heroCinematicBakeryUrl = "/images/hero-cinematic-bakery.png";
 import { CHECKOUT_URL } from "./config";
-import { PhoneMockup } from "./PhoneMockup";
-import { FloatingCards } from "./FloatingCards";
+import heroPan from "@/assets/hero-pan-partido.jpg";
 import { PaymentMethods } from "./PaymentMethods";
 import { CurrencyBox } from "./CurrencyBox";
 
@@ -41,18 +40,15 @@ export function Hero() {
             </span>
 
             <h1 className="text-shadow-gold mt-6 font-serif text-3xl font-bold leading-[1.18] text-cream sm:text-5xl lg:text-6xl">
-              El Pan Calientito de la Abuela, Hecho por Tus Manos — Sin Culpa,{" "}
+              El Secreto del Pan Artesanal{" "}
               <span className="bg-gradient-to-r from-gold via-gold-bright to-gold-deep bg-clip-text text-transparent">
-                Sin Conservantes
+                Dorado y Crujiente
               </span>{" "}
-              y Sin Complicaciones
+              en tu Horno Normal
             </h1>
 
             <p className="mx-auto mt-6 max-w-3xl text-lg font-medium leading-loose text-cream/90 sm:text-xl lg:mx-0">
-              Aunque nunca hayas tocado una masa: tu Chef virtual te habla por
-              voz y te guía paso a paso, incluso con las manos en la masa. Toca
-              1 botón en tu celular y hornea este fin de semana sin
-              conservantes.
+              Sin masas madre complicadas, sin ingredientes costosos y con un Chef virtual que te acompaña paso a paso en tu celular.
             </p>
 
             {/* Confidence chips */}
@@ -81,7 +77,7 @@ export function Hero() {
                 Solo $9.90 Dólares Americanos <span className="whitespace-nowrap">(USD)</span>
               </p>
               <span className="rounded-full bg-emerald-cta px-3.5 py-1.5 text-xs font-extrabold uppercase tracking-wide text-paper sm:text-sm">
-                96% de Descuento · Pago Único
+                96% OFF · Pago Único
               </span>
             </div>
 
@@ -104,7 +100,7 @@ export function Hero() {
               </a>
 
               <p className="mt-3 text-center text-[13px] font-bold leading-relaxed text-emerald-400/90 sm:text-sm">
-                ✅ Pago único para siempre · Sin suscripciones mensuales · Garantía blindada de 7 días
+                🔒 Acceso inmediato en tu correo · 7 días de garantía total
               </p>
 
 
@@ -136,9 +132,16 @@ export function Hero() {
           </div>
 
           {/* Phone showcase + floating cards */}
-          <div className="relative lg:pb-24">
-            <PhoneMockup />
-            <FloatingCards />
+          <div className="relative">
+            <img
+              src={heroPan}
+              alt="Pan artesanal dorado y crujiente partido a la mitad sobre una tabla de madera"
+              width={1024}
+              height={1024}
+              fetchPriority="high"
+              decoding="async"
+              className="mx-auto w-full max-w-xl rounded-3xl border-2 border-gold/40 object-cover shadow-2xl"
+            />
           </div>
         </div>
       </div>
