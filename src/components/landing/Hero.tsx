@@ -70,6 +70,22 @@ export function Hero() {
               )}
             </div>
 
+            {/* Phone mockup above the price block (mobile only; desktop keeps it in the right column) */}
+            <div className="relative mt-9 lg:hidden">
+              <div className="relative mx-auto w-[240px]">
+                <div aria-hidden="true" className="absolute -inset-8 rounded-full bg-gold/20 blur-3xl" />
+                <img
+                  src={heroPhoneApp}
+                  alt="Celular mostrando la app La Casa del Pan en Modo Cocina con el Pan Campesino Rústico, su barra de progreso y el botón Paso 1: Mezcla y Autólisis"
+                  width={1024}
+                  height={1536}
+                  loading="eager"
+                  fetchPriority="high"
+                  decoding="async"
+                  className="relative w-full drop-shadow-[0_30px_60px_rgba(0,0,0,0.55)]"
+                />
+              </div>
+            </div>
 
             {/* Price block */}
             <div className="mt-9 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 lg:justify-start">
@@ -129,8 +145,8 @@ export function Hero() {
             </div>
           </div>
 
-          {/* Photorealistic phone mockup with the real app UI */}
-          <div className="relative">
+          {/* Photorealistic phone mockup with the real app UI (desktop; mobile shows it above the price block) */}
+          <div className="relative hidden lg:block">
             <div className="relative mx-auto w-[290px] sm:w-[340px]">
               <div aria-hidden="true" className="absolute -inset-10 rounded-full bg-gold/20 blur-3xl" />
               <img
