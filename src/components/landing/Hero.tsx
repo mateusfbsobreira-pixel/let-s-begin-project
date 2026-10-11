@@ -137,9 +137,14 @@ export function Hero() {
                 <div className="relative overflow-hidden rounded-[2.4rem] bg-oven">
                   <div className="absolute left-1/2 top-2.5 z-20 h-5 w-24 -translate-x-1/2 rounded-full bg-oven-deep" />
                   <div className="px-4 pb-5 pt-10">
-                    <p className="text-[10px] font-bold uppercase tracking-wider text-gold">🔥 Modo Cocina</p>
+                    <div className="flex items-center justify-between gap-2">
+                      <p className="font-serif text-xs font-bold text-gold">La Casa del Pan</p>
+                      <span className="rounded-full bg-emerald-cta px-2 py-0.5 text-[9px] font-bold text-paper">● Pantalla Activa</span>
+                      <span className="text-sm" aria-hidden="true">🔔⏱</span>
+                    </div>
+                    <p className="mt-2 text-[10px] font-bold uppercase tracking-wider text-gold">🔥 Modo Cocina Activo</p>
                     <p className="mt-1 font-serif text-lg font-bold leading-tight text-cream">Pan Campesino Rústico</p>
-                    <p className="mt-0.5 text-[11px] text-muted-foreground">⏱ 45 min · Dificultad Fácil</p>
+                    <p className="mt-0.5 text-[11px] text-muted-foreground">⏱️ 45 min de horneado · Dificultad: Principiante</p>
                     <img
                       src={heroPan}
                       alt="Pan rústico dorado partido a la mitad, con corteza crujiente y miga suave"
@@ -162,6 +167,9 @@ export function Hero() {
                         <li>✅ 350 ml de agua tibia</li>
                         <li className="text-muted-foreground">⬜ Reposar 30 minutos</li>
                       </ul>
+                      <span className="mt-3 block rounded-full bg-emerald-cta py-2 text-center text-[11px] font-extrabold text-paper">
+                        Paso 1: Mezcla y Autólisis (Comenzar) ▶
+                      </span>
                     </div>
                   </div>
                 </div>

@@ -78,7 +78,7 @@ export function BreadGallery() {
           ))}
         </div>
 
-        <blockquote className="mx-auto mt-10 max-w-3xl rounded-2xl border border-gold/30 bg-paper/85 p-6 text-center font-serif text-lg italic leading-relaxed text-artisan-ink shadow-md backdrop-blur-md sm:px-10 sm:text-xl">
+        <blockquote className="mx-auto mt-10 max-w-3xl rounded-2xl border border-[#E8DFC8] bg-[#FDFBF7] p-6 text-center font-serif text-base font-medium not-italic leading-relaxed text-[#2C1810] shadow-md sm:px-10 sm:text-lg">
           “No necesitas experiencia previa ni hornos industriales. Con las
           recetas interactivas y las alertas del Chef IA, tu primer pan saldrá
           perfecto este fin de semana.”
