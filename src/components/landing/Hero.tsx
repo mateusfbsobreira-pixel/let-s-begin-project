@@ -1,7 +1,7 @@
 import { Check, Infinity as InfinityIcon, Lock, ShieldCheck, Zap } from "lucide-react";
 const heroCinematicBakeryUrl = "/images/hero-cinematic-bakery.png";
 import { CHECKOUT_URL } from "./config";
-import heroPan from "@/assets/hero-pan-partido.jpg";
+import heroPhoneApp from "@/assets/hero-phone-app.png";
 import { PaymentMethods } from "./PaymentMethods";
 import { CurrencyBox } from "./CurrencyBox";
 
@@ -129,51 +129,20 @@ export function Hero() {
             </div>
           </div>
 
-          {/* Realistic phone with the app in Modo Cocina */}
+          {/* Photorealistic phone mockup with the real app UI */}
           <div className="relative">
             <div className="relative mx-auto w-[290px] sm:w-[340px]">
               <div aria-hidden="true" className="absolute -inset-10 rounded-full bg-gold/20 blur-3xl" />
-              <div className="relative rounded-[3rem] border border-gold/30 bg-oven-deep p-2.5 shadow-2xl">
-                <div className="relative overflow-hidden rounded-[2.4rem] bg-oven">
-                  <div className="absolute left-1/2 top-2.5 z-20 h-5 w-24 -translate-x-1/2 rounded-full bg-oven-deep" />
-                  <div className="px-4 pb-5 pt-10">
-                    <div className="flex items-center justify-between gap-2">
-                      <p className="font-serif text-xs font-bold text-gold">La Casa del Pan</p>
-                      <span className="rounded-full bg-emerald-cta px-2 py-0.5 text-[9px] font-bold text-paper">● Pantalla Activa</span>
-                      <span className="text-sm" aria-hidden="true">🔔⏱</span>
-                    </div>
-                    <p className="mt-2 text-[10px] font-bold uppercase tracking-wider text-gold">🔥 Modo Cocina Activo</p>
-                    <p className="mt-1 font-serif text-lg font-bold leading-tight text-cream">Pan Campesino Rústico</p>
-                    <p className="mt-0.5 text-[11px] text-muted-foreground">⏱️ 45 min de horneado · Dificultad: Principiante</p>
-                    <img
-                      src={heroPan}
-                      alt="Pan rústico dorado partido a la mitad, con corteza crujiente y miga suave"
-                      width={1024}
-                      height={1024}
-                      fetchPriority="high"
-                      decoding="async"
-                      className="mt-3 aspect-square w-full rounded-2xl border border-gold/30 object-cover"
-                    />
-                    <div className="mt-4 rounded-2xl border border-gold/25 bg-surface p-3">
-                      <div className="flex items-center justify-between text-[11px] font-bold">
-                        <span className="text-cream">Paso 1: Mezcla y Autólisis</span>
-                        <span className="text-emerald-cta">35%</span>
-                      </div>
-                      <div className="mt-2 h-2 overflow-hidden rounded-full bg-oven-deep">
-                        <div className="h-full w-[35%] rounded-full bg-emerald-cta" />
-                      </div>
-                      <ul className="mt-2.5 space-y-1 text-[11px] text-cream/85">
-                        <li>✅ 500 g de harina común</li>
-                        <li>✅ 350 ml de agua tibia</li>
-                        <li className="text-muted-foreground">⬜ Reposar 30 minutos</li>
-                      </ul>
-                      <span className="mt-3 block rounded-full bg-emerald-cta py-2 text-center text-[11px] font-extrabold text-paper">
-                        Paso 1: Mezcla y Autólisis (Comenzar) ▶
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <img
+                src={heroPhoneApp}
+                alt="Celular mostrando la app La Casa del Pan en Modo Cocina con el Pan Campesino Rústico, su barra de progreso y el botón Paso 1: Mezcla y Autólisis"
+                width={1024}
+                height={1536}
+                loading="eager"
+                fetchPriority="high"
+                decoding="async"
+                className="relative w-full drop-shadow-[0_30px_60px_rgba(0,0,0,0.55)]"
+              />
             </div>
           </div>
         </div>
