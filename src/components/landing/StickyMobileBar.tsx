@@ -1,15 +1,16 @@
 import { useEffect, useState } from "react";
-import { Button } from "@/components/ui/button";
 import { CHECKOUT_URL } from "./config";
 
 export function StickyMobileBar() {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const cta = document.getElementById("hero-cta");
     const onScroll = () => {
-      const pastHero = cta ? cta.getBoundingClientRect().bottom < 0 : window.scrollY > 600;
-      setVisible(pastHero && window.scrollY > 600);
+      const y = window.scrollY;
+      const nearEnd = window.innerHeight + y >= document.body.offsetHeight - 700;
+      const final = document.getElementById("oferta-final");
+      const finalInView = final ? final.getBoundingClientRect().top < window.innerHeight : false;
+      setVisible(y >= 550 && !nearEnd && !finalInView);
     };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
@@ -22,44 +23,23 @@ export function StickyMobileBar() {
 
   return (
     <div
-      className={`fixed inset-x-0 bottom-0 z-50 transition-all duration-300 ${
-        visible
-          ? "translate-y-0 opacity-100"
-          : "pointer-events-none translate-y-full opacity-0"
+      aria-hidden={!visible}
+      className={`fixed bottom-0 left-0 right-0 z-40 max-h-[65px] border-t border-[#D4AF37]/30 bg-[#1A0F08]/85 px-4 py-2.5 shadow-2xl backdrop-blur-md transition-all duration-300 ${
+        visible ? "translate-y-0 opacity-100" : "pointer-events-none translate-y-full opacity-0"
       }`}
     >
-      <div className="glass-dark border-t border-gold/45 px-3 py-2.5 shadow-2xl sm:px-6 sm:py-3">
-        <div className="mx-auto flex max-w-4xl items-center justify-between gap-3">
-          <div className="min-w-0">
-            <p className="flex items-baseline gap-2 leading-none">
-              <span className="text-xs text-cream/50 line-through">$230</span>
-              <span className="whitespace-nowrap text-lg font-black text-gold sm:text-xl">
-                $9.90 Dólares (USD)
-              </span>
-            </p>
-            <p className="mt-1.5 flex items-center gap-1 whitespace-nowrap text-[11px] font-semibold text-cream/75 sm:text-xs">
-              <span className="font-bold text-gold-bright">Precio de Lanzamiento</span>
-            </p>
-            <p className="text-[9px] font-bold text-emerald-400/80 sm:text-[10px]">✅ Pago único · Sin mensualidades · Garantía 7 días</p>
-            <p className="text-[9px] font-semibold text-cream/60 sm:text-[10px]">💡 Hotmart convierte a tu moneda local</p>
-
-          </div>
-
-          <Button
-            asChild
-            className="h-auto shrink-0 rounded-full bg-emerald-cta px-4 py-2.5 text-paper shadow-xl transition-transform hover:scale-[1.03] hover:bg-emerald-cta-hover sm:px-7 sm:py-3"
-          >
-            <a href={CHECKOUT_URL}>
-              <span className="flex flex-col items-center justify-center leading-tight">
-                <span className="text-base font-extrabold uppercase sm:text-lg">QUIERO EL PAQUETE COMPLETO</span>
-                <span className="text-[13px] font-bold text-gold-bright sm:text-sm">
-                  POR SOLO $9.90 DÓLARES (USD) →
-                </span>
-              </span>
-            </a>
-          </Button>
-
+      <div className="mx-auto flex max-w-4xl items-center justify-between gap-3">
+        <div className="min-w-0 leading-tight">
+          <p className="font-serif text-base font-bold text-[#F5E6BE]">$9.90 USD</p>
+          <p className="text-[11px] font-semibold text-emerald-300">Pago Único · 96% OFF</p>
         </div>
+        <a
+          href={CHECKOUT_URL}
+          tabIndex={visible ? 0 : -1}
+          className="whitespace-nowrap rounded-full bg-[#107C41] px-4 py-2.5 text-xs font-bold text-white shadow-lg transition-transform hover:bg-[#0E6837] active:scale-95 sm:px-6 sm:text-sm"
+        >
+          QUIERO EL PAQUETE →
+        </a>
       </div>
     </div>
   );
