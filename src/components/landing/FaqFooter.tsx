@@ -73,8 +73,16 @@ export function Footer() {
   return (
     <footer className="border-t border-gold-mute/20 bg-oven-black px-4 py-10 text-center text-xs text-cream/55">
       <div className="mx-auto max-w-4xl">
-        <div className="inline-flex items-center gap-2 font-serif font-bold tracking-widest text-gold">
-          <Wheat className="h-5 w-5" aria-hidden="true" />
+        <div className="inline-flex items-center gap-3 font-serif font-bold tracking-widest text-gold">
+          <img
+            src={logoUrl}
+            alt="Logo de La Casa del Pan Artesanal"
+            width={48}
+            height={48}
+            loading="lazy"
+            decoding="async"
+            className="h-12 w-12 rounded-xl border border-gold/40 shadow-[0_0_22px_color-mix(in_oklab,var(--color-gold)_22%,transparent)] sm:h-14 sm:w-14"
+          />
           LA CASA DEL PAN
         </div>
         <p className="mt-4">© 2026 La Casa del Pan Artesanal. Todos los derechos reservados.</p>
