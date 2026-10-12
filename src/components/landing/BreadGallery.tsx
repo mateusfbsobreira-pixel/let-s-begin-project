@@ -1,31 +1,38 @@
+import pao1 from "@/assets/pao-1.webp";
+import pao2 from "@/assets/pao-2.webp";
+import pao3 from "@/assets/pao-3.webp";
+import pao4 from "@/assets/pao-4.webp";
+import pao5 from "@/assets/pao-5.webp";
+import pao6 from "@/assets/pao-6.webp";
+
 const breads = [
   {
-    image: "/images/pao-1.webp",
+    image: pao1,
     title: "Hogaza Rústica de Masa Madre",
     subtitle: "Alveolatura abierta y corteza caramelizada",
   },
   {
-    image: "/images/pao-2.webp",
+    image: pao2,
     title: "Hogaza Multisemillas de Campo",
     subtitle: "Miga alveolada con semillas tostadas y fermentación lenta",
   },
   {
-    image: "/images/pao-3.webp",
+    image: pao3,
     title: "Pan de Brioche Gourmet con Sésamo",
     subtitle: "Masa enriquecida ultra-suave, dorada y esponjosa",
   },
   {
-    image: "/images/pao-4.webp",
+    image: pao4,
     title: "Pan Rústico Integral Multicereal",
     subtitle: "Corteza de avena crocante y alto valor nutritivo",
   },
   {
-    image: "/images/pao-5.webp",
+    image: pao5,
     title: "Baguette Tradicional Francesa",
     subtitle: "Alveolado tipo panal y crocancia inigualable",
   },
   {
-    image: "/images/pao-6.webp",
+    image: pao6,
     title: "Rollos de Canela & Masas Dulces",
     subtitle: "Espirales caramelizadas con glaseado artesanal de vainilla",
   },

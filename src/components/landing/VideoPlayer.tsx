@@ -67,7 +67,7 @@ export function VideoPlayer({ src, label, poster }: { src: string; label: string
     >
       <video
         ref={vid}
-        src={src}
+        src={src.includes("#t=") ? src : `${src}#t=0.001`}
         poster={poster}
         playsInline
         preload="metadata"

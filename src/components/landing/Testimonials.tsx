@@ -24,7 +24,6 @@ import sofiaVideo from "@/assets/depoimento-sofia.mp4.asset.json";
 
 import { CHECKOUT_URL } from "./config";
 import { VideoPlayer } from "./VideoPlayer";
-import videoStill from "@/assets/video-testimonial-still.webp";
 
 const mainVideo = {
   src: sofiaVideo.url.startsWith("http")
@@ -158,7 +157,7 @@ export function Testimonials() {
 
         {/* 1. VÍDEO PRINCIPAL */}
         <figure className="mx-auto mt-12 max-w-md">
-          <VideoPlayer src={mainVideo.src} label={mainVideo.tag} poster={videoStill} />
+          <VideoPlayer src={mainVideo.src} label={mainVideo.tag} />
           <figcaption className="mt-4 text-center text-lg font-semibold leading-relaxed text-stone-100">
             {mainVideo.quote}
           </figcaption>
