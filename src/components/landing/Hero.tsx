@@ -151,8 +151,8 @@ export function Hero() {
           </div>
 
           {/* Photorealistic phone mockup with the real app UI (desktop; mobile shows it above the price block) */}
-          <div className="relative hidden lg:block">
-            <div className="relative mx-auto w-[330px] sm:w-[390px] xl:w-[430px]">
+          <div className="relative hidden self-start lg:mt-6 lg:block">
+            <div className="relative mx-auto w-[330px] sm:w-[390px] xl:w-[440px]">
               <div aria-hidden="true" className="absolute -inset-10 rounded-full bg-gold/20 blur-3xl" />
               <img
                 src={heroPhoneApp}
