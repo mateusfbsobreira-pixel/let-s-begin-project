@@ -47,6 +47,23 @@ export function Hero() {
               en tu Horno Normal
             </h1>
 
+            {/* Phone mockup right under the headline so it is seen on first open (mobile only; desktop keeps it in the right column) */}
+            <div className="relative mt-5 sm:mt-9 lg:hidden">
+              <div className="relative mx-auto w-[min(86vw,336px)]">
+                <div aria-hidden="true" className="absolute -inset-8 rounded-full bg-gold/20 blur-3xl" />
+                <img
+                  src={heroPhoneApp}
+                  alt="Celular mostrando la app La Casa del Pan en Modo Cocina con el Pan Campesino Rústico, su barra de progreso y el botón Paso 1: Mezcla y Autólisis"
+                  width={1024}
+                  height={1536}
+                  loading="eager"
+                  fetchPriority="high"
+                  decoding="async"
+                  className="relative w-full drop-shadow-[0_30px_60px_rgba(0,0,0,0.55)]"
+                />
+              </div>
+            </div>
+
             <p className="mx-auto mt-4 max-w-3xl text-base font-medium leading-relaxed text-cream/90 sm:mt-6 sm:text-lg lg:mx-0">
               Sin masas madre complicadas, sin ingredientes costosos y con un Chef virtual que te acompaña paso a paso en tu celular.
             </p>
@@ -68,23 +85,6 @@ export function Hero() {
                   </span>
                 ),
               )}
-            </div>
-
-            {/* Phone mockup above the price block (mobile only; desktop keeps it in the right column) */}
-            <div className="relative mt-6 sm:mt-9 lg:hidden">
-              <div className="relative mx-auto w-[min(84vw,330px)]">
-                <div aria-hidden="true" className="absolute -inset-8 rounded-full bg-gold/20 blur-3xl" />
-                <img
-                  src={heroPhoneApp}
-                  alt="Celular mostrando la app La Casa del Pan en Modo Cocina con el Pan Campesino Rústico, su barra de progreso y el botón Paso 1: Mezcla y Autólisis"
-                  width={1024}
-                  height={1536}
-                  loading="eager"
-                  fetchPriority="high"
-                  decoding="async"
-                  className="relative w-full drop-shadow-[0_30px_60px_rgba(0,0,0,0.55)]"
-                />
-              </div>
             </div>
 
             {/* Price block — strictly vertical flow on mobile, nothing overlapping */}
