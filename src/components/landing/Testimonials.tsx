@@ -23,6 +23,7 @@ import carmenVideo from "@/assets/depoimento-carmen.mp4.asset.json";
 import sofiaVideo from "@/assets/depoimento-sofia.mp4.asset.json";
 
 import { CHECKOUT_URL } from "./config";
+import { VideoPlayer } from "./VideoPlayer";
 
 const mainVideo = {
   src: sofiaVideo.url,
@@ -154,21 +155,7 @@ export function Testimonials() {
 
         {/* 1. VÍDEO PRINCIPAL */}
         <figure className="mx-auto mt-12 max-w-md">
-          <div className="relative overflow-hidden rounded-2xl border-2 border-gold/40 bg-black shadow-2xl">
-            <span className="pointer-events-none absolute left-3 right-3 top-3 z-10 mx-auto w-fit rounded-full border border-gold/50 bg-black/70 px-3 py-1.5 text-center text-xs font-bold text-[#FCD34D] backdrop-blur-sm sm:text-sm">
-              {mainVideo.tag}
-            </span>
-            <video
-              src={mainVideo.src}
-              controls
-              playsInline
-              preload="metadata"
-              controlsList="nodownload noplaybackrate noremoteplayback"
-              disablePictureInPicture
-              onContextMenu={(e) => e.preventDefault()}
-              className="aspect-[9/16] w-full bg-black object-contain"
-            />
-          </div>
+          <VideoPlayer src={mainVideo.src} label={mainVideo.tag} />
           <figcaption className="mt-4 text-center text-lg font-semibold leading-relaxed text-stone-100">
             {mainVideo.quote}
           </figcaption>
