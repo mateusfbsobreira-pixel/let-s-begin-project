@@ -17,7 +17,7 @@ const books = [
   { n: 8, title: "Las Recetas Secretas de La Casa del Pan", benefit: "Prefermentos y fórmulas de autor · Solo lanzamiento", value: "$20.00", img: "/images/recetas-secretas.webp", tag: "Bono Exclusivo", fit: "contain" as const },
 ];
 
-function BookCover({ title, img, fit = "cover" }: { title: string; img: string; fit?: "cover" | "contain" }) {
+function BookCover({ title, img, fit = "cover" }: { title: string; img: string; fit?: "cover" | "contain" | undefined }) {
   return (
     <div className="relative mx-auto aspect-[3/4] w-full max-w-[180px] [perspective:800px]">
       <div className="relative h-full w-full overflow-hidden rounded-r-lg rounded-l-sm border border-gold/60 bg-oven shadow-[8px_10px_20px_-6px_rgba(0,0,0,0.55)] transition-transform duration-500 [transform:rotateY(-12deg)] group-hover:[transform:rotateY(0deg)]">
