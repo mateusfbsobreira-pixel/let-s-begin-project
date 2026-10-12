@@ -1,7 +1,7 @@
 export function AnnouncementBar() {
   return (
     <div className="border-b border-gold/40 bg-oven-black px-3 py-1.5 text-center shadow-md sm:px-4 sm:py-2.5">
-      <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-[11px] font-semibold leading-snug text-cream/90 sm:text-xs sm:leading-relaxed sm:sm:text-sm">
+      <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-[11px] font-semibold leading-snug text-cream/90 sm:text-xs sm:leading-relaxed md:text-sm">
         <p className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1">
           <span className="relative flex h-2 w-2 shrink-0" aria-hidden="true">
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-cta opacity-75" />
