@@ -1,6 +1,6 @@
-import { Wheat } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { CHECKOUT_URL } from "./config";
+const logoUrl = "/images/logo-la-casa-del-pan.png";
 import {
   Accordion,
   AccordionContent,
