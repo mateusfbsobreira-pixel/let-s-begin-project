@@ -12,8 +12,10 @@ export function Navbar() {
               src={logoUrl}
               alt=""
               aria-hidden="true"
-               loading="eager"
-               decoding="async"
+              width={40}
+              height={40}
+              loading="lazy"
+              decoding="async"
               className="h-full w-full object-cover"
             />
           </span>

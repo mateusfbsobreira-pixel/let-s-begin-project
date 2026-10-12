@@ -160,8 +160,7 @@ export function Hero() {
                 alt="Celular mostrando la app La Casa del Pan en Modo Cocina con el Pan Campesino Rústico, su barra de progreso y el botón Paso 1: Mezcla y Autólisis"
                 width={1024}
                 height={1536}
-                loading="eager"
-                fetchPriority="high"
+                loading="lazy"
                 decoding="async"
                 className="relative w-full drop-shadow-[0_30px_60px_rgba(0,0,0,0.55)]"
               />
