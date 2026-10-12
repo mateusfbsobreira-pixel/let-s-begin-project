@@ -21,7 +21,7 @@ const seals = [
 
 export function FinalOffer() {
   return (
-    <section className="bg-artisan-cream px-4 py-20 sm:py-24">
+    <section id="oferta-final" className="bg-artisan-cream px-4 py-20 sm:py-24">
       <div className="mx-auto max-w-4xl">
         <div className="mb-12 overflow-hidden rounded-2xl border border-gold/35 bg-oven-deep p-4 shadow-2xl sm:p-7">
           <img
