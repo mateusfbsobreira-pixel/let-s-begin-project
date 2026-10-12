@@ -16,6 +16,20 @@
   ExpiresByType font/woff "access plus 1 year"
 </IfModule>
 
+<IfModule mod_headers.c>
+  # 1 Year Immutable Cache for Static Assets (CSS, JS, Fonts, Images)
+  <FilesMatch "\.(css|js|mjs|woff2|woff|ttf|eot|webp|png|jpe?g|svg|gif|ico)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+
+  # Fresh cache for HTML so deployments apply immediately
+  <FilesMatch "\.(html|htm)$">
+    Header set Cache-Control "public, max-age=0, must-revalidate"
+  </FilesMatch>
+
+  Header set X-Content-Type-Options "nosniff"
+</IfModule>
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /

@@ -68,8 +68,10 @@ export function BreadGallery() {
                 <img
                   src={bread.image}
                   alt={bread.title}
+                  width={400}
+                  height={300}
                   loading="lazy"
-                   decoding="async"
+                  decoding="async"
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>

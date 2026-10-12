@@ -2,6 +2,7 @@ import { Check, Infinity as InfinityIcon, Lock, ShieldCheck, Zap } from "lucide-
 const heroCinematicBakeryUrl = "/images/hero-cinematic-bakery.webp";
 import { CHECKOUT_URL } from "./config";
 import heroPhoneApp from "@/assets/hero-phone-app.webp";
+import heroPhoneAppSm from "@/assets/hero-phone-app-sm.webp";
 import { PaymentMethods } from "./PaymentMethods";
 import { CurrencyBox } from "./CurrencyBox";
 
@@ -52,14 +53,14 @@ export function Hero() {
               <div className="relative mx-auto w-[min(86vw,336px)]">
                 <div aria-hidden="true" className="absolute -inset-8 rounded-full bg-gold/20 blur-3xl" />
                 <img
-                  src={heroPhoneApp}
+                  src={heroPhoneAppSm}
                   alt="Celular mostrando la app La Casa del Pan en Modo Cocina con el Pan Campesino Rústico, su barra de progreso y el botón Paso 1: Mezcla y Autólisis"
-                  width={1024}
-                  height={1536}
+                  width={336}
+                  height={504}
                   loading="eager"
                   fetchPriority="high"
                   decoding="async"
-                  className="relative w-full drop-shadow-[0_30px_60px_rgba(0,0,0,0.55)]"
+                  className="relative h-auto w-full drop-shadow-[0_30px_60px_rgba(0,0,0,0.55)]"
                 />
               </div>
             </div>

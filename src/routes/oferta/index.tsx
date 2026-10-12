@@ -21,6 +21,13 @@ export const Route = createFileRoute("/oferta/")({
       {
         rel: "preload",
         as: "image",
+        href: "/images/hero-phone-app-sm.webp",
+        media: "(max-width: 1023px)",
+        fetchPriority: "high",
+      },
+      {
+        rel: "preload",
+        as: "image",
         href: "/images/hero-cinematic-bakery.webp",
         fetchPriority: "high",
       },

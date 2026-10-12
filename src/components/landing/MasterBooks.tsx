@@ -20,7 +20,7 @@ const books = [
 function BookCover({ title, img }: { title: string; img: string; fit?: "cover" | "contain" | undefined }) {
   return (
     <div className="relative mx-auto aspect-[3/4] w-full max-w-[210px] overflow-hidden rounded-r-md rounded-l-xs border-r-2 border-[#D4C5A9]/60 shadow-[12px_18px_30px_-5px_rgba(0,0,0,0.4),_-4px_0_8px_rgba(0,0,0,0.25)] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[16px_24px_36px_-5px_rgba(0,0,0,0.5)]">
-      <img src={img} alt={title} loading="lazy" decoding="async" draggable={false} className="block h-full w-full select-none object-cover" />
+      <img src={img} alt={title} width={210} height={280} loading="lazy" decoding="async" draggable={false} className="block h-full w-full select-none object-cover" />
       <div className="pointer-events-none absolute inset-y-0 left-0 w-4 bg-gradient-to-r from-black/40 via-white/20 to-transparent" />
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-white/15" />
     </div>
