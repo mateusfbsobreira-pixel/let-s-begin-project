@@ -83,7 +83,7 @@ export function VideoPlayer({ src, label, poster }: { src: string; label: string
         src={src.includes("#t=") ? src : `${src}#t=0.001`}
         poster={poster}
         playsInline
-        preload="auto"
+        preload="metadata"
         disablePictureInPicture
         controlsList="nodownload"
         onContextMenu={(e) => e.preventDefault()}

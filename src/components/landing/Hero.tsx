@@ -1,5 +1,4 @@
 import { Check, Infinity as InfinityIcon, Lock, ShieldCheck, Zap } from "lucide-react";
-const heroCinematicBakeryUrl = "/images/hero-cinematic-bakery.webp";
 import { CHECKOUT_URL } from "./config";
 import heroPhoneApp from "@/assets/hero-phone-app.webp";
 import heroPhoneAppSm from "@/assets/hero-phone-app-sm.webp";
@@ -15,10 +14,7 @@ const TRUST_SIGNALS = [
 
 export function Hero() {
   return (
-    <section
-      className="relative overflow-hidden bg-cover bg-center sm:bg-right"
-      style={{ backgroundImage: `url(${heroCinematicBakeryUrl})` }}
-    >
+    <section className="hero-bakery-bg relative overflow-hidden bg-cover bg-center sm:bg-right">
       {/* Cinematic horizontal vignette: dark, crisp side for typography; glowing oven stays vibrant on the right */}
       <div
         aria-hidden="true"
