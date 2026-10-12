@@ -14,14 +14,20 @@ const books = [
   { n: 5, title: "Masas Dulces y Panes Rellenos", benefit: "Brioches suaves, roscas y trenzas gourmet", value: "$15.00", img: "/images/bonus-4-masas-dulces.webp", tag: "Bono 4" },
   { n: 6, title: "Recetas Premium para Vender Desde Casa", benefit: "Costos, empaques y estrategias de ingreso extra", value: "$15.00", img: "/images/bonus-5-vender.webp", tag: "Bono 5" },
   { n: 7, title: "Pequeñas Obras de Arte", benefit: "40 recetas de galletas y confitería fina artesanal", value: "$12.00", img: "/images/bonus-6-galletas.webp", tag: "Bono 6" },
-  { n: 8, title: "Las Recetas Secretas de La Casa del Pan", benefit: "Prefermentos y fórmulas de autor · Solo lanzamiento", value: "$20.00", img: "/images/todos-productos.webp", tag: "Bono Exclusivo" },
+  { n: 8, title: "Las Recetas Secretas de La Casa del Pan", benefit: "Prefermentos y fórmulas de autor · Solo lanzamiento", value: "$20.00", img: "/images/recetas-secretas.webp", tag: "Bono Exclusivo", fit: "contain" as const },
 ];
 
-function BookCover({ title, img }: { title: string; img: string }) {
+function BookCover({ title, img, fit = "cover" }: { title: string; img: string; fit?: "cover" | "contain" | undefined }) {
   return (
     <div className="relative mx-auto aspect-[3/4] w-full max-w-[180px] [perspective:800px]">
       <div className="relative h-full w-full overflow-hidden rounded-r-lg rounded-l-sm border border-gold/60 bg-oven shadow-[8px_10px_20px_-6px_rgba(0,0,0,0.55)] transition-transform duration-500 [transform:rotateY(-12deg)] group-hover:[transform:rotateY(0deg)]">
-        <img src={img} alt={title} loading="lazy" decoding="async" className="absolute inset-0 h-full w-full object-cover" />
+        <img
+          src={img}
+          alt={title}
+          loading="lazy"
+          decoding="async"
+          className={`absolute inset-0 h-full w-full ${fit === "contain" ? "object-contain" : "object-cover"}`}
+        />
         <div className="absolute inset-y-0 left-0 w-2.5 bg-gradient-to-r from-oven-black/60 to-transparent" />
       </div>
     </div>
@@ -57,7 +63,7 @@ export function MasterBooks() {
           {books.map((b) => (
             <article key={b.n} className="group flex flex-col rounded-2xl border border-gold/35 bg-paper p-4 text-center shadow-md transition-all duration-300 hover:-translate-y-1 hover:border-gold hover:shadow-xl">
               <span className="mx-auto mb-3 inline-block rounded-full bg-wine px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-paper">{b.tag}</span>
-              <BookCover title={b.title} img={b.img} />
+              <BookCover title={b.title} img={b.img} fit={b.fit} />
               <h3 className="mt-4 font-serif text-base font-bold leading-snug text-artisan-ink sm:text-lg">{b.title}</h3>
               <p className="mt-1 flex-1 text-sm leading-snug text-artisan-ink/70 sm:text-base">{b.benefit}</p>
               <p className="mt-3 rounded-full bg-artisan-cream px-3 py-1 text-sm font-bold text-artisan-ink/80">
