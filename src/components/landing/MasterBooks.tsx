@@ -14,7 +14,7 @@ const books = [
   { n: 5, title: "Masas Dulces y Panes Rellenos", benefit: "Brioches suaves, roscas y trenzas gourmet", value: "$15.00", img: "/images/bonus-4-masas-dulces.webp", tag: "Bono 4" },
   { n: 6, title: "Recetas Premium para Vender Desde Casa", benefit: "Costos, empaques y estrategias de ingreso extra", value: "$15.00", img: "/images/bonus-5-vender.webp", tag: "Bono 5" },
   { n: 7, title: "Pequeñas Obras de Arte", benefit: "40 recetas de galletas y confitería fina artesanal", value: "$12.00", img: "/images/bonus-6-galletas.webp", tag: "Bono 6" },
-  { n: 8, title: "Las Recetas Secretas de La Casa del Pan", benefit: "Prefermentos y fórmulas de autor · Solo lanzamiento", value: "$20.00", img: "/images/recetas-secretas.webp", tag: "Bono Exclusivo", fit: "contain" },
+  { n: 8, title: "Las Recetas Secretas de La Casa del Pan", benefit: "Prefermentos y fórmulas de autor · Solo lanzamiento", value: "$20.00", img: "/images/recetas-secretas.webp", tag: "Bono Exclusivo", fit: "contain" as const },
 ];
 
 function BookCover({ title, img, fit = "cover" }: { title: string; img: string; fit?: "cover" | "contain" }) {
