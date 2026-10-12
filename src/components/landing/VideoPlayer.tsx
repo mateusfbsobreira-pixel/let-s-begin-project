@@ -8,7 +8,7 @@ function fmt(s: number) {
   return `${m}:${r.toString().padStart(2, "0")}`;
 }
 
-export function VideoPlayer({ src, label }: { src: string; label: string }) {
+export function VideoPlayer({ src, label, poster }: { src: string; label: string; poster?: string }) {
   const wrap = useRef<HTMLDivElement>(null);
   const vid = useRef<HTMLVideoElement>(null);
   const hideT = useRef<number | undefined>(undefined);
@@ -68,6 +68,7 @@ export function VideoPlayer({ src, label }: { src: string; label: string }) {
       <video
         ref={vid}
         src={src}
+        poster={poster}
         playsInline
         preload="metadata"
         disablePictureInPicture

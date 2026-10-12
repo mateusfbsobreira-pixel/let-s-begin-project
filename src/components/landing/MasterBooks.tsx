@@ -1,10 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { CHECKOUT_URL } from "./config";
 import { CurrencyBox } from "./CurrencyBox";
-import toolChef from "@/assets/tool-chef-ia.jpg";
-import toolCocina from "@/assets/tool-modo-cocina.jpg";
-import toolTimer from "@/assets/tool-temporizadores.jpg";
-import toolCert from "@/assets/tool-certificado.jpg";
+import toolChef from "@/assets/tool-chef-ia.webp";
+import toolCocina from "@/assets/tool-modo-cocina.webp";
+import toolTimer from "@/assets/tool-temporizadores.webp";
+import toolCert from "@/assets/tool-certificado.webp";
 
 const books = [
   { n: 1, title: "El Método Completo del Pan Artesanal", benefit: "Masa madre, fermentación lenta y técnicas de horneado perfecto", value: "$20.00", img: "/images/livro-principal.webp", tag: "Libro Principal" },

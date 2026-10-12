@@ -21,7 +21,7 @@ export const Route = createFileRoute("/oferta/")({
       {
         rel: "preload",
         as: "image",
-        href: "/images/hero-cinematic-bakery.png",
+        href: "/images/hero-cinematic-bakery.webp",
         fetchPriority: "high",
       },
     ],

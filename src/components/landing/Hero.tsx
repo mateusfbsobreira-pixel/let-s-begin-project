@@ -1,7 +1,7 @@
 import { Check, Infinity as InfinityIcon, Lock, ShieldCheck, Zap } from "lucide-react";
-const heroCinematicBakeryUrl = "/images/hero-cinematic-bakery.png";
+const heroCinematicBakeryUrl = "/images/hero-cinematic-bakery.webp";
 import { CHECKOUT_URL } from "./config";
-import heroPhoneApp from "@/assets/hero-phone-app.png";
+import heroPhoneApp from "@/assets/hero-phone-app.webp";
 import { PaymentMethods } from "./PaymentMethods";
 import { CurrencyBox } from "./CurrencyBox";
 

@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { CHECKOUT_URL } from "./config";
-const logoUrl = "/images/logo-la-casa-del-pan.png";
+const logoUrl = "/images/logo-la-casa-del-pan.webp";
 import {
   Accordion,
   AccordionContent,
