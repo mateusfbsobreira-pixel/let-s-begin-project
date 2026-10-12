@@ -18,6 +18,16 @@ export function VideoPlayer({ src, label }: { src: string; label: string }) {
   const [dur, setDur] = useState(0);
   const [show, setShow] = useState(true);
   const [started, setStarted] = useState(false);
+  const [fs, setFs] = useState(false);
+  useEffect(() => {
+    const on = () => setFs(document.fullscreenElement === wrap.current);
+    document.addEventListener("fullscreenchange", on);
+    document.addEventListener("webkitfullscreenchange", on);
+    return () => {
+      document.removeEventListener("fullscreenchange", on);
+      document.removeEventListener("webkitfullscreenchange", on);
+    };
+  }, []);
 
   const poke = () => {
     setShow(true);
@@ -51,7 +61,7 @@ export function VideoPlayer({ src, label }: { src: string; label: string }) {
   return (
     <div
       ref={wrap}
-      className="group relative overflow-hidden rounded-2xl border-2 border-gold/40 bg-black shadow-2xl"
+      className={`group relative overflow-hidden bg-black ${fs ? "flex h-[100dvh] w-screen items-center justify-center" : "rounded-2xl border-2 border-gold/40 shadow-2xl"}`}
       onMouseMove={poke}
       onTouchStart={poke}
     >
@@ -68,7 +78,7 @@ export function VideoPlayer({ src, label }: { src: string; label: string }) {
         onPause={() => { setPlaying(false); setShow(true); }}
         onTimeUpdate={(e) => setTime(e.currentTarget.currentTime)}
         onLoadedMetadata={(e) => setDur(e.currentTarget.duration)}
-        className="aspect-[9/16] w-full cursor-pointer bg-black object-contain"
+        className={`cursor-pointer bg-black object-contain ${fs ? "h-full max-h-[100dvh] w-full" : "aspect-[9/16] w-full"}`}
       />
 
       <span
@@ -95,7 +105,7 @@ export function VideoPlayer({ src, label }: { src: string; label: string }) {
       )}
 
       <div
-        className={`absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent px-3 pb-3 pt-10 transition-opacity duration-300 ${show || !playing ? "opacity-100" : "pointer-events-none opacity-0"}`}
+        className={`absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent px-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] pt-10 transition-opacity duration-300 ${show || !playing ? "opacity-100" : "pointer-events-none opacity-0"}`}
       >
         <input
           type="range"
