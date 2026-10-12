@@ -17,19 +17,12 @@ const books = [
   { n: 8, title: "Las Recetas Secretas de La Casa del Pan", benefit: "Prefermentos y fórmulas de autor · Solo lanzamiento", value: "$20.00", img: "/images/recetas-secretas.webp", tag: "Bono Exclusivo", fit: "contain" as const },
 ];
 
-function BookCover({ title, img, fit = "cover" }: { title: string; img: string; fit?: "cover" | "contain" | undefined }) {
+function BookCover({ title, img }: { title: string; img: string; fit?: "cover" | "contain" | undefined }) {
   return (
-    <div className="relative mx-auto aspect-[3/4] w-full max-w-[180px] [perspective:800px]">
-      <div className="relative h-full w-full overflow-hidden rounded-r-lg rounded-l-sm border border-gold/60 bg-oven shadow-[8px_10px_20px_-6px_rgba(0,0,0,0.55)] transition-transform duration-500 [transform:rotateY(-12deg)] group-hover:[transform:rotateY(0deg)]">
-        <img
-          src={img}
-          alt={title}
-          loading="lazy"
-          decoding="async"
-          className={`absolute inset-0 h-full w-full ${fit === "contain" ? "object-contain" : "object-cover"}`}
-        />
-        <div className="absolute inset-y-0 left-0 w-2.5 bg-gradient-to-r from-oven-black/60 to-transparent" />
-      </div>
+    <div className="relative mx-auto aspect-[3/4] w-full max-w-[210px] overflow-hidden rounded-r-md rounded-l-xs border-r-2 border-[#D4C5A9]/60 shadow-[12px_18px_30px_-5px_rgba(0,0,0,0.4),_-4px_0_8px_rgba(0,0,0,0.25)] transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[16px_24px_36px_-5px_rgba(0,0,0,0.5)]">
+      <img src={img} alt={title} loading="lazy" decoding="async" draggable={false} className="block h-full w-full select-none object-cover" />
+      <div className="pointer-events-none absolute inset-y-0 left-0 w-4 bg-gradient-to-r from-black/40 via-white/20 to-transparent" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-white/15" />
     </div>
   );
 }
@@ -61,14 +54,15 @@ export function MasterBooks() {
         <h3 className="mt-12 text-center font-serif text-2xl font-bold text-artisan-ink sm:text-3xl">Todo Lo Que Recibes</h3>
         <div className="mt-8 grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4">
           {books.map((b) => (
-            <article key={b.n} className="group flex flex-col rounded-2xl border border-gold/35 bg-paper p-4 text-center shadow-md transition-all duration-300 hover:-translate-y-1 hover:border-gold hover:shadow-xl">
+            <article key={b.n} className="group flex flex-col rounded-2xl border border-gold/35 bg-[#FDFBF7] p-4 text-center shadow-md transition-all duration-300 hover:border-gold hover:shadow-xl">
               <span className="mx-auto mb-3 inline-block rounded-full bg-wine px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-paper">{b.tag}</span>
               <BookCover title={b.title} img={b.img} fit={b.fit} />
-              <h3 className="mt-4 font-serif text-base font-bold leading-snug text-artisan-ink sm:text-lg">{b.title}</h3>
-              <p className="mt-1 flex-1 text-sm leading-snug text-artisan-ink/70 sm:text-base">{b.benefit}</p>
-              <p className="mt-3 rounded-full bg-artisan-cream px-3 py-1 text-sm font-bold text-artisan-ink/80">
+              <h3 className="mt-5 font-serif text-base font-bold leading-snug text-artisan-ink sm:text-lg">{b.title}</h3>
+              <p className="mt-1 line-clamp-2 flex-1 text-sm leading-snug text-artisan-ink/70 sm:text-base">{b.benefit}</p>
+              <p className="mt-3 rounded-full bg-artisan-cream px-3 py-1 text-sm font-bold text-artisan-ink">
                 Valor: <span className="text-red-offer line-through">{b.value}</span>{" "}
-                <span className="text-emerald-cta">¡Incluido!</span>
+                <span className="text-artisan-ink/40">|</span>{" "}
+                <span className="text-emerald-cta">¡Incluido $0!</span>
               </p>
             </article>
           ))}
