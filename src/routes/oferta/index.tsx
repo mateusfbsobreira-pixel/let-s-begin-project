@@ -42,7 +42,7 @@ function Oferta() {
     <div className="min-h-screen bg-oven text-foreground">
       <AnnouncementBar />
       <Navbar />
-      <main>
+      <main className="pb-20">
         <Hero />
         <BreadGallery />
         <MasterBooks />
