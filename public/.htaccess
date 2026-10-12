@@ -22,6 +22,10 @@
   RewriteCond %{REQUEST_URI} ^/app [NC]
   RewriteRule ^ - [L]
 
+  # Redirect Lovable CDN video/audio assets if not on local disk
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^__l5e/assets-v1/(.*)$ https://803c1248-2a45-45d6-8b7a-9364583ecdbe.lovableproject.com/__l5e/assets-v1/$1 [R=302,L]
+
   # If requested file or directory exists, serve directly
   RewriteCond %{REQUEST_FILENAME} -f [OR]
   RewriteCond %{REQUEST_FILENAME} -d

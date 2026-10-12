@@ -27,7 +27,9 @@ import { VideoPlayer } from "./VideoPlayer";
 import videoStill from "@/assets/video-testimonial-still.webp";
 
 const mainVideo = {
-  src: sofiaVideo.url,
+  src: sofiaVideo.url.startsWith("http")
+    ? sofiaVideo.url
+    : `https://803c1248-2a45-45d6-8b7a-9364583ecdbe.lovableproject.com${sofiaVideo.url}`,
   tag: "⭐ Testimonio en Video · Carmen Ortiz (61 años) — Guadalajara, México",
   quote: "«Mi esposo me dijo para qué gastar... hoy no compra pan en la panadería, solo quiere el mío.»",
 };

@@ -12,7 +12,7 @@ export default defineConfig({
       crawlLinks: true,
       autoSubfolderIndex: true,
     },
-    pages: [{ path: "/" }],
+    pages: [{ path: "/" }, { path: "/oferta" }],
   },
   nitro: {
     preset: "static",
