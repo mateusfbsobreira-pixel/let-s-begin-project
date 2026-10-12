@@ -15,7 +15,7 @@ export function VideoPlayer({ src, label, poster }: { src: string; label: string
   const [playing, setPlaying] = useState(false);
   const [muted, setMuted] = useState(false);
   const [time, setTime] = useState(0);
-  const [dur, setDur] = useState(0);
+  const [dur, setDur] = useState(34.12);
   const [show, setShow] = useState(true);
   const [started, setStarted] = useState(false);
   const [fs, setFs] = useState(false);
@@ -28,6 +28,13 @@ export function VideoPlayer({ src, label, poster }: { src: string; label: string
       document.removeEventListener("webkitfullscreenchange", on);
     };
   }, []);
+
+  const updateTimeAndDuration = (el: HTMLVideoElement) => {
+    setTime(el.currentTime);
+    if (el.duration && isFinite(el.duration) && el.duration > 0) {
+      setDur(el.duration);
+    }
+  };
 
   const poke = () => {
     setShow(true);
@@ -56,7 +63,13 @@ export function VideoPlayer({ src, label, poster }: { src: string; label: string
     else v?.webkitEnterFullscreen?.();
   };
 
-  const pct = dur ? (time / dur) * 100 : 0;
+  const seek = (val: number) => {
+    setTime(val);
+    if (vid.current) vid.current.currentTime = val;
+    poke();
+  };
+
+  const pct = dur ? Math.min(100, Math.max(0, (time / dur) * 100)) : 0;
 
   return (
     <div
@@ -70,15 +83,24 @@ export function VideoPlayer({ src, label, poster }: { src: string; label: string
         src={src.includes("#t=") ? src : `${src}#t=0.001`}
         poster={poster}
         playsInline
-        preload="metadata"
+        preload="auto"
         disablePictureInPicture
         controlsList="nodownload"
         onContextMenu={(e) => e.preventDefault()}
         onClick={toggle}
-        onPlay={() => { setPlaying(true); poke(); }}
-        onPause={() => { setPlaying(false); setShow(true); }}
-        onTimeUpdate={(e) => setTime(e.currentTarget.currentTime)}
-        onLoadedMetadata={(e) => setDur(e.currentTarget.duration)}
+        onPlay={() => {
+          setPlaying(true);
+          poke();
+          if (vid.current) updateTimeAndDuration(vid.current);
+        }}
+        onPause={() => {
+          setPlaying(false);
+          setShow(true);
+        }}
+        onTimeUpdate={(e) => updateTimeAndDuration(e.currentTarget)}
+        onLoadedMetadata={(e) => updateTimeAndDuration(e.currentTarget)}
+        onDurationChange={(e) => updateTimeAndDuration(e.currentTarget)}
+        onCanPlay={(e) => updateTimeAndDuration(e.currentTarget)}
         className={`cursor-pointer bg-black object-contain ${fs ? "h-full max-h-[100dvh] w-full" : "aspect-[9/16] w-full"}`}
       />
 
@@ -111,14 +133,12 @@ export function VideoPlayer({ src, label, poster }: { src: string; label: string
         <input
           type="range"
           min={0}
-          max={dur || 0}
+          max={dur > 0 ? dur : 34.12}
           step={0.1}
           value={time}
           aria-label="Progreso del video"
-          onChange={(e) => {
-            if (vid.current) vid.current.currentTime = Number(e.target.value);
-            poke();
-          }}
+          onChange={(e) => seek(Number(e.target.value))}
+          onInput={(e) => seek(Number(e.currentTarget.value))}
           className="h-2 w-full cursor-pointer appearance-none rounded-full accent-[#FCD34D]"
           style={{ background: `linear-gradient(to right, #FCD34D ${pct}%, rgba(255,255,255,0.3) ${pct}%)` }}
         />
