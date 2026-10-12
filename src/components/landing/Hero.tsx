@@ -31,7 +31,7 @@ export function Hero() {
         className="pointer-events-none absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-oven to-transparent"
       />
 
-      <div className="relative mx-auto max-w-7xl px-4 pb-20 pt-14 sm:px-6 sm:pt-20">
+      <div className="relative mx-auto max-w-7xl px-4 pb-16 pt-6 sm:px-6 sm:pb-20 sm:pt-20">
         <div className="grid items-center gap-14 lg:grid-cols-2">
           {/* Copy + CTA */}
           <div className="text-center lg:text-left">
@@ -39,7 +39,7 @@ export function Hero() {
               🥖 Más de 1.480 Familias Ya Están Horneando con Este Método
             </span>
 
-            <h1 className="text-shadow-gold mt-6 font-serif text-3xl font-bold leading-[1.18] text-cream sm:text-5xl lg:text-6xl">
+            <h1 className="text-shadow-gold mt-4 font-serif text-[26px] font-bold leading-[1.18] text-cream sm:mt-6 sm:text-5xl lg:text-6xl">
               El Secreto del Pan Artesanal{" "}
               <span className="bg-gradient-to-r from-gold via-gold-bright to-gold-deep bg-clip-text text-transparent">
                 Dorado y Crujiente
@@ -47,12 +47,29 @@ export function Hero() {
               en tu Horno Normal
             </h1>
 
-            <p className="mx-auto mt-6 max-w-3xl text-lg font-medium leading-loose text-cream/90 sm:text-xl lg:mx-0">
+            {/* Phone mockup right under the headline so it is seen on first open (mobile only; desktop keeps it in the right column) */}
+            <div className="relative mt-5 sm:mt-9 lg:hidden">
+              <div className="relative mx-auto w-[min(86vw,336px)]">
+                <div aria-hidden="true" className="absolute -inset-8 rounded-full bg-gold/20 blur-3xl" />
+                <img
+                  src={heroPhoneApp}
+                  alt="Celular mostrando la app La Casa del Pan en Modo Cocina con el Pan Campesino Rústico, su barra de progreso y el botón Paso 1: Mezcla y Autólisis"
+                  width={1024}
+                  height={1536}
+                  loading="eager"
+                  fetchPriority="high"
+                  decoding="async"
+                  className="relative w-full drop-shadow-[0_30px_60px_rgba(0,0,0,0.55)]"
+                />
+              </div>
+            </div>
+
+            <p className="mx-auto mt-4 max-w-3xl text-base font-medium leading-relaxed text-cream/90 sm:mt-6 sm:text-lg lg:mx-0">
               Sin masas madre complicadas, sin ingredientes costosos y con un Chef virtual que te acompaña paso a paso en tu celular.
             </p>
 
             {/* Confidence chips */}
-            <div className="mt-7 flex flex-wrap items-center justify-center gap-2.5 lg:justify-start">
+            <div className="mt-5 flex flex-wrap items-center justify-center gap-2 sm:mt-7 sm:gap-2.5 lg:justify-start">
               {[
                 "Sin batidoras costosas",
                 "Sin experiencia previa",
@@ -70,25 +87,8 @@ export function Hero() {
               )}
             </div>
 
-            {/* Phone mockup above the price block (mobile only; desktop keeps it in the right column) */}
-            <div className="relative mt-9 lg:hidden">
-              <div className="relative mx-auto w-[240px]">
-                <div aria-hidden="true" className="absolute -inset-8 rounded-full bg-gold/20 blur-3xl" />
-                <img
-                  src={heroPhoneApp}
-                  alt="Celular mostrando la app La Casa del Pan en Modo Cocina con el Pan Campesino Rústico, su barra de progreso y el botón Paso 1: Mezcla y Autólisis"
-                  width={1024}
-                  height={1536}
-                  loading="eager"
-                  fetchPriority="high"
-                  decoding="async"
-                  className="relative w-full drop-shadow-[0_30px_60px_rgba(0,0,0,0.55)]"
-                />
-              </div>
-            </div>
-
             {/* Price block — strictly vertical flow on mobile, nothing overlapping */}
-            <div className="mt-9 flex w-full flex-col items-center gap-3 lg:items-start">
+            <div className="mt-8 flex w-full flex-col items-center gap-3 sm:mt-9 lg:items-start">
               <p className="text-lg font-bold text-cream/60 line-through sm:text-xl">$230 USD</p>
               <p className="text-2xl font-black uppercase leading-tight text-cream sm:text-3xl">
                 Solo $9.90 Dólares Americanos <span className="whitespace-nowrap">(USD)</span>
@@ -151,8 +151,8 @@ export function Hero() {
           </div>
 
           {/* Photorealistic phone mockup with the real app UI (desktop; mobile shows it above the price block) */}
-          <div className="relative hidden lg:block">
-            <div className="relative mx-auto w-[290px] sm:w-[340px]">
+          <div className="relative hidden self-start lg:mt-6 lg:block">
+            <div className="relative mx-auto w-[330px] sm:w-[390px] xl:w-[440px]">
               <div aria-hidden="true" className="absolute -inset-10 rounded-full bg-gold/20 blur-3xl" />
               <img
                 src={heroPhoneApp}
